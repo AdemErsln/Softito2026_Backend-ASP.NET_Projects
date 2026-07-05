@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Franchise Paneli</title>
+    <link href="~/css/site.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.slim.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.slim.js"></script>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <style>
+            body, html {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                font-family: 'Plus Jakarta Sans', sans-serif;
+                background-color: #0b0c10;
+                overflow: hidden;
+            }
+
+            /* Arka plan süzme ışık efektleri ve animasyon */
+            .hero-section {
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                background: #090a0f;
+                overflow: hidden;
+            }
+
+            /* Hareketli ve yaşayan soft ışık küreleri */
+            .glow-sphere-1 {
+                position: absolute;
+                width: 600px;
+                height: 600px;
+                background: radial-gradient(circle, rgba(99, 102, 241, 0.05) 0%, rgba(0,0,0,0) 70%);
+                top: -10%;
+                left: -10%;
+                animation: floatGlow 15s infinite alternate ease-in-out;
+            }
+
+            .glow-sphere-2 {
+                position: absolute;
+                width: 500px;
+                height: 500px;
+                background: radial-gradient(circle, rgba(139, 92, 246, 0.04) 0%, rgba(0,0,0,0) 70%);
+                bottom: -5%;
+                right: -5%;
+                animation: floatGlow 20s infinite alternate-reverse ease-in-out;
+            }
+
+            /* Geliştirilmiş Cam Paneli */
+            .main-panel {
+                background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
+                border: 1px solid rgba(255, 255, 255, 0.06);
+                border-radius: 24px;
+                padding: 4.5rem 3.5rem;
+                max-width: 750px;
+                width: 90%;
+                text-align: center;
+                backdrop-filter: blur(30px);
+                -webkit-backdrop-filter: blur(30px);
+                box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255,255,255,0.1);
+                z-index: 5;
+            }
+
+            .brand-subtitle {
+                color: #6366f1; /* Canlı ama soft indigo tonu */
+                font-size: 0.8rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+                margin-bottom: 1.5rem;
+            }
+
+            /* Kontrastlı Başlık Yapısı */
+            .animated-title {
+                color: #ffffff;
+                font-weight: 800;
+                font-size: 3.2rem;
+                margin-bottom: 1.25rem;
+                letter-spacing: -1px;
+                line-height: 1.2;
+                animation: fadeInSoft 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            }
+
+                .animated-title span {
+                    font-weight: 300;
+                    color: #a5b4fc;
+                }
+
+            .animated-subtitle {
+                color: #8a99ad;
+                font-weight: 400;
+                font-size: 1.1rem;
+                line-height: 1.7;
+                margin-bottom: 3.5rem;
+                max-width: 600px;
+                margin-left: auto;
+                margin-right: auto;
+                animation: fadeInSoft 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            }
+
+            .btn-container {
+                display: flex;
+                gap: 20px;
+                justify-content: center;
+                animation: fadeInSoft 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            }
+
+            /* Yeni Nesil Buton Tasarımları */
+            .custom-btn {
+                padding: 16px 36px;
+                font-size: 1rem;
+                font-weight: 600;
+                border-radius: 12px;
+                transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+                text-decoration: none !important;
+                letter-spacing: 0.3px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                min-width: 220px;
+            }
+
+            /* Şık ve Soft Parlayan Transparan Buton */
+            .btn-user {
+                background-color: rgba(255, 255, 255, 0.02);
+                border: 1px solid rgba(255, 255, 255, 0.12);
+                color: #f1f5f9 !important;
+            }
+
+                .btn-user:hover {
+                    background-color: rgba(255, 255, 255, 0.07);
+                    border-color: rgba(255, 255, 255, 0.3);
+                    color: #ffffff !important;
+                    transform: translateY(-3px);
+                    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.03);
+                }
+
+            /* Premium Indigo Baskın Buton */
+            .btn-admin {
+                background-color: #6366f1;
+                border: 1px solid #6366f1;
+                color: #ffffff !important;
+                box-shadow: 0 4px 20px rgba(99, 102, 241, 0.2);
+            }
+
+                .btn-admin:hover {
+                    background-color: #4f46e5;
+                    border-color: #4f46e5;
+                    transform: translateY(-3px);
+                    box-shadow: 0 15px 30px rgba(99, 102, 241, 0.35);
+                }
+
+            
+    </style>
+</head>
+<body>
+
+    <div class="hero-section">
+        <div class="glow-sphere-1"></div>
+        <div class="glow-sphere-2"></div>
+
+        <div class="main-panel">
+
+            <div class="brand-subtitle">Sistem Girişi</div>
+
+            <h1 class="animated-title">Franchise <span>Yönetimi</span></h1>
+            <p class="animated-subtitle">Bağımsız veri tabanı mimarisiyle güçlendirilmiş; paket, şube ve alıcı yönetim ekranları.</p>
+
+            <div class="btn-container">
+                <a href="/User/Index" class="custom-btn btn-user">
+                    Kullanıcı Paneli
+                </a>
+                <a href="/Admin/Index" class="custom-btn btn-admin">
+                    Admin Paneli
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <div style="display: none;">
+        @RenderBody()
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

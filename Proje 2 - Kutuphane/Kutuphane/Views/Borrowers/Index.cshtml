@@ -1,0 +1,97 @@
+﻿@model IEnumerable<Kutuphane.Models.Borrower>
+@{
+    Layout = "~/views/shared/admin.cshtml";
+    ViewData["Title"] = "Ödünç İşlemleri";
+}
+
+<div class="d-flex justify-content-between align-items-center pb-3 mb-4 border-bottom border-secondary" style="border-color: rgba(255,255,255,0.1) !important;">
+    <div>
+        <h1 class="h2 mb-0">Ödünç Alanlar</h1>
+        <p class="text-muted small mb-0">Kitapları ödünç alan üyeler ve teslim tarihleri</p>
+    </div>
+    <div>
+        <a asp-action="Create" class="btn btn-purple px-4 py-2 fw-semibold">
+            <i class="bi bi-arrow-left-right me-2"></i>Yeni Ödünç Ver
+        </a>
+    </div>
+</div>
+
+<div class="card shadow-lg">
+    <div class="card-body p-0">
+        <div class="table-responsive">
+            <table class="table table-hover mb-0">
+                <thead>
+                    <tr>
+                        <th class="ps-4" style="width: 10%">#ID</th>
+                        <th style="width: 35%">Üye Adı Soyadı</th>
+                        <th style="width: 35%">Ödünç Alınan Kitap</th>
+                        <th style="width: 10%">Tarih</th>
+                        <th class="text-end pe-4" style="width: 10%">İşlemler</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model != null && Model.Any())
+                    {
+                        foreach (var item in Model)
+                        {
+                            <tr>
+                                <td class="ps-4 fw-bold text-secondary">@item.BorrowerId</td>
+                                <td class="fw-semibold text-white"><i class="bi bi-person me-2 opacity-50"></i>@item.FullName</td>
+                                <td>
+                                    <span class="text-purple" style="color: var(--hover-purple); font-weight: 500;">
+                                        <i class="bi bi-book me-1"></i>@item.Book?.Title
+                                    </span>
+                                </td>
+                                <td class="text-muted small">@item.BorrowDate.ToString("dd.MM.yyyy")</td>
+                                <td class="text-end pe-4">
+                                    <div class="btn-group" role="group">
+                                        <a asp-action="Edit" asp-route-id="@item.BorrowerId" class="btn btn-sm btn-outline-warning me-2 rounded">
+                                            <i class="bi bi-pencil-square"></i>
+                                        </a>
+                                        <button type="button" class="btn btn-sm btn-outline-danger rounded" onclick="confirmDelete('@item.BorrowerId', '@item.FullName')">
+                                            <i class="bi bi-trash"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="5" class="text-center py-5 text-muted">
+                                <i class="bi bi-clock-history fs-1 d-block mb-3 opacity-50"></i>
+                                Şu an aktif ödünç kaydı bulunmuyor.
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<form id="deleteForm" asp-action="Delete" method="post" style="display:none;">
+    <input type="hidden" id="deleteId" name="id" />
+</form>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    function confirmDelete(id, name) {
+        Swal.fire({
+            title: 'Emin misiniz?',
+            text: `"${name}" isimli üyenin ödünç kaydı silinecektir!`,
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#dc3545',
+            cancelButtonColor: '#6c757d',
+            confirmButtonText: 'Evet, Sil!',
+            cancelButtonText: 'Vazgeç'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                document.getElementById('deleteId').value = id;
+                document.getElementById('deleteForm').submit();
+            }
+        })
+    }
+</script>

@@ -1,0 +1,215 @@
+﻿@page
+@model NezHotel.Pages.Odalar.IndexModel
+@{
+    ViewData["Title"] = "Odalar";
+}
+
+<style>
+    /* Panel içi kart yapısı */
+    .card {
+        background: var(--white);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 24px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    }
+
+    /* Başlık ve Buton Alanı */
+    .card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 22px;
+    }
+
+    .card-title {
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--navy);
+    }
+
+    /* Temaya Uygun Butonlar */
+    .btn {
+        padding: 9px 16px;
+        border-radius: 8px;
+        font-size: 13px;
+        font-weight: 600;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        border: none;
+        cursor: pointer;
+        transition: all .15s;
+    }
+
+    .btn-gold {
+        background: var(--gold);
+        color: var(--navy);
+    }
+
+        .btn-gold:hover {
+            background: var(--gold2);
+        }
+
+    .btn-outline {
+        border: 1px solid var(--border);
+        color: var(--sub);
+        background: transparent;
+    }
+
+        .btn-outline:hover {
+            background: #f5f5f8;
+            color: var(--navy);
+        }
+
+    .btn-danger {
+        background: #fcebeb;
+        color: #e24b4a;
+    }
+
+        .btn-danger:hover {
+            background: #ebd5d5;
+        }
+
+    /* Tablo Tasarımı */
+    .table-responsive {
+        overflow-x: auto;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: left;
+        font-size: 13.5px;
+    }
+
+    th {
+        padding: 14px 16px;
+        background: #f8fafc;
+        color: var(--sub);
+        font-weight: 600;
+        border-bottom: 2px solid var(--border);
+        text-transform: uppercase;
+        font-size: 11px;
+        letter-spacing: 0.5px;
+    }
+
+    td {
+        padding: 14px 16px;
+        border-bottom: 1px solid var(--border);
+        color: var(--text);
+        vertical-align: middle;
+    }
+
+    tr:last-child td {
+        border-bottom: none;
+    }
+
+    tr:hover td {
+        background: #fafbfc;
+    }
+
+    /* Oda Tipi Rozetleri (Badge) */
+    .badge {
+        padding: 4px 10px;
+        border-radius: 6px;
+        font-size: 11.5px;
+        font-weight: 600;
+        display: inline-block;
+    }
+
+    .badge-standart {
+        background: #e0f2fe;
+        color: #0369a1;
+    }
+
+    .badge-deluxe {
+        background: #fef3c7;
+        color: #b45309;
+    }
+
+    .badge-suit {
+        background: #f3e8ff;
+        color: #6b21a8;
+    }
+
+    .badge-default {
+        background: #f1f5f9;
+        color: #475569;
+    }
+</style>
+
+<div class="card">
+    <div class="card-header">
+        <div class="card-title">Oda Durum ve Tanımlamaları</div>
+        <a href="/Odalar/Ekle" class="btn btn-gold">
+            <i class="ti ti-plus"></i> Yeni Oda Tanımla
+        </a>
+    </div>
+
+    <div class="table-responsive">
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 80px;">Sıra</th>
+                    <th>Oda Numarası</th>
+                    <th>Oda Tipi</th>
+                    <th>Gecelik Fiyat</th>
+                    <th style="width: 150px; text-align: center;">İşlemler</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.Listele != null && Model.Listele.Count > 0)
+                {
+                    int siraNo = 1;
+                    foreach (var oda in Model.Listele)
+                    {
+                        <tr>
+                            <td><span style="color: var(--muted);">@siraNo</span></td>
+                            <td>
+                                <div style="display: flex; align-items: center; gap: 8px;">
+                                    <i class="ti ti-door" style="font-size: 18px; color: var(--gold);"></i>
+                                    <strong>Oda @oda.OdaNo</strong>
+                                </div>
+                            </td>
+                            <td>
+                                @{
+                                    // Oda tipine göre dinamik renkli rozet verelim
+                                    string badgeClass = "badge-default";
+                                    if (oda.OdaTipi.ToLower().Contains("standart")) badgeClass = "badge-standart";
+                                    else if (oda.OdaTipi.ToLower().Contains("deluxe")) badgeClass = "badge-deluxe";
+                                    else if (oda.OdaTipi.ToLower().Contains("suit")) badgeClass = "badge-suit";
+                                }
+                                <span class="badge @badgeClass">@oda.OdaTipi</span>
+                            </td>
+                            <td>
+                                <strong style="color: var(--navy2);">@oda.Fiyat ₺</strong>
+                            </td>
+                            <td>
+                                <div style="display: flex; gap: 6px; justify-content: center;">
+                                    <a href="/Odalar/Duzenle?id=@oda.OdaID" class="btn btn-outline" style="padding: 6px 10px;" title="Düzenle">
+                                        <i class="ti ti-edit"></i>
+                                    </a>
+                                    <a href="/Odalar/Sil?id=@oda.OdaID" class="btn btn-danger" style="padding: 6px 10px;" title="Sil" onclick="return confirm('Bu odayı silmek istediğinize emin misiniz?')">
+                                        <i class="ti ti-trash"></i>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        siraNo++;
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="5" style="text-align: center; padding: 40px; color: var(--muted);">
+                            <i class="ti ti-alert-circle" style="font-size: 24px; display: block; margin-bottom: 8px;"></i>
+                            Sistemde kayıtlı oda bulunamadı.
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,218 @@
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giriş Yap - K-Yönetim</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+        :root {
+            --bg-gradient: linear-gradient(135deg, #0f0c1b 0%, #201335 50%, #0f0c1b 100%);
+            --glass-bg: rgba(30, 21, 49, 0.4);
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --accent-purple: #8c52ff;
+            --btn-hover: #733dd8;
+            --text-light: #f3effa;
+            --text-muted: #a39cb5;
+        }
+
+        body {
+            background: var(--bg-gradient);
+            color: var(--text-light);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        .login-container {
+            width: 100%;
+            max-width: 450px;
+            padding: 15px;
+        }
+
+        .glass-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 40px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .glass-card:hover {
+            box-shadow: 0 20px 45px rgba(140, 82, 255, 0.15);
+        }
+
+        .logo-area {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .logo-area i {
+            font-size: 3rem;
+            color: var(--accent-purple);
+            text-shadow: 0 0 15px rgba(140, 82, 255, 0.6);
+            margin-bottom: 10px;
+        }
+
+        .logo-area h2 {
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .form-label {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .input-group {
+            background: rgba(0, 0, 0, 0.25);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .input-group:focus-within {
+            border-color: var(--accent-purple);
+            box-shadow: 0 0 0 3px rgba(140, 82, 255, 0.2);
+        }
+
+        .input-group-text {
+            background: transparent;
+            border: none;
+            color: var(--text-muted);
+            padding-left: 15px;
+        }
+
+        .form-control {
+            background: transparent;
+            border: none;
+            color: var(--text-light);
+            padding: 12px 15px;
+            font-size: 1rem;
+        }
+
+        .form-control:focus {
+            background: transparent;
+            border: none;
+            box-shadow: none;
+            color: var(--text-light);
+        }
+
+        .form-control::placeholder {
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        .btn-submit {
+            background: var(--accent-purple);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            padding: 12px;
+            font-weight: 600;
+            width: 100%;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(140, 82, 255, 0.3);
+            margin-top: 15px;
+        }
+
+        .btn-submit:hover {
+            background: var(--btn-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(140, 82, 255, 0.5);
+        }
+
+        .btn-submit:active {
+            transform: translateY(0);
+        }
+
+        .alert-custom {
+            background: rgba(239, 68, 68, 0.15);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            color: #ff6b6b;
+            border-radius: 12px;
+            padding: 12px;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+
+        .footer-link {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s ease;
+        }
+
+        .footer-link:hover {
+            color: var(--accent-purple);
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <div class="glass-card">
+        <div class="logo-area">
+            <i class="fa-solid fa-book-open-reader"></i>
+            <h2>K-Yönetim</h2>
+            <p style="color: var(--text-muted);">Giriş Yaparak Sisteme Erişin</p>
+        </div>
+
+        @if (ViewBag.Error != null)
+        {
+            <div class="alert-custom">
+                <i class="fa-solid fa-triangle-exclamation me-2"></i> @ViewBag.Error
+            </div>
+        }
+
+        <form asp-controller="Account" asp-action="Login" method="post">
+            <div class="mb-3">
+                <label for="username" class="form-label">Kullanıcı Adı</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+                    <input type="text" class="form-control" id="username" name="username" placeholder="Kullanıcı adınızı girin" required />
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <label for="password" class="form-label">Şifre</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Şifrenizi girin" required />
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="rememberMe" name="rememberMe" value="true" style="background-color: rgba(0,0,0,0.3); border-color: var(--glass-border);">
+                    <label class="form-check-label small" for="rememberMe" style="color: var(--text-muted);">Beni Hatırla</label>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-submit">Giriş Yap</button>
+        </form>
+
+        <div class="text-center mt-4">
+            <span class="small" style="color: var(--text-muted);">Hesabınız yok mu? </span>
+            <a asp-controller="Account" asp-action="Register" class="footer-link">Kaydolun</a>
+        </div>
+    </div>
+</div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+﻿@model IEnumerable<RentacCar.Model.Kiralama>
+@{
+    ViewData["Title"] = "Kiralama Sözleşmeleri";
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        
+        <!-- ÜST BAŞLIK VE EKLEME BUTONU ALANI -->
+        <div class="d-flex justify-content-between align-items-center flex-wrap mb-4">
+            <div>
+                <h3 class="text-primary fw-bold mb-1">Kiralama İşlemleri</h3>
+                <p class="text-muted mb-0">Aktif sözleşmeler, iade tarihleri ve toplam ciro takibi.</p>
+            </div>
+            <div>
+                <a href="/Kiralama/Create" class="btn btn-primary d-flex align-items-center gap-2">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="me-1">
+                        <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Yeni Sözleşme Oluştur
+                </a>
+            </div>
+        </div>
+
+        <!-- TABLO KARTI -->
+        <div class="card card-block card-stretch custom-scroll">
+            <div class="card-body p-0">
+                <div class="table-responsive rounded">
+                    <table class="table table-striped mb-0">
+                        <thead class="bg-soft-primary text-primary">
+                            <tr>
+                                <th class="ps-4">Sözleşme ID</th>
+                                <th>Müşteri</th>
+                                <th>Araç / Plaka</th>
+                                <th>Alış Tarihi</th>
+                                <th>İade Tarihi</th>
+                                <th>Toplam Tutar</th>
+                                <th>Durum</th>
+                                <th class="text-end pe-4">İşlemler</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (Model != null && Model.Any())
+                            {
+                                foreach (var kiralama in Model)
+                                {
+                                    <tr class="white-space-no-wrap align-middle">
+                                        <td class="ps-4 text-muted font-monospace">#RNT-@kiralama.RentalId</td>
+                                        <!-- Navigation property'den gelen müşteri adı -->
+                                        <td class="fw-bold  ">@(kiralama.Kullanicilar?.AdSoyad ?? "Bilinmeyen Müşteri")</td>
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <span class="text-secondary fw-bold">@(kiralama.Araclar?.Marka) @(kiralama.Araclar?.Model)</span>
+                                                <small class="text-muted font-monospace">@(kiralama.Araclar?.Plaka)</small>
+                                            </div>
+                                        </td>
+                                        <td>@kiralama.AlisTarihi.ToString("dd.MM.yyyy")</td>
+                                        <td>@kiralama.IadeTarihi.ToString("dd.MM.yyyy")</td>
+                                        <td class="text-success fw-bold fs-6">@kiralama.ToplamTutar.ToString("C2")</td>
+                                        <td>
+                                            <!-- Sözleşme Durum Badgeleri -->
+                                            @if (kiralama.Durum == "Aktif")
+                                            {
+                                                <span class="badge bg-soft-primary text-primary rounded-pill px-3 py-2">Aktif (Kirada)</span>
+                                            }
+                                            else if (kiralama.Durum == "Kapatıldı" || kiralama.Durum == "Tamamlandı")
+                                            {
+                                                <span class="badge bg-soft-success text-success rounded-pill px-3 py-2">Tamamlandı</span>
+                                            }
+                                            else
+                                            {
+                                                <span class="badge bg-soft-danger text-danger rounded-pill px-3 py-2">@kiralama.Durum</span>
+                                            }
+                                        </td>
+                                        <!-- İşlem Butonları -->
+                                        <td class="text-end pe-4">
+                                            <div class="d-inline-flex gap-2">
+                                                <a href="/Kiralama/Edit/@kiralama.RentalId" class="btn btn-sm btn-soft-warning rounded-pill px-3" title="Düzenle / Kapat">
+                                                    Düzenle
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                }
+                            }
+                            else
+                            {
+                                <tr>
+                                    <td colspan="8" class="text-center py-5 text-muted">
+                                        <div class="mb-2">
+                                            <svg width="40" height="40" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                            </svg>
+                                        </div>
+                                        <span>Aktif veya geçmiş kiralama sözleşmesi bulunamadı.</span>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

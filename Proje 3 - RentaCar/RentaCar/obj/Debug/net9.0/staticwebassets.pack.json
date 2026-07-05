@@ -1,0 +1,2361 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\RentaCar.bundle.scp.css",
+      "PackagePath": "staticwebassets\\RentaCar.smps5kpcjz.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\css\\bootstrap\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\assets\\css\\bootstrap\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\css\\bootstrap\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\assets\\css\\bootstrap\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\css\\bootstrap\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\assets\\css\\bootstrap\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\css\\bootstrap\\bootstrap.css",
+      "PackagePath": "staticwebassets\\assets\\css\\bootstrap\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\css\\custom\\pages\\ui-kit\\intro-slider.css",
+      "PackagePath": "staticwebassets\\assets\\css\\custom\\pages\\ui-kit\\intro-slider.css"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\css\\libs.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\libs.min.css"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\css\\nairobi.css",
+      "PackagePath": "staticwebassets\\assets\\css\\nairobi.css"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\auth\\01.png",
+      "PackagePath": "staticwebassets\\assets\\images\\auth\\01.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\auth\\02.png",
+      "PackagePath": "staticwebassets\\assets\\images\\auth\\02.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\auth\\03.png",
+      "PackagePath": "staticwebassets\\assets\\images\\auth\\03.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\auth\\04.png",
+      "PackagePath": "staticwebassets\\assets\\images\\auth\\04.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\auth\\05.png",
+      "PackagePath": "staticwebassets\\assets\\images\\auth\\05.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\auth\\06.png",
+      "PackagePath": "staticwebassets\\assets\\images\\auth\\06.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\avatars\\01.png",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\01.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\avatars\\02.png",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\02.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\avatars\\03.png",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\03.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\avatars\\04.png",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\04.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\avatars\\05.png",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\05.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\avatars\\06.png",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\06.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\brands\\01.png",
+      "PackagePath": "staticwebassets\\assets\\images\\brands\\01.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\brands\\02.png",
+      "PackagePath": "staticwebassets\\assets\\images\\brands\\02.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\brands\\03.png",
+      "PackagePath": "staticwebassets\\assets\\images\\brands\\03.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\brands\\04.png",
+      "PackagePath": "staticwebassets\\assets\\images\\brands\\04.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\brands\\05.png",
+      "PackagePath": "staticwebassets\\assets\\images\\brands\\05.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\brands\\06.png",
+      "PackagePath": "staticwebassets\\assets\\images\\brands\\06.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\coins\\01.png",
+      "PackagePath": "staticwebassets\\assets\\images\\coins\\01.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\coins\\02.png",
+      "PackagePath": "staticwebassets\\assets\\images\\coins\\02.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\coins\\03.png",
+      "PackagePath": "staticwebassets\\assets\\images\\coins\\03.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\coins\\04.png",
+      "PackagePath": "staticwebassets\\assets\\images\\coins\\04.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\coins\\05.png",
+      "PackagePath": "staticwebassets\\assets\\images\\coins\\05.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\coins\\06.png",
+      "PackagePath": "staticwebassets\\assets\\images\\coins\\06.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\coins\\07.png",
+      "PackagePath": "staticwebassets\\assets\\images\\coins\\07.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\coins\\08.png",
+      "PackagePath": "staticwebassets\\assets\\images\\coins\\08.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\coins\\09.png",
+      "PackagePath": "staticwebassets\\assets\\images\\coins\\09.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\coins\\10.png",
+      "PackagePath": "staticwebassets\\assets\\images\\coins\\10.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\coins\\11.png",
+      "PackagePath": "staticwebassets\\assets\\images\\coins\\11.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\down-aerrow.gif",
+      "PackagePath": "staticwebassets\\assets\\images\\down-aerrow.gif"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\error\\404.png",
+      "PackagePath": "staticwebassets\\assets\\images\\error\\404.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\favicon.ico",
+      "PackagePath": "staticwebassets\\assets\\images\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\favicon.png",
+      "PackagePath": "staticwebassets\\assets\\images\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\icons\\01.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icons\\01.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\icons\\02.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icons\\02.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\icons\\03.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icons\\03.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\icons\\04.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icons\\04.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\icons\\05.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icons\\05.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\icons\\06.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icons\\06.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\icons\\07.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icons\\07.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\icons\\08.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icons\\08.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\icons\\09.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icons\\09.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\icons\\1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icons\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\icons\\10.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icons\\10.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\icons\\11.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icons\\11.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\icons\\12.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icons\\12.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\icons\\13.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icons\\13.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\icons\\14.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icons\\14.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\icons\\15.png",
+      "PackagePath": "staticwebassets\\assets\\images\\icons\\15.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\loader.gif",
+      "PackagePath": "staticwebassets\\assets\\images\\loader.gif"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\logo.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\logo.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\pages\\01.png",
+      "PackagePath": "staticwebassets\\assets\\images\\pages\\01.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\pages\\02.png",
+      "PackagePath": "staticwebassets\\assets\\images\\pages\\02.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\pages\\03.png",
+      "PackagePath": "staticwebassets\\assets\\images\\pages\\03.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\pages\\04.png",
+      "PackagePath": "staticwebassets\\assets\\images\\pages\\04.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\pages\\05.png",
+      "PackagePath": "staticwebassets\\assets\\images\\pages\\05.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\pages\\06.png",
+      "PackagePath": "staticwebassets\\assets\\images\\pages\\06.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\pages\\07.png",
+      "PackagePath": "staticwebassets\\assets\\images\\pages\\07.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\pages\\08.png",
+      "PackagePath": "staticwebassets\\assets\\images\\pages\\08.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\pages\\09.png",
+      "PackagePath": "staticwebassets\\assets\\images\\pages\\09.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\pages\\10.png",
+      "PackagePath": "staticwebassets\\assets\\images\\pages\\10.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\pages\\11.png",
+      "PackagePath": "staticwebassets\\assets\\images\\pages\\11.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\pages\\12.png",
+      "PackagePath": "staticwebassets\\assets\\images\\pages\\12.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\pages\\13.png",
+      "PackagePath": "staticwebassets\\assets\\images\\pages\\13.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\pages\\14.png",
+      "PackagePath": "staticwebassets\\assets\\images\\pages\\14.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\pages\\15.png",
+      "PackagePath": "staticwebassets\\assets\\images\\pages\\15.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\pages\\16.png",
+      "PackagePath": "staticwebassets\\assets\\images\\pages\\16.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\pages\\17.png",
+      "PackagePath": "staticwebassets\\assets\\images\\pages\\17.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\pages\\18.png",
+      "PackagePath": "staticwebassets\\assets\\images\\pages\\18.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\pages\\19.png",
+      "PackagePath": "staticwebassets\\assets\\images\\pages\\19.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\pages\\Documentation 1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\pages\\Documentation 1.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\pages\\Documentation 2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\pages\\Documentation 2.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\pages\\Logo2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\pages\\Logo2.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\pages\\Profile-Banner.png",
+      "PackagePath": "staticwebassets\\assets\\images\\pages\\Profile-Banner.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\pages\\logo.png",
+      "PackagePath": "staticwebassets\\assets\\images\\pages\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\pages\\logo1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\pages\\logo1.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\pages\\sidebarlogo.png",
+      "PackagePath": "staticwebassets\\assets\\images\\pages\\sidebarlogo.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\utilities\\01.png",
+      "PackagePath": "staticwebassets\\assets\\images\\utilities\\01.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\utilities\\02.png",
+      "PackagePath": "staticwebassets\\assets\\images\\utilities\\02.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\utilities\\03.png",
+      "PackagePath": "staticwebassets\\assets\\images\\utilities\\03.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\utilities\\04.png",
+      "PackagePath": "staticwebassets\\assets\\images\\utilities\\04.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\utilities\\05.png",
+      "PackagePath": "staticwebassets\\assets\\images\\utilities\\05.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\vectormap\\cloudy-day-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\vectormap\\cloudy-day-1.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\vectormap\\cloudy-day-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\vectormap\\cloudy-day-2.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\vectormap\\cloudy-day-3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\vectormap\\cloudy-day-3.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\vectormap\\cloudy-night-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\vectormap\\cloudy-night-1.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\vectormap\\cloudy-night-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\vectormap\\cloudy-night-2.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\vectormap\\cloudy.png",
+      "PackagePath": "staticwebassets\\assets\\images\\vectormap\\cloudy.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\vectormap\\day.png",
+      "PackagePath": "staticwebassets\\assets\\images\\vectormap\\day.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\vectormap\\night.png",
+      "PackagePath": "staticwebassets\\assets\\images\\vectormap\\night.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\vectormap\\rainy-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\vectormap\\rainy-1.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\vectormap\\rainy-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\vectormap\\rainy-2.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\vectormap\\rainy-3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\vectormap\\rainy-3.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\vectormap\\rainy-4.png",
+      "PackagePath": "staticwebassets\\assets\\images\\vectormap\\rainy-4.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\vectormap\\rainy-5.png",
+      "PackagePath": "staticwebassets\\assets\\images\\vectormap\\rainy-5.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\vectormap\\rainy-6.png",
+      "PackagePath": "staticwebassets\\assets\\images\\vectormap\\rainy-6.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\vectormap\\rainy-7.png",
+      "PackagePath": "staticwebassets\\assets\\images\\vectormap\\rainy-7.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\vectormap\\snowy-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\vectormap\\snowy-1.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\vectormap\\snowy-4.png",
+      "PackagePath": "staticwebassets\\assets\\images\\vectormap\\snowy-4.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\vectormap\\snowy-6.png",
+      "PackagePath": "staticwebassets\\assets\\images\\vectormap\\snowy-6.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\vectormap\\thunder.png",
+      "PackagePath": "staticwebassets\\assets\\images\\vectormap\\thunder.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\images\\vectormap\\weather.png",
+      "PackagePath": "staticwebassets\\assets\\images\\vectormap\\weather.png"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\js\\app.js",
+      "PackagePath": "staticwebassets\\assets\\js\\app.js"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\js\\charts\\apexcharts.js",
+      "PackagePath": "staticwebassets\\assets\\js\\charts\\apexcharts.js"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\js\\charts\\dashboard.js",
+      "PackagePath": "staticwebassets\\assets\\js\\charts\\dashboard.js"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\js\\charts\\widgetcharts.js",
+      "PackagePath": "staticwebassets\\assets\\js\\charts\\widgetcharts.js"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\js\\countdown.js",
+      "PackagePath": "staticwebassets\\assets\\js\\countdown.js"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\js\\fslightbox.js",
+      "PackagePath": "staticwebassets\\assets\\js\\fslightbox.js"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\js\\libs.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\libs.min.js"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\js\\prism.mini.js",
+      "PackagePath": "staticwebassets\\assets\\js\\prism.mini.js"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\2 User.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\2 User.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\3 User.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\3 User.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Activity.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Activity.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Add User.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Add User.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Arrow - Down 2.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Arrow - Down 2.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Arrow - Down 3.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Arrow - Down 3.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Arrow - Down Circle.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Arrow - Down Circle.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Arrow - Down Square.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Arrow - Down Square.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Arrow - Down.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Arrow - Down.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Arrow - Left 2.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Arrow - Left 2.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Arrow - Left 3.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Arrow - Left 3.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Arrow - Left Circle.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Arrow - Left Circle.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Arrow - Left Square.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Arrow - Left Square.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Arrow - Left.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Arrow - Left.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Arrow - Right 2.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Arrow - Right 2.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Arrow - Right 3.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Arrow - Right 3.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Arrow - Right Circle.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Arrow - Right Circle.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Arrow - Right Square.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Arrow - Right Square.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Arrow - Right.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Arrow - Right.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Arrow - Up 2.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Arrow - Up 2.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Arrow - Up 3.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Arrow - Up 3.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Arrow - Up Circle.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Arrow - Up Circle.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Arrow - Up Square.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Arrow - Up Square.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Arrow - Up.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Arrow - Up.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Bag 2.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Bag 2.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Bag.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Bag.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Bookmark.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Bookmark.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Buy.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Buy.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Calendar.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Calendar.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Call Missed.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Call Missed.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Call Silent.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Call Silent.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Call.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Call.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Calling.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Calling.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Camera.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Camera.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Category.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Category.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Chart.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Chart.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Chat.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Chat.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Close Square.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Close Square.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Danger.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Danger.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Delete.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Delete.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Discount.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Discount.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Discovery.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Discovery.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Document.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Document.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Download.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Download.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Edit Square.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Edit Square.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Edit.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Edit.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Filter 2.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Filter 2.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Filter.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Filter.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Folder.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Folder.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Game.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Game.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Graph.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Graph.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Heart.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Heart.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Hide.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Hide.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Home.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Home.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Image 2.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Image 2.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Image.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Image.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Info Circle.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Info Circle.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Info Square.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Info Square.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Location.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Location.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Lock.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Lock.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Login.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Login.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Logout.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Logout.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Message.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Message.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\More Circle.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\More Circle.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\More Square.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\More Square.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Notification.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Notification.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Paper Download.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Paper Download.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Paper Fail.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Paper Fail.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Paper Negative.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Paper Negative.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Paper Plus.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Paper Plus.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Paper Upload.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Paper Upload.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Paper.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Paper.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Password.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Password.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Play.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Play.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Plus.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Plus.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Profile.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Profile.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Scan.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Scan.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Search.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Search.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Send.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Send.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Setting.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Setting.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Shield Done.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Shield Done.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Shield Fail.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Shield Fail.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Show.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Show.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Star.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Star.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Swap.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Swap.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Tick Square.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Tick Square.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Ticket Star.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Ticket Star.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Ticket.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Ticket.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Time Circle.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Time Circle.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Time Square.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Time Square.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Unlock.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Unlock.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Upload.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Upload.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Video.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Video.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Voice 2.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Voice 2.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Voice.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Voice.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Volume Down.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Volume Down.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Volume Off.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Volume Off.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Volume Up.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Volume Up.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Wallet.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Wallet.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Bold\\Work.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Bold\\Work.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\2 User.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\2 User.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\3 User.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\3 User.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Activity.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Activity.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Add User.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Add User.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Arrow - Down 2.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Arrow - Down 2.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Arrow - Down 3.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Arrow - Down 3.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Arrow - Down Circle.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Arrow - Down Circle.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Arrow - Down Square.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Arrow - Down Square.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Arrow - Down.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Arrow - Down.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Arrow - Left 2.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Arrow - Left 2.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Arrow - Left 3.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Arrow - Left 3.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Arrow - Left Circle.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Arrow - Left Circle.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Arrow - Left Square.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Arrow - Left Square.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Arrow - Left.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Arrow - Left.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Arrow - Right 2.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Arrow - Right 2.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Arrow - Right 3.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Arrow - Right 3.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Arrow - Right Circle.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Arrow - Right Circle.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Arrow - Right Square.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Arrow - Right Square.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Arrow - Right.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Arrow - Right.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Arrow - Up 2.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Arrow - Up 2.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Arrow - Up 3.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Arrow - Up 3.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Arrow - Up Circle.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Arrow - Up Circle.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Arrow - Up Square.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Arrow - Up Square.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Arrow - Up.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Arrow - Up.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Bag 3.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Bag 3.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Bag.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Bag.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Bookmark.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Bookmark.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Buy.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Buy.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Calendar.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Calendar.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Call Missed.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Call Missed.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Call Silent.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Call Silent.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Call.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Call.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Calling.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Calling.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Camera.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Camera.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Category.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Category.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Chart.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Chart.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Chat.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Chat.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Close Square.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Close Square.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Danger.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Danger.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Delete.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Delete.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Discount.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Discount.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Discovery.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Discovery.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Document.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Document.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Download.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Download.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Edit Square.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Edit Square.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Edit.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Edit.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Filter 2.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Filter 2.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Filter.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Filter.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Folder.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Folder.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Game.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Game.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Graph.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Graph.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Heart.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Heart.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Hide.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Hide.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Home.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Home.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Image 3.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Image 3.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Image.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Image.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Info Circle.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Info Circle.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Info Square.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Info Square.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Location.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Location.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Lock.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Lock.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Login.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Login.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Logout.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Logout.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Message.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Message.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\More Circle.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\More Circle.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\More Square.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\More Square.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Notification.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Notification.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Paper Download.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Paper Download.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Paper Fail.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Paper Fail.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Paper Negative.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Paper Negative.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Paper Plus.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Paper Plus.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Paper Upload.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Paper Upload.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Paper.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Paper.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Password.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Password.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Play.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Play.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Plus.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Plus.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Profile.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Profile.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Scan.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Scan.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Search.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Search.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Send.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Send.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Setting.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Setting.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Shield Done.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Shield Done.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Shield Fail.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Shield Fail.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Show.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Show.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Star.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Star.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Swap.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Swap.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Tick Square.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Tick Square.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Ticket Star.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Ticket Star.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Ticket.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Ticket.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Time Circle.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Time Circle.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Time Square.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Time Square.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Unlock.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Unlock.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Upload.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Upload.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Video.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Video.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Voice 3.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Voice 3.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Voice.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Voice.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Volume Down.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Volume Down.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Volume Off.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Volume Off.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Volume Up.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Volume Up.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Wallet.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Wallet.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Colored\\Work.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Colored\\Work.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\2 User.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\2 User.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\3 User.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\3 User.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Activity.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Activity.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Add User.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Add User.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Arrow - Down 2.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Arrow - Down 2.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Arrow - Down 3.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Arrow - Down 3.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Arrow - Down Circle.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Arrow - Down Circle.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Arrow - Down Square.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Arrow - Down Square.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Arrow - Down.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Arrow - Down.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Arrow - Left 2.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Arrow - Left 2.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Arrow - Left 3.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Arrow - Left 3.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Arrow - Left Circle.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Arrow - Left Circle.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Arrow - Left Square.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Arrow - Left Square.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Arrow - Left.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Arrow - Left.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Arrow - Right 2.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Arrow - Right 2.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Arrow - Right 3.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Arrow - Right 3.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Arrow - Right Circle.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Arrow - Right Circle.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Arrow - Right Square.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Arrow - Right Square.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Arrow - Right.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Arrow - Right.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Arrow - Up 2.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Arrow - Up 2.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Arrow - Up 3.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Arrow - Up 3.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Arrow - Up Circle.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Arrow - Up Circle.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Arrow - Up Square.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Arrow - Up Square.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Arrow - Up.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Arrow - Up.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Bag 3.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Bag 3.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Bag.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Bag.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Bookmark.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Bookmark.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Buy.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Buy.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Calendar.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Calendar.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Call Missed.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Call Missed.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Call Silent.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Call Silent.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Call.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Call.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Calling.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Calling.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Camera.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Camera.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Category.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Category.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Chart.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Chart.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Chat.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Chat.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Close Square.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Close Square.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Danger.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Danger.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Delete.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Delete.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Discount.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Discount.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Discovery.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Discovery.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Document.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Document.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Download.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Download.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Edit Square.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Edit Square.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Edit.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Edit.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Filter 2.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Filter 2.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Filter.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Filter.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Folder.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Folder.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Game.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Game.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Graph.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Graph.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Heart.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Heart.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Hide.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Hide.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Home.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Home.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Image 3.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Image 3.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Image.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Image.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Info Circle.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Info Circle.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Info Square.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Info Square.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Location.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Location.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Lock.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Lock.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Login.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Login.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Logout.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Logout.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Message.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Message.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\More Circle.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\More Circle.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\More Square.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\More Square.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Notification.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Notification.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Paper Download.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Paper Download.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Paper Fail.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Paper Fail.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Paper Negative.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Paper Negative.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Paper Plus.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Paper Plus.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Paper Upload.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Paper Upload.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Paper.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Paper.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Password.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Password.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Play.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Play.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Plus.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Plus.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Profile.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Profile.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Scan.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Scan.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Search.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Search.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Send.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Send.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Setting.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Setting.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Shield Done.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Shield Done.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Shield Fail.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Shield Fail.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Show.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Show.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Star.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Star.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Swap.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Swap.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Tick Square.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Tick Square.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Ticket Star.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Ticket Star.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Ticket.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Ticket.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Time Circle.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Time Circle.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Time Square.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Time Square.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Unlock.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Unlock.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Upload.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Upload.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Video.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Video.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Voice 3.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Voice 3.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Voice.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Voice.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Volume Down.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Volume Down.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Volume Off.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Volume Off.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Volume Up.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Volume Up.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Wallet.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Wallet.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\DualTone\\Work.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\DualTone\\Work.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\2 User.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\2 User.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\3 User.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\3 User.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Activity.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Activity.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Add User.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Add User.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Arrow - Down 2.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Arrow - Down 2.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Arrow - Down 3.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Arrow - Down 3.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Arrow - Down Circle.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Arrow - Down Circle.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Arrow - Down Square.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Arrow - Down Square.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Arrow - Down.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Arrow - Down.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Arrow - Left 2.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Arrow - Left 2.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Arrow - Left 3.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Arrow - Left 3.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Arrow - Left Circle.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Arrow - Left Circle.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Arrow - Left Square.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Arrow - Left Square.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Arrow - Left.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Arrow - Left.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Arrow - Right 2.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Arrow - Right 2.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Arrow - Right 3.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Arrow - Right 3.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Arrow - Right Circle.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Arrow - Right Circle.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Arrow - Right Square.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Arrow - Right Square.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Arrow - Right.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Arrow - Right.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Arrow - Up 2.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Arrow - Up 2.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Arrow - Up 3.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Arrow - Up 3.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Arrow - Up Circle.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Arrow - Up Circle.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Arrow - Up Square.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Arrow - Up Square.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Arrow - Up.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Arrow - Up.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Bag 3.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Bag 3.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Bag.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Bag.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Bookmark.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Bookmark.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Buy.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Buy.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Calendar.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Calendar.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Call Missed.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Call Missed.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Call Silent.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Call Silent.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Call.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Call.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Calling.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Calling.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Camera.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Camera.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Category.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Category.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Chart.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Chart.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Chat.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Chat.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Close Square.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Close Square.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Danger Circle.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Danger Circle.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Danger Triangle.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Danger Triangle.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Delete.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Delete.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Discount.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Discount.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Discovery.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Discovery.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Document.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Document.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Download.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Download.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Edit Square.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Edit Square.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Edit.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Edit.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Filter 3.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Filter 3.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Filter.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Filter.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Folder.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Folder.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Game.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Game.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Graph.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Graph.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Heart.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Heart.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Hide.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Hide.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Home.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Home.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Image 3.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Image 3.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Image.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Image.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Info Square.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Info Square.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Location.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Location.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Lock.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Lock.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Login.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Login.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Logout.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Logout.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Message.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Message.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\More Circle.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\More Circle.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\More Square.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\More Square.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Notification.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Notification.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Paper Download.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Paper Download.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Paper Fail.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Paper Fail.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Paper Negative.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Paper Negative.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Paper Plus.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Paper Plus.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Paper Upload.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Paper Upload.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Paper.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Paper.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Password.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Password.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Play.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Play.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Plus.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Plus.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Profile.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Profile.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Scan.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Scan.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Search.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Search.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Send.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Send.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Setting.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Setting.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Shield Done.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Shield Done.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Shield Fail.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Shield Fail.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Show.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Show.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Star.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Star.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Swap.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Swap.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Tick Square.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Tick Square.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Ticket Star.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Ticket Star.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Ticket.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Ticket.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Time Circle.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Time Circle.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Time Square.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Time Square.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Unlock.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Unlock.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Upload.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Upload.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Video.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Video.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Voice 3.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Voice 3.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Voice.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Voice.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Volume Down.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Volume Down.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Volume Off.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Volume Off.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Volume Up.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Volume Up.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Wallet.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Wallet.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\Iconly\\Line\\Work.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\Iconly\\Line\\Work.svg"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\moment.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\moment.min.js"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\sortable\\Sortable.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\sortable\\Sortable.js"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\assets\\vendor\\sortable\\Sortable.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\sortable\\Sortable.min.js"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.js"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.js"
+    },
+    {
+      "Id": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 3 - RentaCar\\RentaCar\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.RentaCar.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.RentaCar.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.RentaCar.props",
+      "PackagePath": "build\\RentaCar.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.RentaCar.props",
+      "PackagePath": "buildMultiTargeting\\RentaCar.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.RentaCar.props",
+      "PackagePath": "buildTransitive\\RentaCar.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

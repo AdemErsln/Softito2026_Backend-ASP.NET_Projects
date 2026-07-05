@@ -1,0 +1,496 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|c:\\users\\adem.eraslan\\source\\repos\\kutuphane\\kutuphane\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|solutionrelative:kutuphane\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|c:\\users\\adem.eraslan\\source\\repos\\kutuphane\\kutuphane\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|solutionrelative:kutuphane\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|c:\\users\\adem.eraslan\\source\\repos\\kutuphane\\kutuphane\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|solutionrelative:kutuphane\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|c:\\users\\adem.eraslan\\source\\repos\\kutuphane\\kutuphane\\views\\books\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|solutionrelative:kutuphane\\views\\books\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|c:\\users\\adem.eraslan\\source\\repos\\kutuphane\\kutuphane\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|solutionrelative:kutuphane\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|c:\\users\\adem.eraslan\\source\\repos\\kutuphane\\kutuphane\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|solutionrelative:kutuphane\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|c:\\users\\adem.eraslan\\source\\repos\\kutuphane\\kutuphane\\views\\borrowers\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|solutionrelative:kutuphane\\views\\borrowers\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|c:\\users\\adem.eraslan\\source\\repos\\kutuphane\\kutuphane\\controllers\\borrowerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|solutionrelative:kutuphane\\controllers\\borrowerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|c:\\users\\adem.eraslan\\source\\repos\\kutuphane\\kutuphane\\controllers\\authors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|solutionrelative:kutuphane\\controllers\\authors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|c:\\users\\adem.eraslan\\source\\repos\\kutuphane\\kutuphane\\models\\borrower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|solutionrelative:kutuphane\\models\\borrower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|c:\\users\\adem.eraslan\\source\\repos\\kutuphane\\kutuphane\\views\\borrowers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|solutionrelative:kutuphane\\views\\borrowers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|c:\\users\\adem.eraslan\\source\\repos\\kutuphane\\kutuphane\\views\\books\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|solutionrelative:kutuphane\\views\\books\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|c:\\users\\adem.eraslan\\source\\repos\\kutuphane\\kutuphane\\views\\borrowers\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|solutionrelative:kutuphane\\views\\borrowers\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|c:\\users\\adem.eraslan\\source\\repos\\kutuphane\\kutuphane\\views\\books\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|solutionrelative:kutuphane\\views\\books\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|c:\\users\\adem.eraslan\\source\\repos\\kutuphane\\kutuphane\\views\\authors\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|solutionrelative:kutuphane\\views\\authors\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|c:\\users\\adem.eraslan\\source\\repos\\kutuphane\\kutuphane\\views\\shared\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|solutionrelative:kutuphane\\views\\shared\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|c:\\users\\adem.eraslan\\source\\repos\\kutuphane\\kutuphane\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|solutionrelative:kutuphane\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|c:\\users\\adem.eraslan\\source\\repos\\kutuphane\\kutuphane\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|solutionrelative:kutuphane\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|c:\\users\\adem.eraslan\\source\\repos\\kutuphane\\kutuphane\\views\\authors\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|solutionrelative:kutuphane\\views\\authors\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|c:\\users\\adem.eraslan\\source\\repos\\kutuphane\\kutuphane\\views\\authors\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|solutionrelative:kutuphane\\views\\authors\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|c:\\users\\adem.eraslan\\source\\repos\\kutuphane\\kutuphane\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|solutionrelative:kutuphane\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|c:\\users\\adem.eraslan\\source\\repos\\kutuphane\\kutuphane\\kutuphane.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|solutionrelative:kutuphane\\kutuphane.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|c:\\users\\adem.eraslan\\source\\repos\\kutuphane\\kutuphane\\views\\authors\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|solutionrelative:kutuphane\\views\\authors\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|c:\\users\\adem.eraslan\\source\\repos\\kutuphane\\kutuphane\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|solutionrelative:kutuphane\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|c:\\users\\adem.eraslan\\source\\repos\\kutuphane\\kutuphane\\wwwroot\\index.html||{C76D83F8-A489-11D0-8195-00A0C91BBEE3}",
+      "RelativeMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|solutionrelative:kutuphane\\wwwroot\\index.html||{C76D83F8-A489-11D0-8195-00A0C91BBEE3}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|c:\\users\\adem.eraslan\\source\\repos\\kutuphane\\kutuphane\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|solutionrelative:kutuphane\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Models\\AppDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Kutuphane\\Models\\AppDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|c:\\users\\adem.eraslan\\source\\repos\\kutuphane\\kutuphane\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EA175F5E-9867-4E1B-B7D8-E789DDAD00A5}|Kutuphane\\Kutuphane.csproj|solutionrelative:kutuphane\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Views\\Borrowers\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Kutuphane\\Views\\Borrowers\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Views\\Borrowers\\Edit.cshtml",
+              "RelativeToolTip": "Kutuphane\\Views\\Borrowers\\Edit.cshtml",
+              "ViewState": "AgIAADoAAACAAAAAAIAewEgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-15T19:13:52.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Views\\Borrowers\\Index.cshtml",
+              "RelativeDocumentMoniker": "Kutuphane\\Views\\Borrowers\\Index.cshtml",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Views\\Borrowers\\Index.cshtml",
+              "RelativeToolTip": "Kutuphane\\Views\\Borrowers\\Index.cshtml",
+              "ViewState": "AgIAAC8AAACAmJmZmdkhwAYAAACCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-15T18:50:34.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Views\\Books\\Index.cshtml",
+              "RelativeDocumentMoniker": "Kutuphane\\Views\\Books\\Index.cshtml",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Views\\Books\\Index.cshtml",
+              "RelativeToolTip": "Kutuphane\\Views\\Books\\Index.cshtml",
+              "ViewState": "AgIAACAAAAAA2MzMzMwAwCsAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-15T18:48:01.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BooksController.cs",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Controllers\\BooksController.cs",
+              "RelativeDocumentMoniker": "Kutuphane\\Controllers\\BooksController.cs",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Controllers\\BooksController.cs",
+              "RelativeToolTip": "Kutuphane\\Controllers\\BooksController.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAuwF0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-15T18:47:02.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Borrower.cs",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Models\\Borrower.cs",
+              "RelativeDocumentMoniker": "Kutuphane\\Models\\Borrower.cs",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Models\\Borrower.cs",
+              "RelativeToolTip": "Kutuphane\\Models\\Borrower.cs",
+              "ViewState": "AgIAAAUAAABgZmZmZuYWwA8AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-15T18:46:31.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "Kutuphane\\Models\\Book.cs",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Models\\Book.cs",
+              "RelativeToolTip": "Kutuphane\\Models\\Book.cs",
+              "ViewState": "AgIAAAgAAAAAl5mZmZnzvw8AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-15T18:46:20.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Views\\Authors\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Kutuphane\\Views\\Authors\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Views\\Authors\\Edit.cshtml",
+              "RelativeToolTip": "Kutuphane\\Views\\Authors\\Edit.cshtml",
+              "ViewState": "AgIAADAAAAAwMzMzMzMEwEEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-15T18:42:16.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Author.cs",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Models\\Author.cs",
+              "RelativeDocumentMoniker": "Kutuphane\\Models\\Author.cs",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Models\\Author.cs",
+              "RelativeToolTip": "Kutuphane\\Models\\Author.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-15T18:32:38.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Views\\Authors\\Index.cshtml",
+              "RelativeDocumentMoniker": "Kutuphane\\Views\\Authors\\Index.cshtml",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Views\\Authors\\Index.cshtml",
+              "RelativeToolTip": "Kutuphane\\Views\\Authors\\Index.cshtml",
+              "ViewState": "AgIAADQAAAAAAAAAAAAUwEkAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-13T00:06:26.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Kutuphane\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Kutuphane\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAswCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-12T23:25:39.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "Kutuphane\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "Kutuphane\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AgIAAAEAAADAzMzMzIwjwAgAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-12T23:37:53.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Authors.cs",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Controllers\\Authors.cs",
+              "RelativeDocumentMoniker": "Kutuphane\\Controllers\\Authors.cs",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Controllers\\Authors.cs",
+              "RelativeToolTip": "Kutuphane\\Controllers\\Authors.cs",
+              "ViewState": "AgIAAEAAAAAAODMzMzP1v00AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T00:06:14.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BorrowersController.cs",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Controllers\\BorrowersController.cs",
+              "RelativeDocumentMoniker": "Kutuphane\\Controllers\\BorrowersController.cs",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Controllers\\BorrowersController.cs",
+              "RelativeToolTip": "Kutuphane\\Controllers\\BorrowersController.cs",
+              "ViewState": "AgIAACAAAABgNDMzM3MtwCwAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-15T18:50:02.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Views\\Books\\Create.cshtml",
+              "RelativeDocumentMoniker": "Kutuphane\\Views\\Books\\Create.cshtml",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Views\\Books\\Create.cshtml",
+              "RelativeToolTip": "Kutuphane\\Views\\Books\\Create.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAswD4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-15T18:49:03.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Views\\Books\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Kutuphane\\Views\\Books\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Views\\Books\\Edit.cshtml",
+              "RelativeToolTip": "Kutuphane\\Views\\Books\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-15T18:49:29.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Views\\Borrowers\\Create.cshtml",
+              "RelativeDocumentMoniker": "Kutuphane\\Views\\Borrowers\\Create.cshtml",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Views\\Borrowers\\Create.cshtml",
+              "RelativeToolTip": "Kutuphane\\Views\\Borrowers\\Create.cshtml",
+              "ViewState": "AgIAACgAAAAAAAAAAAAswDkAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-15T18:51:25.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Views\\Authors\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Kutuphane\\Views\\Authors\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Views\\Authors\\Delete.cshtml",
+              "RelativeToolTip": "Kutuphane\\Views\\Authors\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-15T18:22:39.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Views\\Authors\\Create.cshtml",
+              "RelativeDocumentMoniker": "Kutuphane\\Views\\Authors\\Create.cshtml",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Views\\Authors\\Create.cshtml",
+              "RelativeToolTip": "Kutuphane\\Views\\Authors\\Create.cshtml",
+              "ViewState": "AgIAAAAAAACAzMzMzIwjwAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-13T00:55:30.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Program.cs",
+              "RelativeDocumentMoniker": "Kutuphane\\Program.cs",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Program.cs",
+              "RelativeToolTip": "Kutuphane\\Program.cs",
+              "ViewState": "AgIAAAAAAADg//////8gwAgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-13T00:53:59.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Kutuphane",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Kutuphane.csproj",
+              "RelativeDocumentMoniker": "Kutuphane\\Kutuphane.csproj",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Kutuphane.csproj",
+              "RelativeToolTip": "Kutuphane\\Kutuphane.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-06-12T23:07:31.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "admin.cshtml",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Views\\Shared\\admin.cshtml",
+              "RelativeDocumentMoniker": "Kutuphane\\Views\\Shared\\admin.cshtml",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Views\\Shared\\admin.cshtml",
+              "RelativeToolTip": "Kutuphane\\Views\\Shared\\admin.cshtml",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAswKoAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-12T23:36:50.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Kutuphane\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Kutuphane\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAEAAAAAl5mZmZkuwA0AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-12T23:21:54.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "Kutuphane\\wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "Kutuphane\\wwwroot\\js\\site.js",
+              "ViewState": "AgIAAAEAAAA4MzMzM7MiwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-06-15T18:40:57.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "Kutuphane\\wwwroot\\index.html",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\wwwroot\\index.html",
+              "RelativeToolTip": "Kutuphane\\wwwroot\\index.html",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-06-12T23:10:34.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Kutuphane\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Kutuphane\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-12T23:03:46.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Kutuphane\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Kutuphane\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAEAAABEAAAAAAAhwAoAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-12T20:58:55.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Models\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Kutuphane\\Models\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\Models\\AppDbContext.cs",
+              "RelativeToolTip": "Kutuphane\\Models\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-12T20:58:07.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\appsettings.json",
+              "RelativeDocumentMoniker": "Kutuphane\\appsettings.json",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\Kutuphane\\Kutuphane\\appsettings.json",
+              "RelativeToolTip": "Kutuphane\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-12T20:51:46.056Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+﻿@model Kutuphane.Models.Author
+@{
+    Layout = "~/views/shared/admin.cshtml";
+}
+
+<div class="container mt-5">
+    <div class="card border-danger shadow-lg max-width-500 mx-auto">
+        <div class="card-header bg-danger text-white py-3">
+            <h5 class="mb-0"><i class="bi bi-exclamation-triangle-fill me-2"></i>Yazar Silme Onayı</h5>
+        </div>
+        <div class="card-body py-4">
+            <p class="fs-5">Aşağıdaki yazarı silmek istediğinize emin misiniz?</p>
+            <div class="alert alert-secondary">
+                <strong>Yazar Adı:</strong> @Model.Name <br />
+                <strong>Ülke:</strong> @(string.IsNullOrEmpty(Model.Country) ? "Belirtilmemiş" : Model.Country)
+            </div>
+            <p class="text-danger small"><i class="bi bi-info-circle me-1"></i> Bu işlem geri alınamaz ve bu yazara ait kitaplar varsa sorun yaşanabilir.</p>
+        </div>
+        <div class="card-footer bg-light d-flex justify-content-end gap-2 py-3">
+            <a asp-action="Index" class="btn btn-secondary">Vazgeç</a>
+            <form asp-action="Delete" method="post">
+                <input type="hidden" name="id" value="@Model.AuthorId" />
+                <button type="submit" class="btn btn-danger px-4">Evet, Sil</button>
+            </form>
+        </div>
+    </div>
+</div>

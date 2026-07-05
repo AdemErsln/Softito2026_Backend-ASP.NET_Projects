@@ -1,0 +1,496 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|c:\\users\\adem.eraslan\\source\\repos\\nezhotel\\nezhotel\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|solutionrelative:nezhotel\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|c:\\users\\adem.eraslan\\source\\repos\\nezhotel\\nezhotel\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|solutionrelative:nezhotel\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|c:\\users\\adem.eraslan\\source\\repos\\nezhotel\\nezhotel\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|solutionrelative:nezhotel\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|c:\\users\\adem.eraslan\\source\\repos\\nezhotel\\nezhotel\\pages\\rezervasyonlar\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|solutionrelative:nezhotel\\pages\\rezervasyonlar\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|c:\\users\\adem.eraslan\\source\\repos\\nezhotel\\nezhotel\\pages\\rezervasyonlar\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|solutionrelative:nezhotel\\pages\\rezervasyonlar\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|c:\\users\\adem.eraslan\\source\\repos\\nezhotel\\nezhotel\\pages\\musteriler\\musteri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|solutionrelative:nezhotel\\pages\\musteriler\\musteri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|c:\\users\\adem.eraslan\\source\\repos\\nezhotel\\nezhotel\\pages\\musteriler\\duzenle.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|solutionrelative:nezhotel\\pages\\musteriler\\duzenle.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|c:\\users\\adem.eraslan\\source\\repos\\nezhotel\\nezhotel\\pages\\musteriler\\duzenle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|solutionrelative:nezhotel\\pages\\musteriler\\duzenle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|c:\\users\\adem.eraslan\\source\\repos\\nezhotel\\nezhotel\\pages\\musteriler\\sil.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|solutionrelative:nezhotel\\pages\\musteriler\\sil.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|c:\\users\\adem.eraslan\\source\\repos\\nezhotel\\nezhotel\\pages\\musteriler\\sil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|solutionrelative:nezhotel\\pages\\musteriler\\sil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|c:\\users\\adem.eraslan\\source\\repos\\nezhotel\\nezhotel\\pages\\musteriler\\ekle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|solutionrelative:nezhotel\\pages\\musteriler\\ekle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|c:\\users\\adem.eraslan\\source\\repos\\nezhotel\\nezhotel\\pages\\musteriler\\ekle.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|solutionrelative:nezhotel\\pages\\musteriler\\ekle.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|c:\\users\\adem.eraslan\\source\\repos\\nezhotel\\nezhotel\\pages\\musteriler\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|solutionrelative:nezhotel\\pages\\musteriler\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|c:\\users\\adem.eraslan\\source\\repos\\nezhotel\\nezhotel\\pages\\musteriler\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|solutionrelative:nezhotel\\pages\\musteriler\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|c:\\users\\adem.eraslan\\source\\repos\\nezhotel\\nezhotel\\pages\\rezervasyonlar\\rezervasyonlar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|solutionrelative:nezhotel\\pages\\rezervasyonlar\\rezervasyonlar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|c:\\users\\adem.eraslan\\source\\repos\\nezhotel\\nezhotel\\pages\\rezervasyonlar\\sil.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|solutionrelative:nezhotel\\pages\\rezervasyonlar\\sil.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|c:\\users\\adem.eraslan\\source\\repos\\nezhotel\\nezhotel\\pages\\rezervasyonlar\\sil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|solutionrelative:nezhotel\\pages\\rezervasyonlar\\sil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|c:\\users\\adem.eraslan\\source\\repos\\nezhotel\\nezhotel\\pages\\rezervasyonlar\\ekle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|solutionrelative:nezhotel\\pages\\rezervasyonlar\\ekle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|c:\\users\\adem.eraslan\\source\\repos\\nezhotel\\nezhotel\\pages\\rezervasyonlar\\ekle.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|solutionrelative:nezhotel\\pages\\rezervasyonlar\\ekle.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|c:\\users\\adem.eraslan\\source\\repos\\nezhotel\\nezhotel\\pages\\odalar\\duzenle.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|solutionrelative:nezhotel\\pages\\odalar\\duzenle.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|c:\\users\\adem.eraslan\\source\\repos\\nezhotel\\nezhotel\\pages\\odalar\\sil.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|solutionrelative:nezhotel\\pages\\odalar\\sil.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|c:\\users\\adem.eraslan\\source\\repos\\nezhotel\\nezhotel\\pages\\odalar\\sil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|solutionrelative:nezhotel\\pages\\odalar\\sil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|c:\\users\\adem.eraslan\\source\\repos\\nezhotel\\nezhotel\\pages\\odalar\\duzenle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|solutionrelative:nezhotel\\pages\\odalar\\duzenle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|c:\\users\\adem.eraslan\\source\\repos\\nezhotel\\nezhotel\\pages\\odalar\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|solutionrelative:nezhotel\\pages\\odalar\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|c:\\users\\adem.eraslan\\source\\repos\\nezhotel\\nezhotel\\pages\\odalar\\odalar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|solutionrelative:nezhotel\\pages\\odalar\\odalar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|c:\\users\\adem.eraslan\\source\\repos\\nezhotel\\nezhotel\\pages\\odalar\\ekle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|solutionrelative:nezhotel\\pages\\odalar\\ekle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|c:\\users\\adem.eraslan\\source\\repos\\nezhotel\\nezhotel\\pages\\odalar\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|solutionrelative:nezhotel\\pages\\odalar\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|c:\\users\\adem.eraslan\\source\\repos\\nezhotel\\nezhotel\\pages\\odalar\\ekle.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{110A3A89-ADE4-4FB1-B1F8-0714FF37D608}|NezHotel\\NezHotel.csproj|solutionrelative:nezhotel\\pages\\odalar\\ekle.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Duzenle.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Musteriler\\Duzenle.cshtml.cs",
+              "RelativeDocumentMoniker": "NezHotel\\Pages\\Musteriler\\Duzenle.cshtml.cs",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Musteriler\\Duzenle.cshtml.cs",
+              "RelativeToolTip": "NezHotel\\Pages\\Musteriler\\Duzenle.cshtml.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAIwEgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T00:00:02.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Duzenle.cshtml",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Musteriler\\Duzenle.cshtml",
+              "RelativeDocumentMoniker": "NezHotel\\Pages\\Musteriler\\Duzenle.cshtml",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Musteriler\\Duzenle.cshtml",
+              "RelativeToolTip": "NezHotel\\Pages\\Musteriler\\Duzenle.cshtml",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAIwCEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-17T23:59:44.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Sil.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Musteriler\\Sil.cshtml.cs",
+              "RelativeDocumentMoniker": "NezHotel\\Pages\\Musteriler\\Sil.cshtml.cs",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Musteriler\\Sil.cshtml.cs",
+              "RelativeToolTip": "NezHotel\\Pages\\Musteriler\\Sil.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T23:59:27.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Sil.cshtml",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Musteriler\\Sil.cshtml",
+              "RelativeDocumentMoniker": "NezHotel\\Pages\\Musteriler\\Sil.cshtml",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Musteriler\\Sil.cshtml",
+              "RelativeToolTip": "NezHotel\\Pages\\Musteriler\\Sil.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-17T23:58:46.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Ekle.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Musteriler\\Ekle.cshtml.cs",
+              "RelativeDocumentMoniker": "NezHotel\\Pages\\Musteriler\\Ekle.cshtml.cs",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Musteriler\\Ekle.cshtml.cs",
+              "RelativeToolTip": "NezHotel\\Pages\\Musteriler\\Ekle.cshtml.cs",
+              "ViewState": "AgIAABUAAABAMzMzM/MswCcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T23:58:23.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "NezHotel\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "NezHotel\\Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAFwBAACgMzMzM5MwwGsBAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-17T22:27:46.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "NezHotel\\Pages\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Index.cshtml.cs",
+              "RelativeToolTip": "NezHotel\\Pages\\Index.cshtml.cs",
+              "ViewState": "AgIAAAsAAAAAZmZmZmYkwA4AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T00:02:03.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "NezHotel\\Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Index.cshtml",
+              "RelativeToolTip": "NezHotel\\Pages\\Index.cshtml",
+              "ViewState": "AgIAAKsAAAAAAAAAAAAkwLwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-18T00:01:57.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Ekle.cshtml",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Musteriler\\Ekle.cshtml",
+              "RelativeDocumentMoniker": "NezHotel\\Pages\\Musteriler\\Ekle.cshtml",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Musteriler\\Ekle.cshtml",
+              "RelativeToolTip": "NezHotel\\Pages\\Musteriler\\Ekle.cshtml",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAIwIkAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-17T23:58:19.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Musteriler\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "NezHotel\\Pages\\Musteriler\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Musteriler\\Index.cshtml.cs",
+              "RelativeToolTip": "NezHotel\\Pages\\Musteriler\\Index.cshtml.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAIwDEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T23:57:55.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Musteriler\\Index.cshtml",
+              "RelativeDocumentMoniker": "NezHotel\\Pages\\Musteriler\\Index.cshtml",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Musteriler\\Index.cshtml",
+              "RelativeToolTip": "NezHotel\\Pages\\Musteriler\\Index.cshtml",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAIwJIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-17T23:57:50.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Rezervasyonlar\\Index.cshtml",
+              "RelativeDocumentMoniker": "NezHotel\\Pages\\Rezervasyonlar\\Index.cshtml",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Rezervasyonlar\\Index.cshtml",
+              "RelativeToolTip": "NezHotel\\Pages\\Rezervasyonlar\\Index.cshtml",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAvwIsAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-17T23:52:59.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Rezervasyonlar\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "NezHotel\\Pages\\Rezervasyonlar\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Rezervasyonlar\\Index.cshtml.cs",
+              "RelativeToolTip": "NezHotel\\Pages\\Rezervasyonlar\\Index.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T23:53:04.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Musteri.cs",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Musteriler\\Musteri.cs",
+              "RelativeDocumentMoniker": "NezHotel\\Pages\\Musteriler\\Musteri.cs",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Musteriler\\Musteri.cs",
+              "RelativeToolTip": "NezHotel\\Pages\\Musteriler\\Musteri.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T00:01:16.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Rezervasyonlar.cs",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Rezervasyonlar\\Rezervasyonlar.cs",
+              "RelativeDocumentMoniker": "NezHotel\\Pages\\Rezervasyonlar\\Rezervasyonlar.cs",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Rezervasyonlar\\Rezervasyonlar.cs",
+              "RelativeToolTip": "NezHotel\\Pages\\Rezervasyonlar\\Rezervasyonlar.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T23:54:40.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Sil.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Rezervasyonlar\\Sil.cshtml.cs",
+              "RelativeDocumentMoniker": "NezHotel\\Pages\\Rezervasyonlar\\Sil.cshtml.cs",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Rezervasyonlar\\Sil.cshtml.cs",
+              "RelativeToolTip": "NezHotel\\Pages\\Rezervasyonlar\\Sil.cshtml.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAIwB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T23:56:00.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Sil.cshtml",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Rezervasyonlar\\Sil.cshtml",
+              "RelativeDocumentMoniker": "NezHotel\\Pages\\Rezervasyonlar\\Sil.cshtml",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Rezervasyonlar\\Sil.cshtml",
+              "RelativeToolTip": "NezHotel\\Pages\\Rezervasyonlar\\Sil.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-17T23:55:56.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Ekle.cshtml",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Rezervasyonlar\\Ekle.cshtml",
+              "RelativeDocumentMoniker": "NezHotel\\Pages\\Rezervasyonlar\\Ekle.cshtml",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Rezervasyonlar\\Ekle.cshtml",
+              "RelativeToolTip": "NezHotel\\Pages\\Rezervasyonlar\\Ekle.cshtml",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAIwJYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-17T23:55:18.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Ekle.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Rezervasyonlar\\Ekle.cshtml.cs",
+              "RelativeDocumentMoniker": "NezHotel\\Pages\\Rezervasyonlar\\Ekle.cshtml.cs",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Rezervasyonlar\\Ekle.cshtml.cs",
+              "RelativeToolTip": "NezHotel\\Pages\\Rezervasyonlar\\Ekle.cshtml.cs",
+              "ViewState": "AgIAAB4AAABAzczMzAwqwGMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T23:55:26.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Sil.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Odalar\\Sil.cshtml.cs",
+              "RelativeDocumentMoniker": "NezHotel\\Pages\\Odalar\\Sil.cshtml.cs",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Odalar\\Sil.cshtml.cs",
+              "RelativeToolTip": "NezHotel\\Pages\\Odalar\\Sil.cshtml.cs",
+              "ViewState": "AgIAAAAAAAC4zMzMzEwcwAgAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T23:51:12.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Sil.cshtml",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Odalar\\Sil.cshtml",
+              "RelativeDocumentMoniker": "NezHotel\\Pages\\Odalar\\Sil.cshtml",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Odalar\\Sil.cshtml",
+              "RelativeToolTip": "NezHotel\\Pages\\Odalar\\Sil.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-17T23:51:04.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Duzenle.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Odalar\\Duzenle.cshtml.cs",
+              "RelativeDocumentMoniker": "NezHotel\\Pages\\Odalar\\Duzenle.cshtml.cs",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Odalar\\Duzenle.cshtml.cs",
+              "RelativeToolTip": "NezHotel\\Pages\\Odalar\\Duzenle.cshtml.cs",
+              "ViewState": "AgIAABUAAABAMzMzM1M0wBoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T23:47:45.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Duzenle.cshtml",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Odalar\\Duzenle.cshtml",
+              "RelativeDocumentMoniker": "NezHotel\\Pages\\Odalar\\Duzenle.cshtml",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Odalar\\Duzenle.cshtml",
+              "RelativeToolTip": "NezHotel\\Pages\\Odalar\\Duzenle.cshtml",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAIwIoAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-17T23:47:41.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Ekle.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Odalar\\Ekle.cshtml.cs",
+              "RelativeDocumentMoniker": "NezHotel\\Pages\\Odalar\\Ekle.cshtml.cs",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Odalar\\Ekle.cshtml.cs",
+              "RelativeToolTip": "NezHotel\\Pages\\Odalar\\Ekle.cshtml.cs",
+              "ViewState": "AgIAACAAAACAnJmZmVkvwCMAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T22:56:07.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Ekle.cshtml",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Odalar\\Ekle.cshtml",
+              "RelativeDocumentMoniker": "NezHotel\\Pages\\Odalar\\Ekle.cshtml",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Odalar\\Ekle.cshtml",
+              "RelativeToolTip": "NezHotel\\Pages\\Odalar\\Ekle.cshtml",
+              "ViewState": "AgIAAJsAAAAAAAAAAAAAwKYAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-17T22:56:03.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Odalar.cs",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Odalar\\Odalar.cs",
+              "RelativeDocumentMoniker": "NezHotel\\Pages\\Odalar\\Odalar.cs",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Odalar\\Odalar.cs",
+              "RelativeToolTip": "NezHotel\\Pages\\Odalar\\Odalar.cs",
+              "ViewState": "AgIAAAMAAADQzMzMzGwwwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T22:47:18.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Odalar\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "NezHotel\\Pages\\Odalar\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Odalar\\Index.cshtml.cs",
+              "RelativeToolTip": "NezHotel\\Pages\\Odalar\\Index.cshtml.cs",
+              "ViewState": "AgIAAAsAAABgAAAAAAAswCYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T22:46:07.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Odalar\\Index.cshtml",
+              "RelativeDocumentMoniker": "NezHotel\\Pages\\Odalar\\Index.cshtml",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\NezHotel\\NezHotel\\Pages\\Odalar\\Index.cshtml",
+              "RelativeToolTip": "NezHotel\\Pages\\Odalar\\Index.cshtml",
+              "ViewState": "AgIAAMcAAAAAAAAAAAAowNYAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-17T22:46:04.722Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

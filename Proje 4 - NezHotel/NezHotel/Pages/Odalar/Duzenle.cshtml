@@ -1,0 +1,163 @@
+﻿@page
+@model NezHotel.Pages.Odalar.DuzenleModel
+@{
+    ViewData["Title"] = "Oda Düzenle";
+}
+
+<style>
+    .form-card {
+        background: var(--white);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 28px;
+        max-width: 550px;
+        margin: 20px auto;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.01);
+    }
+
+    .form-header {
+        margin-bottom: 24px;
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 12px;
+    }
+
+    .form-title {
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--navy);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .form-group {
+        margin-bottom: 18px;
+    }
+
+    .form-label {
+        display: block;
+        font-size: 13px;
+        font-weight: 600;
+        margin-bottom: 6px;
+        color: var(--navy2);
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 10px 14px;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        font-size: 13.5px;
+        background: #fafbfc;
+        color: var(--text);
+        transition: all 0.15s ease-in-out;
+    }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--gold);
+            background: #fff;
+        }
+
+    .form-actions {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+        margin-top: 28px;
+        border-top: 1px solid var(--border);
+        padding-top: 18px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        border-radius: 8px;
+        font-size: 13.5px;
+        font-weight: 600;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .btn-gold {
+        background: var(--gold);
+        color: var(--navy);
+    }
+
+        .btn-gold:hover {
+            background: var(--gold2);
+        }
+
+    .btn-outline {
+        border: 1px solid var(--border);
+        color: var(--sub);
+        background: transparent;
+    }
+
+        .btn-outline:hover {
+            background: #f5f5f8;
+        }
+
+    .alert-box {
+        background: #fdf2f2;
+        border: 1px solid #fbd5d5;
+        color: #ec4899;
+        padding: 12px;
+        border-radius: 8px;
+        font-size: 13px;
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+</style>
+
+<div class="form-card">
+    <div class="form-header">
+        <div class="form-title">
+            <i class="ti ti-edit" style="font-size: 20px; color: var(--gold);"></i>
+            Oda Bilgilerini Güncelle
+        </div>
+    </div>
+
+    @if (!string.IsNullOrEmpty(Model.Mesaj))
+    {
+        <div class="alert-box">
+            <i class="ti ti-alert-triangle"></i>
+            @Model.Mesaj
+        </div>
+    }
+
+    <form method="post">
+        <input type="hidden" asp-for="OdaID" />
+
+        <div class="form-group">
+            <label class="form-label">Oda Numarası</label>
+            <input type="text" asp-for="OdaNo" class="form-control" required />
+        </div>
+
+        <div class="form-group">
+            <label class="form-label">Oda Tipi</label>
+            <select asp-for="OdaTipi" class="form-control" required>
+                <option value="Standart Oda">Standart Oda</option>
+                <option value="Deluxe Oda">Deluxe Oda</option>
+                <option value="Suit Oda">Suit Oda</option>
+                <option value="Kral Dairesi">Kral Dairesi</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label class="form-label">Gecelik Konaklama Bedeli (₺)</label>
+            <input type="text" asp-for="Fiyat" class="form-control" required />
+        </div>
+
+        <div class="form-actions">
+            <a href="/Odalar/Index" class="btn btn-outline">Vazgeç</a>
+            <button type="submit" class="btn btn-gold">
+                <i class="ti ti-checkbox"></i> Değişiklikleri Kaydet
+            </button>
+        </div>
+    </form>
+</div>

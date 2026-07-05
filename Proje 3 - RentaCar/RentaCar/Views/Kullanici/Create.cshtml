@@ -1,0 +1,52 @@
+﻿@model RentacCar.Model.Kullanicilar
+@{
+    ViewData["Title"] = "Yeni Müşteri Kaydı";
+}
+<div class="row justify-content-center">
+    <div class="col-lg-10">
+        <div class="d-flex justify-content-between align-items-center flex-wrap mb-4">
+            <div>
+                <h3 class="text-primary fw-bold mb-1">Yeni Müşteri Kaydı</h3>
+                <p class="text-muted mb-0">Sisteme yeni bir kiralayan sürücü profili ekleyin.</p>
+            </div>
+            <div>
+                <a href="/Kullanici/Index" class="btn btn-soft-secondary rounded-pill px-4">Listeye Dön</a>
+            </div>
+        </div>
+
+        <div class="card shadow-sm">
+            <div class="card-header border-bottom py-3 bg-soft-primary">
+                <h4 class="card-title fw-bold text-primary mb-0">Müşteri Bilgi Formu</h4>
+            </div>
+            <div class="card-body p-4">
+                <form action="/Kullanici/Create" method="post">
+                    @Html.AntiForgeryToken()
+                    <div asp-validation-summary="ModelOnly" class="text-danger mb-3 fw-bold"></div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <label class="form-label fw-bold text-secondary">Ad Soyad <span class="text-danger">*</span></label>
+                            <input type="text" name="AdSoyad" class="form-control" placeholder="Örn: Ahmet Yılmaz" required maxlength="20" />
+                            <span asp-validation-for="AdSoyad" class="text-danger small mt-1 d-block"></span>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <label class="form-label fw-bold text-secondary">Yaş <span class="text-danger">*</span></label>
+                            <input type="number" name="yas" class="form-control" placeholder="Örn: 25" required min="18" max="100" />
+                            <span asp-validation-for="yas" class="text-danger small mt-1 d-block"></span>
+                        </div>
+                        <div class="col-md-12 mb-4">
+                            <label class="form-label fw-bold text-secondary">Telefon Numarası <span class="text-danger">*</span></label>
+                            <input type="tel" name="Telefon" class="form-control" placeholder="05XXXXXXXXX" required />
+                            <span asp-validation-for="Telefon" class="text-danger small mt-1 d-block"></span>
+                        </div>
+                    </div>
+
+                    <hr class="hr-horizontal my-3">
+                    <div class="d-flex justify-content-end gap-2">
+                        <button type="submit" class="btn btn-primary rounded-pill px-5">Müşteriyi Kaydet</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

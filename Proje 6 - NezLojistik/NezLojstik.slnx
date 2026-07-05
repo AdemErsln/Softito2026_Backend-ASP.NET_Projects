@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="NezLojistikMvc/NezLojistikMvc.csproj" />
+  <Project Path="NezLojstik/NezLojstikApi.csproj" />
+</Solution>

@@ -1,0 +1,138 @@
+﻿@page
+@model NezHotel.Pages.Musteriler.EkleModel
+@{
+    ViewData["Title"] = "Yeni Müşteri Tanımla";
+}
+
+<style>
+    .form-card {
+        background: var(--white);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 28px;
+        max-width: 550px;
+        margin: 20px auto;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.01);
+    }
+
+    .form-header {
+        margin-bottom: 24px;
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 12px;
+    }
+
+    .form-title {
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--navy);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .form-group {
+        margin-bottom: 18px;
+    }
+
+    .form-label {
+        display: block;
+        font-size: 13px;
+        font-weight: 600;
+        margin-bottom: 6px;
+        color: var(--navy2);
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 10px 14px;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        font-size: 13.5px;
+        background: #fafbfc;
+        color: var(--text);
+    }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--gold);
+            background: #fff;
+        }
+
+    .form-actions {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+        margin-top: 28px;
+        border-top: 1px solid var(--border);
+        padding-top: 18px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        border-radius: 8px;
+        font-size: 13.5px;
+        font-weight: 600;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .btn-gold {
+        background: var(--gold);
+        color: var(--navy);
+    }
+
+    .btn-outline {
+        border: 1px solid var(--border);
+        color: var(--sub);
+        background: transparent;
+    }
+
+    .alert-box {
+        background: #fdf2f2;
+        border: 1px solid #fbd5d5;
+        color: #e24b4a;
+        padding: 12px;
+        border-radius: 8px;
+        font-size: 13px;
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+</style>
+
+<div class="form-card">
+    <div class="form-header">
+        <div class="form-title">
+            <i class="ti ti-user-plus" style="font-size: 20px; color: var(--gold);"></i> Yeni Müşteri Profili Tanımla
+        </div>
+    </div>
+
+    @if (!string.IsNullOrEmpty(Model.Mesaj))
+    {
+        <div class="alert-box"><i class="ti ti-alert-triangle"></i> @Model.Mesaj</div>
+    }
+
+    <form method="post">
+        <div class="form-group">
+            <label class="form-label">Adı Soyadı</label>
+            <input type="text" asp-for="AdSoyad" class="form-control" placeholder="Örn: Adem Eraslan" required />
+        </div>
+        <div class="form-group">
+            <label class="form-label">Telefon Numarası</label>
+            <input type="tel" asp-for="Telefon" class="form-control" placeholder="Örn: 0555 123 4567" />
+        </div>
+        <div class="form-group">
+            <label class="form-label">E-Posta Adresi</label>
+            <input type="email" asp-for="Email" class="form-control" placeholder="Örn: ahmet@domain.com" />
+        </div>
+        <div class="form-actions">
+            <a href="/Musteriler/Index" class="btn btn-outline">İptal</a>
+            <button type="submit" class="btn btn-gold"><i class="ti ti-device-floppy"></i> Müşteriyi Kaydet</button>
+        </div>
+    </form>
+</div>

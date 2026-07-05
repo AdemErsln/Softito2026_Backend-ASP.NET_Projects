@@ -1,0 +1,64 @@
+﻿@model Kutuphane.Models.Book
+@{
+    Layout = "~/views/shared/admin.cshtml";
+    ViewData["Title"] = "Kitap Düzenle";
+}
+
+<div class="d-flex justify-content-between align-items-center pb-3 mb-4 border-bottom border-secondary" style="border-color: rgba(255,255,255,0.1) !important;">
+    <div>
+        <h1 class="h2 mb-0">Kitap Bilgilerini Güncelle</h1>
+        <p class="text-muted small mb-0">Kitap adını, yayın yılını ve yazarını buradan değiştirebilirsiniz.</p>
+    </div>
+    <div>
+        <a asp-action="Index" class="btn btn-outline-light btn-sm px-3 py-2 fw-semibold opacity-75">
+            <i class="bi bi-arrow-left me-2"></i>Listeye Geri Dön
+        </a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-8 col-lg-6">
+        <div class="card shadow-lg">
+            <div class="card-body p-4">
+                <form asp-action="Edit" method="post">
+                    <input type="hidden" asp-for="BookId" />
+                    <div asp-validation-summary="ModelOnly" class="text-danger small mb-3"></div>
+
+                    <div class="mb-4">
+                        <label asp-for="Title" class="form-label small fw-semibold opacity-75 mb-2">Kitap Adı</label>
+                        <input asp-for="Title" class="form-control py-2" placeholder="Örn: Suç ve Ceza" autocomplete="off" />
+                        <span asp-validation-for="Title" class="text-danger small mt-1 d-block"></span>
+                    </div>
+
+                    <div class="mb-4">
+                        <label asp-for="AuthorId" class="form-label small fw-semibold opacity-75 mb-2">Yazar</label>
+                        <select asp-for="AuthorId" class="form-select py-2" asp-items="ViewBag.AuthorId">
+                            <option value="">-- Yazar Seçiniz --</option>
+                        </select>
+                        <span asp-validation-for="AuthorId" class="text-danger small mt-1 d-block"></span>
+                    </div>
+
+                    <div class="mb-4">
+                        <label asp-for="PublishYear" class="form-label small fw-semibold opacity-75 mb-2">Yayın Yılı</label>
+                        <input asp-for="PublishYear" type="number" class="form-control py-2" placeholder="Örn: 1866" />
+                        <span asp-validation-for="PublishYear" class="text-danger small mt-1 d-block"></span>
+                    </div>
+
+                    <div class="d-flex justify-content-end gap-2 pt-3 border-top border-secondary" style="border-color: rgba(255,255,255,0.05) !important;">
+                        <a asp-action="Index" class="btn btn-sm btn-secondary bg-opacity-25 border-0 px-4 py-2" style="background-color: rgba(255,255,255,0.1);">Vazgeç</a>
+                        <button type="submit" class="btn btn-purple btn-sm px-4 py-2 fw-semibold">
+                            <i class="bi bi-check-lg me-2"></i>Kaydet
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+}

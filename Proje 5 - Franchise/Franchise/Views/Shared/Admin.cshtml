@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Franchise Panel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+    <style>
+            /* ==================== TEMA DEĞİŞKENLERİ ==================== */
+            :root, [data-theme="dark"] {
+                --bg-main: #08090c;
+                --bg-sidebar: rgba(11, 12, 16, 0.95);
+                --border-color: rgba(255, 255, 255, 0.04);
+                --accent-color: #6366f1;
+                --text-main: #f1f5f9;
+                --text-secondary: #64748b;
+                --card-bg: rgba(11, 12, 16, 0.4);
+                --input-bg: #212529;
+                --dropdown-bg: #111318;
+                --badge-bg: rgba(99, 102, 241, 0.1);
+                --table-row-hover: rgba(255, 255, 255, 0.02);
+            }
+
+            [data-theme="light"] {
+                --bg-main: #f1f5f9;
+                --bg-sidebar: #ffffff;
+                --border-color: rgba(0, 0, 0, 0.08);
+                --accent-color: #4f46e5;
+                --text-main: #0f172a;
+                --text-secondary: #475569;
+                --card-bg: #ffffff !important;
+                --input-bg: #f8fafc;
+                --dropdown-bg: #ffffff;
+                --badge-bg: rgba(79, 70, 229, 0.1);
+                --table-row-hover: rgba(0, 0, 0, 0.02);
+            }
+
+            [data-theme="hellokitty"] {
+                --bg-main: #fff0f5;
+                --bg-sidebar: #ffb6c1;
+                --border-color: rgba(255, 20, 147, 0.2) !important;
+                --accent-color: #ff1493;
+                --text-main: #4a0026;
+                --text-secondary: #c71585;
+                --card-bg: rgba(255, 255, 255, 0.92) !important;
+                --input-bg: #ffffff;
+                --dropdown-bg: #fff0f5;
+                --badge-bg: rgba(255, 20, 147, 0.12);
+                --table-row-hover: rgba(255, 182, 193, 0.2) !important;
+            }
+
+            /* ==================== GLOBAL DÜZELTMELER VE GRİ Leke TEMİZLİĞİ ==================== */
+            body {
+                background-color: var(--bg-main) !important;
+                color: var(--text-main) !important;
+                font-family: 'Plus Jakarta Sans', sans-serif;
+                overflow-x: hidden;
+                transition: background-color 0.3s ease, color 0.3s ease;
+            }
+
+            [data-theme="hellokitty"] body {
+                background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKjqUcE4CLOUetnC8Aa8dYNQieGFgRXdjDNF018CtDWjP2YDME77p3aF0&s=10') !important;
+                background-size: 140px !important;
+                background-repeat: repeat !important;
+                background-attachment: fixed;
+            }
+
+            /* Eski sert koyu arka planları ve kartları eziyoruz */
+            .bg-dark, .table-dark, .modal-content, [style*="background-color: rgba(11, 12, 16, 0.4)"] {
+                background-color: var(--card-bg) !important;
+                border-color: var(--border-color) !important;
+            }
+
+            /* Başlıklar ve alt başlık metinleri */
+            .text-white, h4, h5, .modal-title, .fw-bold, .fw-semibold, .page-title, .brand, #packages-table-body td, #buyers-table-body td {
+                color: var(--text-main) !important;
+            }
+
+            .text-secondary {
+                color: var(--text-secondary) !important;
+            }
+
+            /* 🎀 HELLO KITTY İÇİN TABLO VE METİN EZİCİLERİ */
+            [data-theme="hellokitty"] .table th,
+            [data-theme="hellokitty"] .table td,
+            [data-theme="hellokitty"] thead tr,
+            [data-theme="hellokitty"] tbody tr {
+                color: var(--text-main) !important;
+                background-color: transparent !important;
+                border-bottom-color: var(--border-color) !important;
+            }
+
+            [data-theme="hellokitty"] .table-hover tbody tr:hover {
+                background-color: var(--table-row-hover) !important;
+            }
+
+            /* Form elemanlarının griliğini temizleme */
+            .form-control {
+                background-color: var(--input-bg) !important;
+                color: var(--text-main) !important;
+                border: 1px solid var(--border-color) !important;
+            }
+
+                .form-control::placeholder {
+                    color: var(--text-secondary) !important;
+                    opacity: 0.7;
+                }
+
+            /* Butonların içindeki yazı rengini koru */
+            .btn-indigo, .btn-indigo *, .btn-primary, .modal-footer .btn-indigo {
+                color: #ffffff !important;
+            }
+
+            /* Layout İskeleti */
+            .admin-container {
+                display: flex;
+                min-height: 100vh;
+            }
+
+            .admin-sidebar {
+                width: 260px;
+                background-color: var(--bg-sidebar) !important;
+                border-right: 1px solid var(--border-color);
+                padding: 20px;
+            }
+
+            .sidebar-menu {
+                list-style: none;
+                padding: 0;
+                margin-top: 30px;
+            }
+
+            .menu-item a {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                padding: 12px;
+                color: var(--text-secondary) !important;
+                text-decoration: none;
+                border-radius: 10px;
+                transition: all 0.2s ease;
+                margin-bottom: 5px;
+            }
+
+                .menu-item a:hover {
+                    background-color: rgba(99, 102, 241, 0.05);
+                    color: var(--text-main) !important;
+                }
+
+            .menu-item.active a {
+                background-color: var(--badge-bg) !important;
+                border: 1px solid var(--border-color) !important;
+                color: var(--accent-color) !important;
+                font-weight: bold;
+            }
+
+            .main-content {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .admin-navbar {
+                height: 70px;
+                border-bottom: 1px solid var(--border-color);
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0px 30px;
+                background-color: var(--bg-sidebar) !important;
+            }
+
+            .page-body {
+                padding: 30px;
+                flex: 1;
+            }
+
+            /* Tablo Alanları Genel */
+            .table {
+                color: var(--text-main) !important;
+            }
+
+            .table-secondary, .border-secondary {
+                color: var(--text-secondary) !important;
+                border-color: var(--border-color) !important;
+            }
+
+            /* Dropdown Menü */
+            .theme-dropdown-menu {
+                background-color: var(--dropdown-bg) !important;
+                border: 1px solid var(--border-color) !important;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+                border-radius: 12px !important;
+                padding: 8px !important;
+            }
+
+            .theme-dropdown-item {
+                color: var(--text-main) !important;
+                border-radius: 8px;
+                padding: 8px 12px !important;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+
+                .theme-dropdown-item:hover, .theme-dropdown-item.active-theme-row {
+                    background-color: var(--badge-bg) !important;
+                    font-weight: bold;
+                }
+    </style>
+</head>
+<body>
+    <script>
+            const savedTheme = localStorage.getItem('admin-theme') || 'dark';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+    </script>
+
+    <div class="admin-container">
+        <!-- SIDEBAR -->
+        <div class="admin-sidebar">
+            <div class="brand fs-5 fw-bold"><i class="fa-solid fa-bolt me-2" style="color: var(--accent-color);"></i> Franchise Pro</div>
+            <ul class="sidebar-menu">
+                <li class="menu-item">
+                    <a href="/Admin"><i class="fa-solid fa-chart-pie"></i> Panel Özeti</a>
+                </li>
+                <li class="menu-item">
+                    <a href="/Admin/Buyers"><i class="fa-solid fa-users"></i> Yatırımcılar (Buyers)</a>
+                </li>
+                <li class="menu-item">
+                    <a href="/Admin/Packages"><i class="fa-solid fa-box-archive"></i> Franchise Paketleri</a>
+                </li>
+                <li class="menu-item">
+                    <a href="/Admin/Report"><i class="fa-solid fa-chart-bar"></i> Raporlama</a>
+                </li>
+                <li class="menu-item">
+                    <a href="/Admin/Settings"><i class="fa-solid fa-sliders"></i> Sistem Ayarları</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- MAIN CONTENT -->
+        <div class="main-content">
+            <!-- TOPBAR -->
+            <nav class="admin-navbar">
+                <div class="page-title fs-5 fw-semibold">Yönetim Paneli</div>
+
+                <div class="dropdown">
+                    <button class="btn border border-secondary border-opacity-20 rounded-3 px-3 py-2 d-flex align-items-center gap-2"
+                            type="button" id="themeDropdownBtn" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: var(--input-bg); color: var(--text-main);">
+                        <i id="currentThemeIcon" class="fa-solid fa-moon"></i>
+                        <span id="currentThemeText" class="small fw-semibold">Karanlık</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end theme-dropdown-menu" aria-labelledby="themeDropdownBtn">
+                        <li>
+                            <div class="dropdown-item theme-dropdown-item" onclick="changeTheme('dark')">
+                                <i class="fa-solid fa-moon text-primary" style="width: 20px;"></i> Karanlık Tema
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown-item theme-dropdown-item" onclick="changeTheme('light')">
+                                <i class="fa-solid fa-sun text-warning" style="width: 20px;"></i> Açık Tema
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown-item theme-dropdown-item" onclick="changeTheme('hellokitty')">
+                                <i class="fa-solid fa-cat" style="color: #ff1493; width: 20px;"></i> Hello Kitty
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="page-body">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+        var currentPath = window.location.pathname;
+        $('.sidebar-menu .menu-item a').each(function () {
+        var href = $(this).attr('href');
+        if (currentPath === href || (href === "/Admin" && currentPath === "/Admin/")) {
+        $(this).closest('.menu-item').addClass('active');
+        } else {
+        $(this).closest('.menu-item').removeClass('active');
+        }
+        });
+
+        updateTopbarButton(localStorage.getItem('admin-theme') || 'dark');
+        });
+
+        function changeTheme(themeName) {
+        document.documentElement.setAttribute('data-theme', themeName);
+        localStorage.setItem('admin-theme', themeName);
+        updateTopbarButton(themeName);
+        }
+
+        function updateTopbarButton(themeName) {
+        var icon = $('#currentThemeIcon');
+        var text = $('#currentThemeText');
+        $('.theme-dropdown-item').removeClass('active-theme-row');
+
+        if (themeName === 'dark') {
+        icon.attr('class', 'fa-solid fa-moon text-primary');
+        text.text('Karanlık');
+        $('[onclick="changeTheme(\'dark\')"]').addClass('active-theme-row');
+        } else if (themeName === 'light') {
+        icon.attr('class', 'fa-solid fa-sun text-warning');
+        text.text('Açık');
+        $('[onclick="changeTheme(\'light\')"]').addClass('active-theme-row');
+        } else if (themeName === 'hellokitty') {
+        icon.attr('class', 'fa-solid fa-cat').css('color', '#ff1493');
+        text.text('Hello Kitty');
+        $('[onclick="changeTheme(\'hellokitty\')"]').addClass('active-theme-row');
+        }
+        }
+    </script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,176 @@
+@page
+@model NezHotel.Pages.Musteriler.IndexModel
+@{
+    ViewData["Title"] = "Müşteriler";
+}
+
+<style>
+    .card {
+        background: var(--white);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 24px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    }
+
+    .card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 22px;
+    }
+
+    .card-title {
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--navy);
+    }
+
+    .btn {
+        padding: 9px 16px;
+        border-radius: 8px;
+        font-size: 13px;
+        font-weight: 600;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        border: none;
+        cursor: pointer;
+        transition: all .15s;
+    }
+
+    .btn-gold {
+        background: var(--gold);
+        color: var(--navy);
+    }
+
+        .btn-gold:hover {
+            background: var(--gold2);
+        }
+
+    .btn-outline {
+        border: 1px solid var(--border);
+        color: var(--sub);
+        background: transparent;
+    }
+
+        .btn-outline:hover {
+            background: #f5f5f8;
+            color: var(--navy);
+        }
+
+    .btn-danger {
+        background: #fcebeb;
+        color: #e24b4a;
+    }
+
+    .table-responsive {
+        overflow-x: auto;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: left;
+        font-size: 13.5px;
+    }
+
+    th {
+        padding: 14px 16px;
+        background: #f8fafc;
+        color: var(--sub);
+        font-weight: 600;
+        border-bottom: 2px solid var(--border);
+        text-transform: uppercase;
+        font-size: 11px;
+        letter-spacing: 0.5px;
+    }
+
+    td {
+        padding: 14px 16px;
+        border-bottom: 1px solid var(--border);
+        color: var(--text);
+        vertical-align: middle;
+    }
+
+    tr:hover td {
+        background: #fafbfc;
+    }
+</style>
+
+<div class="card">
+    <div class="card-header">
+        <div class="card-title">Müşteri Kayıt Rehberi</div>
+        <div>
+            <a href="/Musteriler/Index?handler=ExportToExcel" class="btn btn-outline" style="background-color: #e8f5e9; color: #2e7d32; border-color: #c8e6c9;">
+                <i class="ti ti-file-spreadsheet"></i> Excel Çıktısı
+            </a>
+            <a href="/Musteriler/Index?handler=ExportToPdf" class="btn btn-outline" style="background-color: #ffebee; color: #c62828; border-color: #ffcdd2;">
+                <i class="ti ti-file-description"></i> PDF Raporu
+            </a>
+            <a href="/Musteriler/Ekle" class="btn btn-gold">
+                <i class="ti ti-user-plus"></i> Yeni Müşteri Ekle
+            </a>
+        </div>
+    </div>
+
+    <!-- Search Form -->
+    <div class="mb-4" style="max-width: 500px;">
+        <form method="get" class="d-flex gap-2">
+            <input type="text" name="searchString" class="form-control" placeholder="Müşteri adı, telefon veya e-posta ile ara..." value="@Model.SearchString" style="padding: 10px; border-radius: 8px; border: 1px solid var(--border); font-size: 13.5px; width: 100%;" />
+            <button type="submit" class="btn btn-gold">Ara</button>
+            @if (!string.IsNullOrEmpty(Model.SearchString))
+            {
+                <a href="/Musteriler/Index" class="btn btn-outline">Temizle</a>
+            }
+        </form>
+    </div>
+
+    <div class="table-responsive">
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 80px;">ID</th>
+                    <th>Adı Soyadı</th>
+                    <th>Telefon</th>
+                    <th>E-Posta Adresi</th>
+                    <th style="width: 150px; text-align: center;">İşlemler</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.MusteriListesi != null && Model.MusteriListesi.Count > 0)
+                {
+                    foreach (var musteri in Model.MusteriListesi)
+                    {
+                        <tr>
+                            <td><span style="color: var(--muted); font-weight: 600;">#@musteri.MusteriID</span></td>
+                            <td><strong>@musteri.AdSoyad</strong></td>
+                            <td>@(string.IsNullOrEmpty(musteri.Telefon) ? "-" : musteri.Telefon)</td>
+                            <td>@(string.IsNullOrEmpty(musteri.Email) ? "-" : musteri.Email)</td>
+                            <td>
+                                <div style="display: flex; gap: 6px; justify-content: center;">
+                                    <a href="/Musteriler/Duzenle?id=@musteri.MusteriID" class="btn btn-outline" style="padding: 6px 10px;">
+                                        <i class="ti ti-edit"></i>
+                                    </a>
+                                    <a href="/Musteriler/Sil?id=@musteri.MusteriID" class="btn btn-danger" style="padding: 6px 10px;" onclick="return confirm('Bu müşteriyi silmek istediğinize emin misiniz?')">
+                                        <i class="ti ti-trash"></i>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="5" style="text-align: center; padding: 40px; color: var(--muted);">
+                            <i class="ti ti-users" style="font-size: 24px; display: block; margin-bottom: 8px;"></i>
+                            Henüz kayıtlı bir müşteri bulunmuyor.
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

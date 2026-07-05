@@ -1,0 +1,110 @@
+﻿@model RentACar.Models.Araclars
+@{
+    ViewData["Title"] = "Yeni Araç Ekle";
+}
+
+<div class="row justify-content-center">
+    <div class="col-lg-10">
+        
+        <!-- ÜST BAŞLIK VE GERİ DÖNÜŞ ALANI -->
+        <div class="d-flex justify-content-between align-items-center flex-wrap mb-4">
+            <div>
+                <h3 class="text-primary fw-bold mb-1">Yeni Araç Girişi</h3>
+                <p class="text-muted mb-0">Filoya dahil edilecek yeni aracın teknik ve finansal bilgilerini tanımlayın.</p>
+            </div>
+            <div>
+                <a href="/Arac/Index" class="btn btn-soft-secondary d-flex align-items-center gap-2 rounded-pill px-4">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Listeye Dön
+                </a>
+            </div>
+        </div>
+
+        <!-- FORM KARTI -->
+        <div class="card shadow-sm">
+            <div class="card-header d-flex justify-content-between border-bottom py-3 bg-soft-primary">
+                <div class="header-title">
+                    <h4 class="card-title fw-bold text-primary mb-0">Araç Bilgi Formu</h4>
+                </div>
+            </div>
+            <div class="card-body p-4">
+                <form action="/Arac/Create" method="post">
+                    @Html.AntiForgeryToken()
+
+                    <!-- Model Doğrulama Hataları -->
+                    <div asp-validation-summary="ModelOnly" class="text-danger mb-3 fw-bold"></div>
+
+                    <div class="row">
+                        <!-- Plaka Girişi -->
+                        <div class="col-md-6 mb-4">
+                            <label class="form-label fw-bold text-secondary">Araç Plakası <span class="text-danger">*</span></label>
+                            <input type="text" name="Plaka" class="form-control font-monospace text-uppercase fs-5 fw-bold" 
+                                   placeholder="Örn: 34ABC123" required style="letter-spacing: 1px;" maxlength="10" />
+                            <span asp-validation-for="Plaka" class="text-danger small mt-1 d-block"></span>
+                        </div>
+
+                        <!-- Marka Seçimi / Girişi -->
+                        <div class="col-md-6 mb-4">
+                            <label class="form-label fw-bold text-secondary">Marka <span class="text-danger">*</span></label>
+                            <input type="text" name="Marka" class="form-control" placeholder="Örn: Volkswagen" required />
+                            <span asp-validation-for="Marka" class="text-danger small mt-1 d-block"></span>
+                        </div>
+
+                        <!-- Model Girişi -->
+                        <div class="col-md-6 mb-4">
+                            <label class="form-label fw-bold text-secondary">Model <span class="text-danger">*</span></label>
+                            <input type="text" name="Model" class="form-control" placeholder="Örn: Passat" required />
+                            <span asp-validation-for="Model" class="text-danger small mt-1 d-block"></span>
+                        </div>
+
+                        <!-- Üretim Yılı -->
+                        <div class="col-md-6 mb-4">
+                            <label class="form-label fw-bold text-secondary">Model Yılı <span class="text-danger">*</span></label>
+                            <input type="number" name="Yil" class="form-control" placeholder="Örn: 2023" 
+                                   min="2000" max="@(DateTime.Now.Year + 1)" required />
+                            <span asp-validation-for="Yil" class="text-danger small mt-1 d-block"></span>
+                        </div>
+
+                        <!-- Günlük Ücret -->
+                        <div class="col-md-6 mb-4">
+                            <label class="form-label fw-bold text-secondary">Günlük Kiralama Ücreti (₺) <span class="text-danger">*</span></label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-soft-success text-success fw-bold">₺</span>
+                                <input type="number" name="GunlukUcret" step="0.01" class="form-control fs-5 fw-bold text-success" placeholder="0.00" min="0" required />
+                            </div>
+                            <span asp-validation-for="GunlukUcret" class="text-danger small mt-1 d-block"></span>
+                        </div>
+
+                        <!-- Araç Durumu -->
+                        <div class="col-md-6 mb-4">
+                            <label class="form-label fw-bold text-secondary">Başlangıç Durumu</label>
+                            <select name="Durum" class="form-select   fw-bold">
+                                <option value="Müsait" class="text-success">Müsait (Kiralamaya Hazır)</option>
+                                <option value="Kirada" class="text-primary">Kirada</option>
+                                <option value="Bakımda" class="text-danger">Bakımda / Serviste</option>
+                            </select>
+                            <span asp-validation-for="Durum" class="text-danger small mt-1 d-block"></span>
+                        </div>
+                    </div>
+
+                    <hr class="hr-horizontal my-3">
+
+                    <!-- BUTONLAR -->
+                    <div class="d-flex justify-content-end gap-2 mt-2">
+                        <button type="reset" class="btn btn-soft-danger rounded-pill px-4">Formu Temizle</button>
+                        <button type="submit" class="btn btn-primary rounded-pill px-5 d-flex align-items-center gap-2">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Aracı Kaydet
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>

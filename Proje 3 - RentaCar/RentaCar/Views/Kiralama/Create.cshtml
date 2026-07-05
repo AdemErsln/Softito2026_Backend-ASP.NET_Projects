@@ -1,0 +1,70 @@
+﻿@model RentacCar.Model.Kiralama
+@{
+    ViewData["Title"] = "Yeni Kiralama Sözleşmesi";
+}
+<div class="row justify-content-center">
+    <div class="col-lg-10">
+        <div class="d-flex justify-content-between align-items-center flex-wrap mb-4">
+            <div>
+                <h3 class="text-primary fw-bold mb-1">Yeni Kiralama Girişi</h3>
+                <p class="text-muted mb-0">Araç ve müşteri eşleştirmesini yaparak sözleşmeyi başlatın.</p>
+            </div>
+            <div>
+                <a href="/Kiralama/Index" class="btn btn-soft-secondary rounded-pill px-4">Vazgeç</a>
+            </div>
+        </div>
+
+        <div class="card shadow-sm">
+            <div class="card-header border-bottom py-3 bg-soft-primary">
+                <h4 class="card-title fw-bold text-primary mb-0">Sözleşme Detay Formu</h4>
+            </div>
+            <div class="card-body p-4">
+                <form action="/Kiralama/Create" method="post">
+                    @Html.AntiForgeryToken()
+
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <label class="form-label fw-bold text-secondary">Kiracı Müşteri <span class="text-danger">*</span></label>
+                            <select name="CustomerId" class="form-select   fw-bold" asp-items="ViewBag.Musteriler" required>
+                                <option value="">-- Müşteri Seçin --</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <label class="form-label fw-bold text-secondary">Kiralanacak Araç <span class="text-danger">*</span></label>
+                            <select name="CarId" class="form-select   fw-bold" asp-items="ViewBag.Araclar" required>
+                                <option value="">-- Araç Seçin --</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <label class="form-label fw-bold text-secondary">Alış Tarihi <span class="text-danger">*</span></label>
+                            <input type="date" name="AlisTarihi" class="form-control  " required value="@DateTime.Now.ToString("yyyy-MM-dd")" />
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <label class="form-label fw-bold text-secondary">İade Tarihi <span class="text-danger">*</span></label>
+                            <input type="date" name="IadeTarihi" class="form-control  " required value="@DateTime.Now.AddDays(1).ToString("yyyy-MM-dd")" />
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <label class="form-label fw-bold text-secondary">Toplam Sözleşme Tutarı (₺) <span class="text-danger">*</span></label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-soft-success text-success fw-bold">₺</span>
+                                <input type="number" name="ToplamTutar" step="0.01" class="form-control fs-5 fw-bold text-success" placeholder="0.00" required />
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <label class="form-label fw-bold text-secondary">Sözleşme Başlangıç Durumu</label>
+                            <select name="Durum" class="form-select fw-bold">
+                                <option value="Aktif" class="text-primary">Aktif (Araç Teslim Edildi)</option>
+                                <option value="Kapatıldı" class="text-success">Kapatıldı (İade Alındı)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <hr class="hr-horizontal my-3">
+                    <div class="d-flex justify-content-end">
+                        <button type="submit" class="btn btn-primary rounded-pill px-5">Sözleşmeyi Onayla ve Başlat</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

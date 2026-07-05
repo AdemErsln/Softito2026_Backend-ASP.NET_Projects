@@ -1,0 +1,56 @@
+﻿@model RentACar.Models.Araclars
+@{
+    ViewData["Title"] = "Aracı Silmeyi Onayla";
+}
+
+<div class="row justify-content-center">
+    <div class="col-lg-8">
+        
+        <div class="card shadow-sm border border-danger">
+            <!-- Nairobi Şablonu Tehlike Şeridi -->
+            <div class="card-header d-flex justify-content-between border-bottom py-3 bg-soft-danger">
+                <div class="header-title">
+                    <h4 class="card-title fw-bold text-danger mb-0">⚠️ Aracı Silme Onayı</h4>
+                </div>
+            </div>
+            
+            <div class="card-body p-4 text-center">
+                <div class="mb-4">
+                    <svg width="60" height="60" fill="none" stroke="#DC3545" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+                    </svg>
+                </div>
+                
+                <h4 class="fw-bold text-secondary mb-3">Bu aracı sistemden tamamen silmek istediğinize emin misiniz?</h4>
+                <p class="text-muted">Bu işlem geri alınamaz ve araca ait kiralama geçmişinde tutarsızlıklara neden olabilir.</p>
+                
+                <!-- SİLİNECEK ARAÇ ÖZETİ -->
+                <div class="bg-soft-light p-3 rounded-3 text-start mx-auto mb-4" style="max-width: 500px;">
+                    <div class="d-flex justify-content-between mb-2">
+                        <span class="text-muted">Araç Plakası:</span>
+                        <span class="badge bg-dark font-monospace text-white fw-bold">@Model.Plaka</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span class="text-muted">Marka / Model:</span>
+                        <span class="fw-bold  ">@Model.Marka @Model.Model (@Model.Yil)</span>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <span class="text-muted">Günlük Ücret:</span>
+                        <span class="text-success fw-bold">@Model.GunlukUcret.ToString("C2")</span>
+                    </div>
+                </div>
+
+                <!-- ONAY FORMU -->
+                <!-- Eğer bir önceki adımdaki Delete metodunu tetikleyeceksen action linkini doğrudan veriyoruz -->
+                <form action="/Arac/Delete/@Model.CarId" method="get">
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="/Arac/Index" class="btn btn-soft-secondary rounded-pill px-4">Hayır, İptal Et</a>
+                        <button type="submit" class="btn btn-danger rounded-pill px-5 fw-bold">Evet, Sistemi Temizle ve Sil</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+</div>

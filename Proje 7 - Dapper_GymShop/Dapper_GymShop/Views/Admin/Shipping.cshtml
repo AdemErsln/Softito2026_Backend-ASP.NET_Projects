@@ -1,0 +1,136 @@
+﻿@model IEnumerable<Dapper_GymShop.Models.ShippingCompany.ShippingCompany>
+
+@{
+    ViewData["Title"] = "Anlaşmalı Kargolar";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="space-y-8">
+
+    <div class="flex justify-between items-center">
+        <div>
+            <h2 class="text-2xl font-black tracking-tight">🚚 Anlaşmalı Kargo Yönetimi</h2>
+            <p class="text-xs theme-text-muted mt-1">Sitede aktif olacak kargo firmalarını, teslimat sürelerini ve gönderim ücretlerini buradan yönetin.</p>
+        </div>
+        <button onclick="toggleModal('addShippingModal')" class="px-4 py-2.5 rounded-xl text-xs font-bold theme-btn-primary transition cursor-pointer shadow-md">
+            ➕ Yeni Kargo Firması Ekle
+        </button>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        @if (Model != null && Model.Any())
+        {
+            foreach (var company in Model)
+            {
+                <div class="theme-card border p-6 rounded-2xl shadow-xs flex flex-col justify-between space-y-4">
+                    <div>
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <span class="text-2xl">📦</span>
+                                <h3 class="text-base font-bold mt-2">@company.CompanyName</h3>
+                            </div>
+                        </div>
+
+                        <div class="mt-4 space-y-1.5 text-xs">
+                            <div class="flex justify-between">
+                                <span class="theme-text-muted">Kargo Ücreti:</span>
+                                <span class="font-bold text-emerald-500">@company.ShippingPrice.ToString("C2")</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="theme-text-muted">Tahmini Teslimat:</span>
+                                <span class="font-bold">@company.EstimatedDeliveryDays Gün</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-2 pt-2 border-t theme-border">
+                        <button onclick="toggleModal('editShippingModal-@company.ID')" class="flex-1 py-2 text-center rounded-xl border theme-border text-xs font-semibold hover:bg-slate-500/10 cursor-pointer">
+                            ⚙️ Düzenle
+                        </button>
+                        <a href="/Admin/DeleteShipping/@company.ID" onclick="return confirm('Bu kargo anlaşmasını silmek istediğinize emin misiniz?')" class="px-3 py-2 text-rose-500 hover:bg-rose-500/10 rounded-xl text-xs flex items-center justify-center transition" title="Sil">
+                            🗑️
+                        </a>
+                    </div>
+                </div>
+
+                <div id="editShippingModal-@company.ID" class="fixed inset-0 bg-black/50 hidden items-center justify-center z-50 p-4 backdrop-blur-xs">
+                    <div class="theme-card border p-6 rounded-2xl shadow-xl max-w-md w-full space-y-4" style="background-color: var(--bg-card)">
+                        <div class="flex justify-between items-center border-b theme-border pb-3">
+                            <h3 class="text-base font-bold">Kargo Anlaşmasını Düzenle</h3>
+                            <button onclick="toggleModal('editShippingModal-@company.ID')" class="text-xl font-bold cursor-pointer">&times;</button>
+                        </div>
+                        <form action="/Admin/UpdateShipping" method="POST" class="space-y-3">
+                            <input type="hidden" name="ID" value="@company.ID" />
+                            <div>
+                                <label class="text-xs font-bold block mb-1">Kargo Firma Adı</label>
+                                <input type="text" name="CompanyName" value="@company.CompanyName" class="w-full p-2.5 rounded-xl border theme-border bg-transparent text-sm outline-none" required />
+                            </div>
+                            <div class="grid grid-cols-2 gap-3">
+                                <div>
+                                    <label class="text-xs font-bold block mb-1">Kargo Ücreti (TL)</label>
+                                    <input type="number" step="0.01" name="ShippingPrice" value="@company.ShippingPrice.ToString("F2").Replace(",", ".")" class="w-full p-2.5 rounded-xl border theme-border bg-transparent text-sm outline-none" required />
+                                </div>
+                                <div>
+                                    <label class="text-xs font-bold block mb-1">Tahmini Teslimat (Gün)</label>
+                                    <input type="number" name="EstimatedDeliveryDays" value="@company.EstimatedDeliveryDays" class="w-full p-2.5 rounded-xl border theme-border bg-transparent text-sm outline-none" required />
+                                </div>
+                            </div>
+                            <div class="flex justify-end gap-2 pt-2">
+                                <button type="button" onclick="toggleModal('editShippingModal-@company.ID')" class="px-4 py-2 border theme-border text-xs rounded-xl cursor-pointer">Vazgeç</button>
+                                <button type="submit" class="px-4 py-2 text-xs font-bold theme-btn-primary rounded-xl cursor-pointer">Değişiklikleri Kaydet</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <div class="col-span-full theme-card border p-8 text-center rounded-2xl theme-text-muted">
+                Kayıtlı kargo anlaşması bulunamadı.
+            </div>
+        }
+    </div>
+</div>
+
+<div id="addShippingModal" class="fixed inset-0 bg-black/50 hidden items-center justify-center z-50 p-4 backdrop-blur-xs">
+    <div class="theme-card border p-6 rounded-2xl shadow-xl max-w-md w-full space-y-4" style="background-color: var(--bg-card)">
+        <div class="flex justify-between items-center border-b theme-border pb-3">
+            <h3 class="text-base font-bold">Yeni Kargo Girişi Yap</h3>
+            <button onclick="toggleModal('addShippingModal')" class="text-xl font-bold cursor-pointer">&times;</button>
+        </div>
+        <form action="/Admin/AddShipping" method="POST" class="space-y-3">
+            <div>
+                <label class="text-xs font-bold block mb-1">Kargo Firma Adı</label>
+                <input type="text" name="CompanyName" placeholder="Örn: MNG Kargo" class="w-full p-2.5 rounded-xl border theme-border bg-transparent text-sm outline-none" required />
+            </div>
+            <div class="grid grid-cols-2 gap-3">
+                <div>
+                    <label class="text-xs font-bold block mb-1">Kargo Ücreti (TL)</label>
+                    <input type="number" step="0.01" name="ShippingPrice" placeholder="75.00" class="w-full p-2.5 rounded-xl border theme-border bg-transparent text-sm outline-none" required />
+                </div>
+                <div>
+                    <label class="text-xs font-bold block mb-1">Tahmini Teslimat (Gün)</label>
+                    <input type="number" name="EstimatedDeliveryDays" placeholder="3" class="w-full p-2.5 rounded-xl border theme-border bg-transparent text-sm outline-none" required />
+                </div>
+            </div>
+            <div class="flex justify-end gap-2 pt-2">
+                <button type="button" onclick="toggleModal('addShippingModal')" class="px-4 py-2 border theme-border text-xs rounded-xl cursor-pointer">Kapat</button>
+                <button type="submit" class="px-4 py-2 text-xs font-bold theme-btn-primary rounded-xl cursor-pointer">Anlaşmayı Kaydet</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    function toggleModal(modalId) {
+        const modal = document.getElementById(modalId);
+        if(modal.classList.contains('hidden')) {
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        } else {
+            modal.classList.remove('flex');
+            modal.classList.add('hidden');
+        }
+    }
+</script>

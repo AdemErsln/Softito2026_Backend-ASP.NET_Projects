@@ -1,0 +1,6 @@
+@KahveOtomati_HostAddress = http://localhost:5228
+
+GET {{KahveOtomati_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

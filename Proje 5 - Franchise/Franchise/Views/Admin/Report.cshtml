@@ -1,0 +1,127 @@
+@{
+    ViewData["Title"] = "Raporlama";
+    Layout = "~/Views/Shared/Admin.cshtml";
+}
+
+<!-- Özet Kartları -->
+<div class="row g-4 mb-4" id="summaryCards">
+    <div class="col-md-3">
+        <div class="card border-0 rounded-4 p-3" style="background-color: var(--card-bg); border: 1px solid var(--border-color) !important;">
+            <div class="d-flex align-items-center gap-3">
+                <div class="rounded-3 d-flex align-items-center justify-content-center" style="width:48px;height:48px;background:rgba(99,102,241,0.1);">
+                    <i class="fa-solid fa-users" style="color:var(--accent-color);font-size:1.2rem;"></i>
+                </div>
+                <div>
+                    <div class="small" style="color:var(--text-secondary);">Toplam Alıcı</div>
+                    <div class="fs-4 fw-bold" id="totalBuyers">-</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card border-0 rounded-4 p-3" style="background-color: var(--card-bg); border: 1px solid var(--border-color) !important;">
+            <div class="d-flex align-items-center gap-3">
+                <div class="rounded-3 d-flex align-items-center justify-content-center" style="width:48px;height:48px;background:rgba(34,197,94,0.1);">
+                    <i class="fa-solid fa-box-archive" style="color:#22c55e;font-size:1.2rem;"></i>
+                </div>
+                <div>
+                    <div class="small" style="color:var(--text-secondary);">Toplam Paket</div>
+                    <div class="fs-4 fw-bold" id="totalPackages">-</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card border-0 rounded-4 p-3" style="background-color: var(--card-bg); border: 1px solid var(--border-color) !important;">
+            <div class="d-flex align-items-center gap-3">
+                <div class="rounded-3 d-flex align-items-center justify-content-center" style="width:48px;height:48px;background:rgba(59,130,246,0.1);">
+                    <i class="fa-solid fa-link" style="color:#3b82f6;font-size:1.2rem;"></i>
+                </div>
+                <div>
+                    <div class="small" style="color:var(--text-secondary);">Paketli Alıcı</div>
+                    <div class="fs-4 fw-bold" id="buyersWithPackage">-</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card border-0 rounded-4 p-3" style="background-color: var(--card-bg); border: 1px solid var(--border-color) !important;">
+            <div class="d-flex align-items-center gap-3">
+                <div class="rounded-3 d-flex align-items-center justify-content-center" style="width:48px;height:48px;background:rgba(239,68,68,0.1);">
+                    <i class="fa-solid fa-unlink" style="color:#ef4444;font-size:1.2rem;"></i>
+                </div>
+                <div>
+                    <div class="small" style="color:var(--text-secondary);">Paketsiz Alıcı</div>
+                    <div class="fs-4 fw-bold" id="buyersWithoutPackage">-</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Paket Dağılım Tablosu -->
+<div class="card border-0 rounded-4 p-4 mb-4" style="background-color: var(--card-bg); border: 1px solid var(--border-color) !important;">
+    <h5 class="fw-bold mb-3"><i class="fa-solid fa-chart-pie me-2" style="color:var(--accent-color);"></i>Paket Bazında Dağılım</h5>
+    <table class="table table-hover">
+        <thead>
+            <tr style="border-bottom: 1px solid var(--border-color);">
+                <th style="color:var(--text-secondary);">Paket Adı</th>
+                <th style="color:var(--text-secondary);">Fiyat</th>
+                <th style="color:var(--text-secondary);">Alıcı Sayısı</th>
+            </tr>
+        </thead>
+        <tbody id="packageDistribution"></tbody>
+    </table>
+</div>
+
+<!-- Son Eklenen Alıcılar -->
+<div class="card border-0 rounded-4 p-4" style="background-color: var(--card-bg); border: 1px solid var(--border-color) !important;">
+    <h5 class="fw-bold mb-3"><i class="fa-solid fa-clock-rotate-left me-2" style="color:var(--accent-color);"></i>Son Eklenen Alıcılar</h5>
+    <table class="table table-hover">
+        <thead>
+            <tr style="border-bottom: 1px solid var(--border-color);">
+                <th style="color:var(--text-secondary);">Alıcı Adı</th>
+                <th style="color:var(--text-secondary);">Paket</th>
+                <th style="color:var(--text-secondary);">Notlar</th>
+            </tr>
+        </thead>
+        <tbody id="recentBuyers"></tbody>
+    </table>
+</div>
+
+@section Scripts {
+<script>
+    $(document).ready(function () {
+        $.getJSON('/Admin/GetReportData', function (data) {
+            if (data.success) {
+                $('#totalBuyers').text(data.totalBuyers);
+                $('#totalPackages').text(data.totalPackages);
+                $('#buyersWithPackage').text(data.buyersWithPackage);
+                $('#buyersWithoutPackage').text(data.buyersWithoutPackage);
+
+                // Paket Dağılımı
+                var distHtml = '';
+                $.each(data.packageDistribution, function (i, item) {
+                    distHtml += '<tr style="border-bottom: 1px solid var(--border-color);">';
+                    distHtml += '<td>' + item.packageName + '</td>';
+                    distHtml += '<td>' + item.price + '</td>';
+                    distHtml += '<td><span class="badge rounded-pill" style="background:var(--badge-bg);color:var(--accent-color);padding:6px 14px;">' + item.buyerCount + '</span></td>';
+                    distHtml += '</tr>';
+                });
+                $('#packageDistribution').html(distHtml);
+
+                // Son Alıcılar
+                var buyersHtml = '';
+                $.each(data.recentBuyers, function (i, item) {
+                    buyersHtml += '<tr style="border-bottom: 1px solid var(--border-color);">';
+                    buyersHtml += '<td>' + item.buyerName + '</td>';
+                    buyersHtml += '<td><span class="badge rounded-pill" style="background:var(--badge-bg);color:var(--accent-color);padding:6px 14px;">' + item.packageName + '</span></td>';
+                    buyersHtml += '<td>' + item.notes + '</td>';
+                    buyersHtml += '</tr>';
+                });
+                $('#recentBuyers').html(buyersHtml);
+            }
+        });
+    });
+</script>
+}

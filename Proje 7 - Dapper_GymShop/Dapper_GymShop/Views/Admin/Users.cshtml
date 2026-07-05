@@ -1,0 +1,73 @@
+﻿@model IEnumerable<Admin>
+@{
+    ViewData["Title"] = "Yönetici Ayarları";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="space-y-8">
+    <div class="flex justify-between items-center">
+        <div>
+            <h2 class="text-2xl font-black tracking-tight">🔐 Yönetici Yetkilendirme</h2>
+            <p class="text-xs theme-text-muted mt-1">Sisteme ve yönetim paneline erişim hakkı bulunan admin hesapları ayarları.</p>
+        </div>
+        <button onclick="toggleModal('addAdminModal')" class="px-4 py-2.5 rounded-xl text-xs font-bold theme-btn-primary transition cursor-pointer shadow-md">
+            🔐 Yeni Admin Ekle
+        </button>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        @if (Model != null && Model.Any())
+        {
+            foreach (var admin in Model)
+            {
+                <div class="theme-card border p-6 rounded-2xl shadow-xs flex flex-col justify-between space-y-4">
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-xl flex items-center justify-center font-black text-white" style="background-color: var(--accent)">
+                            @admin.Username.Substring(0,1).ToUpper()
+                        </div>
+                        <div>
+                            <h3 class="text-sm font-bold">@admin.Username</h3>
+                            <p class="text-[11px] theme-text-muted">Sistem Yöneticisi</p>
+                        </div>
+                    </div>
+                    
+                    <div class="pt-3 border-t theme-border flex justify-end">
+                        <a href="/Admin/DeleteAdmin/@admin.ID" onclick="return confirm('Bu yöneticinin yetkisini almak istediğinize emin misiniz?')" class="px-3 py-1.5 text-xs text-rose-500 hover:bg-rose-500/10 rounded-xl transition">
+                            ❌ Yetkiyi Kaldır
+                        </a>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>
+
+<div id="addAdminModal" class="fixed inset-0 bg-black/50 hidden items-center justify-center z-50 p-4 backdrop-blur-xs">
+    <div class="theme-card border p-6 rounded-2xl shadow-xl max-w-md w-full space-y-4" style="background-color: var(--bg-card)">
+        <div class="flex justify-between items-center border-b theme-border pb-3">
+            <h3 class="text-base font-bold">Yeni Panel Yöneticisi Tanımla</h3>
+            <button onclick="toggleModal('addAdminModal')" class="text-xl font-bold cursor-pointer">&times;</button>
+        </div>
+        <form action="/Admin/AddAdmin" method="POST" class="space-y-3">
+            <div>
+                <label class="text-xs font-bold block mb-1">Kullanıcı Adı</label>
+                <input type="text" name="Username" class="w-full p-2.5 rounded-xl border theme-border bg-transparent text-sm outline-none" required />
+            </div>
+            <div>
+                <label class="text-xs font-bold block mb-1">Şifre</label>
+                <input type="password" name="Password" class="w-full p-2.5 rounded-xl border theme-border bg-transparent text-sm outline-none" required />
+            </div>
+            <div class="flex justify-end gap-2 pt-2">
+                <button type="button" onclick="toggleModal('addAdminModal')" class="px-4 py-2 border theme-border text-xs rounded-xl cursor-pointer">Vazgeç</button>
+                <button type="submit" class="px-4 py-2 text-xs font-bold theme-btn-primary rounded-xl cursor-pointer">Yöneticiyi Kaydet</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    function toggleModal(id) {
+        const el = document.getElementById(id);
+        el.classList.contains('hidden') ? (el.classList.remove('hidden'), el.classList.add('flex')) : (el.classList.remove('flex'), el.classList.add('hidden'));
+    }
+</script>

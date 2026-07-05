@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="RentaCar.Data/RentaCar.Data.csproj" />
+  <Project Path="RentaCar/RentaCar.csproj" />
+  <Project Path="RentacCar.Model/RentacCar.Model.csproj" />
+</Solution>

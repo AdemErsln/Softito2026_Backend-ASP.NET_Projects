@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>@ViewData["Title"] - Nezsoft Rent A Car</title>
+    <link rel="shortcut icon" href="~/assets/images/favicon.ico" />
+    <link rel="stylesheet" href="~/assets/css/libs.min.css">
+    <link rel="stylesheet" href="~/assets/css/nairobi.css?v=1.0.0">
+</head>
+<body class=" ">
+    <div id="loading">
+        <div class="loader simple-loader">
+            <div class="loader-body"></div>
+        </div>
+    </div>
+    <aside class="sidebar sidebar-default sidebar-dark navs-gradient sidebar-mini sidebar-hover ">
+        <div class="sidebar-header d-flex align-items-center justify-content-start">
+            <a href="/Home/Index" class="navbar-brand dis-none">
+                <div class="logo">
+                    <svg width="35" viewBox="0 0 52 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="7" y="5" width="11.4716" height="48" fill="#9C2224"/>
+                        <rect x="33.5283" y="5" width="11.4716" height="48" fill="#9C2224"/>
+                        <path d="M7 5H18.4716L44.9997 53H33.5281L7 5Z" fill="#9C2224"/>
+                    </svg>
+                </div>
+                <div class="logo-hover">
+                    <span class="text-white fw-bold fs-4 ms-2">NEZSOFT</span>
+                </div>
+            </a>
+            <div class="sidebar-toggle d-xl-none" data-toggle="sidebar" data-active="true">
+                <i class="icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.25 12.2744L19.25 12.2744" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M10.2998 18.2988L4.2498 12.2748L10.2998 6.24976" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </i>
+            </div>
+        </div>
+        <div class="sidebar-body p-0 data-scrollbar">
+            <div class="collapse navbar-collapse" id="sidebar">
+                <ul class="navbar-nav iq-main-menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Arac/Index">
+                            <i class="icon">
+                                <svg width="22" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.15722 20.7714V17.7047C9.1572 16.9246 9.79312 16.2908 10.581 16.2856H13.4671C14.2587 16.2856 14.9005 16.9209 14.9005 17.7047V17.7047V20.7809C14.9003 21.4432 15.4343 21.9845 16.103 22H18.0271C19.9451 22 21.5 20.4607 21.5 18.5618V18.5618V9.83784C21.4898 9.09083 21.1355 8.38935 20.538 7.93303L13.9577 2.6853C12.8049 1.77157 11.1662 1.77157 10.0134 2.6853L3.46203 7.94256C2.86226 8.39702 2.50739 9.09967 2.5 9.84736V18.5618C2.5 20.4607 4.05488 22 5.97291 22H7.89696C8.58235 22 9.13797 21.4499 9.13797 20.7714V20.7714" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>                            
+                            </i>
+                            <span class="item-name">Araç Yönetimi</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Kullanici/Index">
+                            <i class="icon">
+                                <svg width="22" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.9849 15.3462C8.11731 15.3462 4.81445 15.931 4.81445 18.2729C4.81445 20.6148 8.09636 21.2205 11.9849 21.2205C15.8525 21.2205 19.1545 20.6348 19.1545 18.2938C19.1545 15.9529 15.8735 15.3462 11.9849 15.3462Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M11.9849 12.0059C14.523 12.0059 16.5801 9.94779 16.5801 7.40969C16.5801 4.8716 14.523 2.81445 11.9849 2.81445C9.44679 2.81445 7.3887 4.8716 7.3887 7.40969C7.38013 9.93922 9.42394 11.9973 11.9525 12.0059H11.9849Z" stroke="currentColor" stroke-width="1.42857" stroke-linecap="round" stroke-linejoin="round"></path> </svg>                            
+                            </i>
+                            <span class="item-name">Müşteri Yönetimi</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Kiralama/Index">
+                            <i class="icon">
+                                <svg width="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5 10.5005C14.5 9.11924 13.3808 8 12.0005 8C10.6192 8 9.5 9.11924 9.5 10.5005C9.5 11.8808 10.6192 13 12.0005 13C13.3808 13 14.5 11.8808 14.5 10.5005Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9995 21C10.801 21 4.5 15.8984 4.5 10.5633C4.5 6.38664 7.8571 3 11.9995 3C16.1419 3 19.5 6.38664 19.5 10.5633C19.5 15.8984 13.198 21 11.9995 21Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>                            
+                            </i>
+                            <span class="item-name">Kiralama İşlemleri</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <main class="main-content">
+        <div class="position-relative">
+            <nav class="nav navbar navbar-expand-lg navbar-light iq-navbar">
+                <div class="container-fluid navbar-inner">
+                    <div class="sidebar-toggle" data-toggle="sidebar" data-active="true">
+                        <i class="icon">
+                            <svg width="20px" height="20px" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" />
+                            </svg>
+                        </i>
+                    </div>
+                    <div class="header-logo d-xl-none">
+                        <a href="/Home/Index" class="navbar-brand dis-none">
+                            <svg width="35" viewBox="0 0 52 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="7" y="5" width="11.4716" height="48" fill="#9C2224"/>
+                                <rect x="33.5283" y="5" width="11.4716" height="48" fill="#9C2224"/>
+                                <path d="M7 5H18.4716L44.9997 53H33.5281L7 5Z" fill="#9C2224"/>
+                            </svg>
+                        </a>
+                    </div>     
+                    <div class="input-group search-input">
+                        <span class="input-group-text" id="search-input">
+                            <svg width="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="11.7669" cy="11.7666" r="8.98856" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></circle>
+                                <path d="M18.0186 18.4851L21.5426 22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </span>
+                        <input type="search" class="form-control" placeholder="Sistemde ara...">
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                            <span class="navbar-toggler-bar bar1 mt-2"></span>
+                            <span class="navbar-toggler-bar bar2"></span>
+                            <span class="navbar-toggler-bar bar3"></span>
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto navbar-list mb-2 mb-lg-0 align-items-center">
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link" id="notification-drop" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <svg width="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 17.8476C17.6392 17.8476 20.2481 17.1242 20.5 14.2205C20.5 11.3188 18.6812 11.5054 18.6812 7.94511C18.6812 5.16414 16.0452 2 12 2C7.95477 2 5.31885 5.16414 5.31885 7.94511C5.31885 11.5054 3.5 11.3188 3.5 14.2205C3.75295 17.1352 6.36177 17.8476 12 17.8476Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M14.3889 20.8572C13.0247 22.3719 10.8967 22.3899 9.51953 20.8572" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>                            
+                                    <span class="bg-danger dots"></span>
+                                </a>
+                                <div class="sub-drop dropdown-menu iq-noti dropdown-menu-end p-0" aria-labelledby="notification-drop">
+                                    <div class="card bg-transparent shadow-none m-0">
+                                        <div class="card-header bg-transparent d-flex justify-content-between">
+                                            <div class="header-title">
+                                                <p class="fs-6 mb-0">Yeni Bildirimler</p>
+                                            </div>
+                                            <div class="header-title">
+                                                <p class="fs-6 mb-0 text-primary" style="cursor: pointer;">Tümünü Oku</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body p-0">
+                                            <a href="#" class="iq-sub-card">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="~/assets/images/utilities/05.png" class="img-fluid avatar avatar-30 avatar-rounded" alt="img">
+                                                    <div class="ms-3 w-100">
+                                                        <h6 class="mb-0 ">Yeni Kiralama Yapıldı</h6>
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <p class="mb-0">15 dk önce</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="iq-sub-card">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="">
+                                                        <img src="~/assets/images/utilities/03.png" class="img-fluid avatar avatar-30 avatar-rounded" alt="img">
+                                                    </div>
+                                                    <div class="ms-3 w-100">
+                                                        <h6 class="mb-0 ">Teslim Süresi Geçen Araçlar</h6>
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <p class="mb-0">30 dk önce</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown" >
+                                <a href="#" class="nav-link" id="mail-drop" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <svg width="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.9028 8.85107L13.4596 12.4641C12.6201 13.1301 11.4389 13.1301 10.5994 12.4641L6.11865 8.85107" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M16.9089 21C19.9502 21.0084 22 18.5095 22 15.4384V8.57001C22 5.49883 19.9502 3 16.9089 3H7.09114C4.04979 3 2 5.49883 2 8.57001V15.4384C2 18.5095 4.04979 21.0084 7.09114 21H16.9089Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>                            
+                                    <span class="bg-primary count-mail"></span>
+                                </a>
+                                <div class="sub-drop dropdown-menu dropdown-menu-end p-0" aria-labelledby="mail-drop">
+                                    <div class="card bg-transparent shadow-none m-0">
+                                        <div class="card-header bg-transparent d-flex justify-content-between py-3">
+                                            <div class="header-title">
+                                                <p class="mb-0 text-white">Sistem Durumu</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body p-0 ">
+                                            <a href="#" class="iq-sub-card">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="~/assets/images/coins/02.png" class="img-fluid avatar avatar-30 avatar-rounded" alt="img">
+                                                    <div class="w-100 ms-3">
+                                                        <h6 class="mb-0 ">Veritabanı Durumu</h6>
+                                                        <small class="text-muted">Yedekleme planlandığı gibi çalıştı.</small>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link py-0 d-flex align-items-center" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="~/assets/images/avatars/01.png" alt="User-Profile" class="img-fluid avatar avatar-50 avatar-rounded">
+                                    <div class="caption ms-3">
+                                        <h6 class="mb-0 caption-title">Fatih</h6>
+                                        <p class="mb-0 caption-sub-title">Yönetici</p>
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="/Kullanici/Edit/1">Profilim</a></li>
+                                    <li><a class="dropdown-item" href="/Home/Settings">Sistem Ayarları</a></li>
+                                    <li><hr class="m-0 dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="/Account/Logout">Çıkış Yap</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            </div>
+
+        <div class="container-fluid content-inner pb-0">
+            @RenderBody()
+        </div>
+
+        <footer class="footer">
+            <div class="footer-body">
+                <ul class="left-panel list-inline mb-0 p-0">
+                    <li class="list-inline-item"><a href="#" class="text-white">Gizlilik Politikası</a></li>
+                    <li class="list-inline-item"><a href="#" class="text-white">Kullanım Şartları</a></li>
+                </ul>
+                <div class="right-panel">
+                    © @DateTime.Now.Year Nezsoft Rent A Car, Tüm Hakları Saklıdır.
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="~/assets/js/libs.min.js"></script>
+    <script src="~/assets/js/charts/widgetcharts.js"></script>
+    <script src="~/assets/js/charts/dashboard.js"></script>
+    <script src="~/assets/js/fslightbox.js"></script>
+    <script src="~/assets/js/app.js"></script>
+    <script src="~/assets/js/charts/apexcharts.js"></script>
+    <script src="~/assets/js/countdown.js"></script>
+</body>
+</html>

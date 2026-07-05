@@ -1,0 +1,17 @@
+C:\Users\adem.eraslan\source\repos\RentaCar\RentaCar.Data\bin\Debug\net10.0\RentaCar.Data.deps.json
+C:\Users\adem.eraslan\source\repos\RentaCar\RentaCar.Data\bin\Debug\net10.0\RentaCar.Data.runtimeconfig.json
+C:\Users\adem.eraslan\source\repos\RentaCar\RentaCar.Data\bin\Debug\net10.0\RentaCar.Data.dll
+C:\Users\adem.eraslan\source\repos\RentaCar\RentaCar.Data\bin\Debug\net10.0\RentaCar.Data.pdb
+C:\Users\adem.eraslan\source\repos\RentaCar\RentaCar.Data\bin\Debug\net10.0\RentacCar.Model.dll
+C:\Users\adem.eraslan\source\repos\RentaCar\RentaCar.Data\bin\Debug\net10.0\RentacCar.Model.pdb
+C:\Users\adem.eraslan\source\repos\RentaCar\RentaCar.Data\obj\Debug\net10.0\RentaCar.Data.csproj.AssemblyReference.cache
+C:\Users\adem.eraslan\source\repos\RentaCar\RentaCar.Data\obj\Debug\net10.0\RentaCar.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adem.eraslan\source\repos\RentaCar\RentaCar.Data\obj\Debug\net10.0\RentaCar.Data.AssemblyInfoInputs.cache
+C:\Users\adem.eraslan\source\repos\RentaCar\RentaCar.Data\obj\Debug\net10.0\RentaCar.Data.AssemblyInfo.cs
+C:\Users\adem.eraslan\source\repos\RentaCar\RentaCar.Data\obj\Debug\net10.0\RentaCar.Data.csproj.CoreCompileInputs.cache
+C:\Users\adem.eraslan\source\repos\RentaCar\RentaCar.Data\obj\Debug\net10.0\RentaCar.580C1BDB.Up2Date
+C:\Users\adem.eraslan\source\repos\RentaCar\RentaCar.Data\obj\Debug\net10.0\RentaCar.Data.dll
+C:\Users\adem.eraslan\source\repos\RentaCar\RentaCar.Data\obj\Debug\net10.0\refint\RentaCar.Data.dll
+C:\Users\adem.eraslan\source\repos\RentaCar\RentaCar.Data\obj\Debug\net10.0\RentaCar.Data.pdb
+C:\Users\adem.eraslan\source\repos\RentaCar\RentaCar.Data\obj\Debug\net10.0\RentaCar.Data.genruntimeconfig.cache
+C:\Users\adem.eraslan\source\repos\RentaCar\RentaCar.Data\obj\Debug\net10.0\ref\RentaCar.Data.dll

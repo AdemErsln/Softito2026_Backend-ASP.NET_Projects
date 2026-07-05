@@ -1,0 +1,192 @@
+﻿@page
+@model NezHotel.Pages.Rezervasyonlar.IndexModel
+@{
+    ViewData["Title"] = "Rezervasyonlar";
+}
+
+<style>
+    .card {
+        background: var(--white);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 24px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    }
+
+    .card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 22px;
+    }
+
+    .card-title {
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--navy);
+    }
+
+    .btn {
+        padding: 9px 16px;
+        border-radius: 8px;
+        font-size: 13px;
+        font-weight: 600;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        border: none;
+        cursor: pointer;
+        transition: all .15s;
+    }
+
+    .btn-gold {
+        background: var(--gold);
+        color: var(--navy);
+    }
+
+        .btn-gold:hover {
+            background: var(--gold2);
+        }
+
+    .btn-outline {
+        border: 1px solid var(--border);
+        color: var(--sub);
+        background: transparent;
+    }
+
+        .btn-outline:hover {
+            background: #f5f5f8;
+            color: var(--navy);
+        }
+
+    .btn-danger {
+        background: #fcebeb;
+        color: #e24b4a;
+    }
+
+        .btn-danger:hover {
+            background: #ebd5d5;
+        }
+
+    .table-responsive {
+        overflow-x: auto;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: left;
+        font-size: 13.5px;
+    }
+
+    th {
+        padding: 14px 16px;
+        background: #f8fafc;
+        color: var(--sub);
+        font-weight: 600;
+        border-bottom: 2px solid var(--border);
+        text-transform: uppercase;
+        font-size: 11px;
+        letter-spacing: 0.5px;
+    }
+
+    td {
+        padding: 14px 16px;
+        border-bottom: 1px solid var(--border);
+        color: var(--text);
+        vertical-align: middle;
+    }
+
+    tr:hover td {
+        background: #fafbfc;
+    }
+
+    .date-box {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-weight: 500;
+        color: var(--navy2);
+    }
+
+        .date-box i {
+            color: var(--muted);
+            font-size: 15px;
+        }
+</style>
+
+<div class="card">
+    <div class="card-header">
+        <div class="card-title">Aktif Rezervasyon Kayıtları</div>
+        <a href="/Rezervasyonlar/Ekle" class="btn btn-gold">
+            <i class="ti ti-calendar-plus"></i> Yeni Rezervasyon Oluştur
+        </a>
+    </div>
+
+    <div class="table-responsive">
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 80px;">Rez. ID</th>
+                    <th>Müşteri Ad Soyad</th>
+                    <th>Oda No</th>
+                    <th>Giriş Tarihi</th>
+                    <th>Çıkış Tarihi</th>
+                    <th style="width: 150px; text-align: center;">İşlemler</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.RezervasyonlarListele != null && Model.RezervasyonlarListele.Count > 0)
+                {
+                    foreach (var rez in Model.RezervasyonlarListele)
+                    {
+                        <tr>
+                            <td><span style="color: var(--muted); font-weight: 600;">#@rez.RezervasyonID</span></td>
+                            <td>
+                                <div style="display: flex; align-items: center; gap: 8px;">
+                                    <i class="ti ti-user" style="font-size: 16px; color: var(--sub);"></i>
+                                    <strong>@rez.MusteriAdSoyad</strong>
+                                </div>
+                            </td>
+                            <td>
+                                <span style="background: #f1f5f9; padding: 4px 8px; border-radius: 6px; font-weight: 600; color: var(--navy);">
+                                    Oda @rez.OdaNo
+                                </span>
+                            </td>
+                            <td>
+                                <div class="date-box">
+                                    <i class="ti ti-calendar-input"></i> @rez.GirisTarihi
+                                </div>
+                            </td>
+                            <td>
+                                <div class="date-box">
+                                    <i class="ti ti-calendar-output"></i> @rez.CikisTarihi
+                                </div>
+                            </td>
+                            <td>
+                                <div style="display: flex; gap: 6px; justify-content: center;">
+                                    <a href="/Rezervasyonlar/Duzenle?id=@rez.RezervasyonID" class="btn btn-outline" style="padding: 6px 10px;" title="Düzenle">
+                                        <i class="ti ti-edit"></i>
+                                    </a>
+                                    <a href="/Rezervasyonlar/Sil?id=@rez.RezervasyonID" class="btn btn-danger" style="padding: 6px 10px;" title="Sil" onclick="return confirm('Bu rezervasyonu iptal etmek/silmek istediğinize emin misiniz?')">
+                                        <i class="ti ti-trash"></i>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="6" style="text-align: center; padding: 40px; color: var(--muted);">
+                            <i class="ti ti-calendar-x" style="font-size: 24px; display: block; margin-bottom: 8px;"></i>
+                            Sistemde kayıtlı rezervasyon bulunamadı.
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

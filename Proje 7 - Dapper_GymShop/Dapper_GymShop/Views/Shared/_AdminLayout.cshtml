@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html lang="tr" data-theme="light">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - NezGym Admin</title>
+    <script src="https://cdn.jsdelivr.net/npm/@@tailwindcss/browser@4"></script>
+
+    <style>
+        /* 🌟 Geliştirilmiş Tema Değişkenleri (Kartlar ve Sınırlar Tam Uyumlu) */
+        :root, [data-theme="light"] {
+        --bg-main: #f8fafc;
+        --bg-card: #ffffff;
+        --border-color: #e2e8f0;
+        --text-main: #0f172a;
+        --text-muted: #64748b;
+        --accent: #4f46e5;
+        --accent-hover: #4338ca;
+        --sidebar-bg: #ffffff;
+        --table-header: #f8fafc;
+        }
+
+        [data-theme="dark"] {
+        --bg-main: #0f172a;
+        --bg-card: #1e293b;
+        --border-color: #334155;
+        --text-main: #f8fafc;
+        --text-muted: #94a3b8;
+        --accent: #6366f1;
+        --accent-hover: #4f46e5;
+        --sidebar-bg: #1e293b;
+        --table-header: #1e293b;
+        }
+
+        [data-theme="kitty"] {
+        --bg-main: #fff0f5;
+        --bg-card: #ffffff;
+        --border-color: #ffe4e1;
+        --text-main: #4c1130;
+        --text-muted: #ff69b4;
+        --accent: #ff1493;
+        --accent-hover: #db7093;
+        --sidebar-bg: #fff0f6;
+        --table-header: #fff5f7;
+        }
+
+        [data-theme="fitness"] {
+        --bg-main: #111111;
+        --bg-card: #1a1a1a;
+        --border-color: #262626;
+        --text-main: #ffffff;
+        --text-muted: #a3a3a3;
+        --accent: #84cc16;
+        --accent-hover: #65a30d;
+        --sidebar-bg: #1a1a1a;
+        --table-header: #262626;
+        }
+
+        /* 🛠️ Global Fix Sınıfları */
+        body {
+        background-color: var(--bg-main);
+        color: var(--text-main);
+        transition: all 0.25s ease;
+        }
+
+        .theme-card {
+        background-color: var(--bg-card) !important;
+        border-color: var(--border-color) !important;
+        color: var(--text-main) !important;
+        }
+
+        .theme-sidebar {
+        background-color: var(--sidebar-bg) !important;
+        border-color: var(--border-color) !important;
+        }
+
+        .theme-border {
+        border-color: var(--border-color) !important;
+        }
+
+        .theme-text-muted {
+        color: var(--text-muted) !important;
+        }
+
+        .theme-btn-primary {
+        background-color: var(--accent) !important;
+        color: #fff !important;
+        }
+
+        .theme-btn-primary:hover {
+        background-color: var(--accent-hover) !important;
+        }
+
+        .theme-th {
+        background-color: var(--table-header) !important;
+        color: var(--text-muted) !important;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="flex min-h-screen">
+        <aside class="w-64 theme-sidebar border-r flex flex-col justify-between p-6 shrink-0">
+            <div>
+                <div class="flex items-center gap-3 px-2 mb-8">
+                    <div class="p-2 rounded-xl text-xl theme-card border">🏋️‍♂️</div>
+                    <span class="text-xl font-black tracking-tight">NezGym</span>
+                </div>
+
+                <p class="text-[10px] font-bold uppercase tracking-wider theme-text-muted px-2 mb-2">Genel Bakış</p>
+                <nav class="space-y-1 mb-6">
+                    <a href="/Admin/Dashboard" class="flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-semibold theme-btn-primary transition shadow-sm">
+                        📊 Dashboard
+                    </a>
+                </nav>
+
+                <p class="text-[10px] font-bold uppercase tracking-wider theme-text-muted px-2 mb-2">Mağaza Yönetimi</p>
+                <nav class="space-y-1 mb-6">
+                    <a href="/Admin/Products" class="flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-medium hover:bg-slate-500/10 transition">
+                        📦 Ürünler
+                    </a>
+                    <a href="/Admin/Orders" class="flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-medium hover:bg-slate-500/10 transition">
+                        📥 Siparişler
+                    </a>
+                    <a href="/Admin/Shipping" class="flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-medium hover:bg-slate-500/10 transition">
+                        🚚 Anlaşmalı Kargolar
+                    </a>
+                </nav>
+
+                <p class="text-[10px] font-bold uppercase tracking-wider theme-text-muted px-2 mb-2">Sistem</p>
+                <nav class="space-y-1">
+                    <a href="/Admin/Users" class="flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-medium hover:bg-slate-500/10 transition">
+                        🔐 Adminler / Yetki
+                    </a>
+                </nav>
+            </div>
+
+            <div>
+                <a href="/Admin/Login" class="flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium text-rose-500 hover:bg-rose-500/10 transition w-full">
+                    🚪 Çıkış Yap
+                </a>
+            </div>
+        </aside>
+
+        <div class="flex-1 flex flex-col min-w-0">
+            <header class="h-16 theme-sidebar border-b flex items-center justify-between px-8 shrink-0">
+                <h1 class="text-sm font-semibold theme-text-muted">NezGym Yönetim Paneli</h1>
+
+                <div class="flex items-center gap-6">
+                    <select id="themeSelect" onchange="changeTheme(this.value)" class="text-xs font-bold px-3 py-2 rounded-xl theme-card border outline-none cursor-pointer">
+                        <option value="light">⚪ Beyaz Tema</option>
+                        <option value="dark">⚫ Karanlık Tema</option>
+                        <option value="kitty">🌸 Hello Kitty Teması</option>
+                        <option value="fitness">🔥 Fitness Teması</option>
+                    </select>
+
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm text-white shadow-sm" style="background-color: var(--accent)">A</div>
+                    </div>
+                </div>
+            </header>
+
+            <main class="flex-1 p-8 overflow-y-auto">
+                @RenderBody()
+            </main>
+        </div>
+    </div>
+
+    <script>
+        function changeTheme(themeName) {
+        document.documentElement.setAttribute('data-theme', themeName);
+        localStorage.setItem('admin-theme', themeName);
+        }
+        document.addEventListener("DOMContentLoaded", () => {
+        const savedTheme = localStorage.getItem('admin-theme') || 'light';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        document.getElementById('themeSelect').value = savedTheme;
+        });
+    </script>
+</body>
+</html>

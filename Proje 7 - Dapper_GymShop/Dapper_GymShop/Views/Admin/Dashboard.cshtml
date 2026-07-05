@@ -1,0 +1,176 @@
+﻿@model IEnumerable<Product>
+@using Dapper_GymShop.Models
+
+@{
+    ViewData["Title"] = "Dashboard";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+
+    var orders = ViewBag.Orders as List<Order> ?? new List<Order>();
+    var totalProductsSold = orders.Sum(o => o.Quantity);
+    var topProduct = orders.GroupBy(o => o.OrderedProductName)
+                           .Select(g => new { Name = g.Key, TotalQty = g.Sum(o => o.Quantity) })
+                           .OrderByDescending(x => x.TotalQty)
+                           .FirstOrDefault();
+
+    var totalInventoryValue = Model != null ? Model.Sum(p => p.Price * p.Stock) : 0;
+    var totalStock = Model != null ? Model.Sum(p => p.Stock) : 0;
+    var criticalStockCount = Model != null ? Model.Count(p => p.Stock <= 5) : 0;
+}
+
+<div class="space-y-8">
+
+    <div class="flex justify-between items-center">
+        <div>
+            <h2 class="text-2xl font-black tracking-tight">Genel Bakış Paneli</h2>
+            <p class="text-xs theme-text-muted mt-1">NezGym genel mağaza durumu ve istatistik özetleri.</p>
+        </div>
+    </div>
+
+    <!-- Hızlı Özet Kartları -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="theme-card p-6 rounded-2xl border shadow-xs flex items-center gap-4">
+            <div class="p-3 rounded-xl text-xl theme-border border" style="background-color: var(--bg-main)">📥</div>
+            <div>
+                <p class="text-xs font-semibold theme-text-muted uppercase tracking-wider">Toplam Sipariş</p>
+                <p class="text-2xl font-black">@orders.Count</p>
+            </div>
+        </div>
+        <div class="theme-card p-6 rounded-2xl border shadow-xs flex items-center gap-4">
+            <div class="p-3 rounded-xl text-xl theme-border border" style="background-color: var(--bg-main)">🏋️‍♂️</div>
+            <div>
+                <p class="text-xs font-semibold theme-text-muted uppercase tracking-wider">Aktif Ürün Sayısı</p>
+                <p class="text-2xl font-black">@(Model != null ? Model.Count() : 0)</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Raporlar Bölümü (2 Adet Basit Rapor) -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Rapor 1: Stok & Envanter Raporu -->
+        <div class="theme-card p-6 rounded-2xl border shadow-xs flex flex-col justify-between">
+            <div>
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-sm font-bold flex items-center gap-2">
+                        <span>📊</span> Stok &amp; Envanter Analizi
+                    </h3>
+                    <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-blue-500/10 text-blue-500">Envanter</span>
+                </div>
+                <div class="space-y-3.5 mt-2">
+                    <div class="flex justify-between items-center text-sm border-b theme-border pb-2">
+                        <span class="theme-text-muted">Toplam Envanter Değeri:</span>
+                        <span class="font-extrabold text-base text-primary">@totalInventoryValue.ToString("C2")</span>
+                    </div>
+                    <div class="flex justify-between items-center text-sm border-b theme-border pb-2">
+                        <span class="theme-text-muted">Toplam Stok Adedi:</span>
+                        <span class="font-bold">@totalStock Adet</span>
+                    </div>
+                    <div class="flex justify-between items-center text-sm">
+                        <span class="theme-text-muted">Kritik Stok Seviyesi (≤5):</span>
+                        @if (criticalStockCount > 0)
+                        {
+                            <span class="font-bold text-red-500 px-2 py-0.5 rounded bg-red-500/10 animate-pulse">@criticalStockCount Ürün</span>
+                        }
+                        else
+                        {
+                            <span class="font-bold text-green-500 px-2 py-0.5 rounded bg-green-500/10">Sorun Yok</span>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rapor 2: Satış & Sipariş Analizi -->
+        <div class="theme-card p-6 rounded-2xl border shadow-xs flex flex-col justify-between">
+            <div>
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-sm font-bold flex items-center gap-2">
+                        <span>📈</span> Satış &amp; Sipariş Analizi
+                    </h3>
+                    <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-500">Satış</span>
+                </div>
+                <div class="space-y-3.5 mt-2">
+                    <div class="flex justify-between items-center text-sm border-b theme-border pb-2">
+                        <span class="theme-text-muted">Toplam Satılan Ürün:</span>
+                        <span class="font-bold">@totalProductsSold Adet</span>
+                    </div>
+                    <div class="flex justify-between items-center text-sm border-b theme-border pb-2">
+                        <span class="theme-text-muted">En Çok Tercih Edilen Ürün:</span>
+                        <span class="font-bold truncate max-w-[180px] text-right" title="@(topProduct?.Name ?? "-")">
+                            @(topProduct != null ? $"{topProduct.Name} ({topProduct.TotalQty} Adet)" : "-")
+                        </span>
+                    </div>
+                    <div class="flex justify-between items-center text-sm">
+                        <span class="theme-text-muted">Ortalama Sipariş Adedi:</span>
+                        <span class="font-bold">
+                            @(orders.Any() ? Math.Round(orders.Average(o => o.Quantity), 1).ToString() : "0") Adet
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+        <div class="lg:col-span-2 theme-card rounded-2xl border shadow-xs overflow-hidden flex flex-col">
+            <div class="p-5 border-b theme-border flex justify-between items-center">
+                <h3 class="text-sm font-bold">Son Gelen Siparişler</h3>
+                <a href="/Admin/Orders" class="text-xs font-bold theme-text-muted hover:underline">Tümünü Gör →</a>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="border-b theme-border text-xs font-bold uppercase">
+                            <th class="px-6 py-3 theme-th">Müşteri</th>
+                            <th class="px-6 py-3 theme-th">Ürün</th>
+                            <th class="px-6 py-3 theme-th text-center">Adet</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y theme-border text-sm">
+                        @if (ViewBag.Orders != null && ((List<Order>)ViewBag.Orders).Any())
+                        {
+                            foreach (var order in ((List<Order>)ViewBag.Orders).Take(5)) // İlk 5'ini özet basıyoruz
+                            {
+                                <tr class="hover:opacity-80 transition">
+                                    <td class="px-6 py-3.5 font-semibold">@order.CustomerName</td>
+                                    <td class="px-6 py-3.5">
+                                        <span class="inline-flex items-center px-2.5 py-0.5 rounded-lg text-xs font-medium theme-border border">
+                                            @order.OrderedProductName
+                                        </span>
+                                    </td>
+                                    <td class="px-6 py-3.5 text-center font-bold">@order.Quantity</td>
+                                </tr>
+                            }
+                        }
+                        else
+                        {
+                            <tr>
+                                <td colspan="3" class="px-6 py-8 text-center theme-text-muted">Kayıtlı sipariş yok.</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="theme-card rounded-2xl border shadow-xs p-5 flex flex-col h-fit">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="text-sm font-bold">Aktif Vitrin</h3>
+                <a href="/Admin/Products" class="text-xs font-bold theme-text-muted hover:underline">Yönet →</a>
+            </div>
+            <div class="space-y-2">
+                @foreach (var product in Model.Take(3))
+                {
+                    <div class="p-3 border theme-border rounded-xl flex justify-between items-center" style="background-color: var(--bg-main)">
+                        <div>
+                            <h4 class="text-xs font-semibold">@product.ProductName</h4>
+                            <p class="text-[11px] theme-text-muted">Stok: @product.Stock</p>
+                        </div>
+                        <span class="text-xs font-bold">@product.Price.ToString("C2")</span>
+                    </div>
+                }
+            </div>
+        </div>
+
+    </div>
+</div>

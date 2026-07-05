@@ -1,0 +1,173 @@
+﻿@{
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+    ViewData["Title"] = "Paket Yönetimi";
+}
+
+<div class="row g-4 justify-content-center">
+
+    <!-- MEVCUT PAKET ALANI (İçerik AJAX ile dolacak) -->
+    <div class="col-lg-8">
+        <div id="current-package-container" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(99, 102, 241, 0.02) 100%); border: 1px solid rgba(99, 102, 241, 0.2); border-radius: 20px; padding: 2.5rem; position: relative; overflow: hidden;">
+            <div class="text-center py-4 ">
+                Mevcut paket bilgisi yükleniyor...
+            </div>
+        </div>
+    </div>
+
+    <!-- YÜKSELTİLEBİLİR ÜST PAKETLER (İçerik AJAX ile dolacak) -->
+    <div class="col-lg-8 mt-5">
+        <div class="mb-4">
+            <h3 class="fs-5 fw-bold text-white mb-2">Üst Modellere Yükseltin</h3>
+            <p class=" small">Franchise hacminizi büyütmek için aşağıdaki daha yüksek cirolu konseptlere geçiş talebi oluşturabilirsiniz.</p>
+        </div>
+
+        <div id="upgrades-list" class="d-flex flex-column gap-3">
+            <div class="text-center py-4 ">
+                Üst paket seçenekleri kontrol ediliyor...
+            </div>
+        </div>
+    </div>
+
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            loadDashboardData();
+        });
+
+        // Tüm verileri API'den çeken ana fonksiyon
+        function loadDashboardData() {
+            // 1. Mevcut Paketi Getir
+            $.ajax({
+                url: '/User/GetCurrentPackage', // Backend'deki ilgili Action URL'i
+                type: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    if(data) {
+                        renderCurrentPackage(data);
+                    }
+                },
+                error: function () {
+                    $('#current-package-container').html('<div class="text-danger small">Mevcut paket bilgisi alınamadı.</div>');
+                }
+            });
+
+            // 2. Yükseltilebilir Üst Paketleri Getir
+            $.ajax({
+                url: '/User/GetAvailableUpgrades', // Backend'deki ilgili Action URL'i
+                type: 'GET',
+                dataType: 'json',
+                success: function (list) {
+                    renderUpgradeList(list);
+                },
+                error: function () {
+                    $('#upgrades-list').html('<div class="text-danger small text-center">Yükseltme listesi yüklenemedi.</div>');
+                }
+            });
+        }
+
+        // Mevcut paketi HTML'e basan fonksiyon
+        function renderCurrentPackage(pkg) {
+
+            var html = "";
+            if (pkg.success == false) {
+                         html = `
+                              <div style="position: absolute; top: 1.5rem; right: 1.5rem;">
+                    <span class="badge bg-secondary bg-opacity-10 text-secondary border border-secondary border-opacity-20 px-3 py-2 rounded-pill fw-semibold">Tanımlı Değil</span>
+                </div>
+
+                <div class="small text-uppercase fw-bold tracking-wider mb-1" style="color: #a5b4fc !important;">Mevcut Franchise Modeliniz</div>
+
+                <h2 class="text-white text-opacity-50 fw-extrabold display-6 mb-3">Aktif Paketiniz Bulunmuyor</h2>
+
+                <div class="pt-4 border-top border-dark border-opacity-50 d-flex justify-content-between align-items-center">
+                    <div>
+                        <span class="d-block small text-secondary">Yatırım Değeri</span>
+                        <span class="fs-4 fw-bold text-muted">—</span>
+                    </div>
+                    <div class="text-end">
+                        <span class="d-block small text-secondary">Durum</span>
+                        <span class="text-warning small fw-medium">Lütfen bir paket seçin</span>
+                    </div>
+                </div>
+                    `;
+
+            }
+            else 
+{
+
+
+             html = `
+                <div style="position: absolute; top: 1.5rem; right: 1.5rem;">
+                    <span class="badge bg-success bg-opacity-10 text-success border border-success border-opacity-20 px-3 py-2 rounded-pill fw-semibold">Aktif Kullanımda</span>
+                </div>
+                <div class=" small text-uppercase fw-bold tracking-wider mb-1" style="color: #a5b4fc !important;">Mevcut Franchise Modeliniz</div>
+                <h2 class="text-white fw-extrabold display-6 mb-3">${pkg.packageName}</h2>
+                <div class="pt-4 border-top border-dark border-opacity-50 d-flex justify-content-between align-items-center">
+                    <div>
+                        <span class=" d-block small">Yatırım Değeri</span>
+                        <span class="fs-4 fw-bold text-white"></span>
+                    </div>
+                    <div class="text-end">
+                        <span class=" d-block small">Durum</span>
+                        <span class="text-secondary small">Tüm şube yetkileri tanımlı</span>
+                    </div>
+                </div>
+            `;
+                    }
+            $('#current-package-container').html(html);
+        }
+
+        // Üst paketleri listeleyen fonksiyon
+        function renderUpgradeList(list) {
+            let html = '';
+
+            if (!list || list.length === 0) {
+                html = `<div class=" small p-4 border border-dashed border-secondary rounded-3 text-center">
+                            Şu anda geçiş yapabileceğiniz başka bir üst paket bulunmamaktadır.
+                        </div>`;
+            } else {
+                list.forEach(function (pkg) {
+                    html += `
+                        <div style="background: rgba(255, 255, 255, 0.01); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 14px; padding: 1.5rem;" class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+                            <div>
+                                <h4 class="text-white fw-bold fs-5 mb-1">${pkg.packageName}</h4>
+                                <span class=" small">Hedef Yatırım Bedeli: <strong class="text-white">${pkg.price}</strong></span>
+                            </div>
+                            <div>
+                                <button onclick="requestUpgrade(${pkg.packageID})" style="background-color: #f8f9fa; color: #08090c; border: none; padding: 10px 24px; font-size: 0.9rem; font-weight: 600; border-radius: 8px; transition: all 0.2s;">
+                                    Bu Pakete Yükselt
+                                </button>
+                            </div>
+                        </div>
+                    `;
+                });
+            }
+            $('#upgrades-list').html(html);
+        }
+
+        // Yükseltme isteği gönderen fonksiyon
+    
+                function requestUpgrade(packageId) {
+            if (confirm("Bu pakete doğrudan geçiş yapmak istediğinize emin misiniz?")) {
+                $.ajax({
+                    url: '/User/UpgradePackage',
+                    type: 'POST',
+                    data: { packageid: packageId },
+                    success: function (response) {
+                        if(response.success) {
+                            alert(response.message);
+                            loadDashboardData(); // Paketi ve üst paket listesini anında yenile
+                        } else {
+                            alert(response.message);
+                        }
+                    },
+                    error: function () {
+                        alert("İşlem gerçekleştirilirken bir hata oluştu.");
+                    }
+                });
+            }
+        }
+    </script>
+}

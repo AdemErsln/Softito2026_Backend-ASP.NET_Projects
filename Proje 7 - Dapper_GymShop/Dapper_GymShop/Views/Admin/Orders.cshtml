@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Order>
+@{
+    ViewData["Title"] = "Sipariş Kayıtları";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="space-y-8">
+    <div>
+        <h2 class="text-2xl font-black tracking-tight">📥 Sipariş Talepleri</h2>
+        <p class="text-xs theme-text-muted mt-1">Müşteriler tarafından gönderilen tüm sipariş formları ve satın alım talepleri.</p>
+    </div>
+
+    <div class="theme-card rounded-2xl border shadow-xs overflow-hidden">
+        <div class="overflow-x-auto">
+            <table class="w-full text-left border-collapse">
+                <thead>
+                    <tr class="border-b theme-border text-xs font-bold uppercase">
+                        <th class="px-6 py-4 theme-th">Sipariş ID</th>
+                        <th class="px-6 py-4 theme-th">Müşteri Adı</th>
+                        <th class="px-6 py-4 theme-th">İletişim Telefonu</th>
+                        <th class="px-6 py-4 theme-th">İstenen Ürün</th>
+                        <th class="px-6 py-4 text-center theme-th">Miktar (Adet)</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y theme-border text-sm">
+                    @if (Model != null && Model.Any())
+                    {
+                        foreach (var order in Model)
+                        {
+                            <tr class="hover:opacity-95 transition">
+                                <td class="px-6 py-4 font-mono text-xs theme-text-muted">#ORD-@order.ID</td>
+                                <td class="px-6 py-4 font-bold">@order.CustomerName</td>
+                                <td class="px-6 py-4 font-medium">@order.CustomerPhone</td>
+                                <td class="px-6 py-4">
+                                    <span class="inline-flex items-center px-2.5 py-1 rounded-lg text-xs font-semibold theme-border border" style="background-color: var(--bg-main)">
+                                        📦 @order.OrderedProductName
+                                    </span>
+                                </td>
+                                <td class="px-6 py-4 text-center font-black">@order.Quantity</td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="5" class="px-6 py-8 text-center theme-text-muted">Henüz hiç sipariş kaydı alınmadı.</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

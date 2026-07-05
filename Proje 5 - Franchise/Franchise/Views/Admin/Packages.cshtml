@@ -1,0 +1,252 @@
+﻿@{
+    ViewData["Title"] = "Franchise Paket Yönetimi";
+    
+    Layout = "/Views/Shared/admin.cshtml";
+
+}
+
+
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <h4 class="text-white fw-bold mb-1">Franchise Paketleri</h4>
+        <p class="text-secondary small mb-0">Yatırımcılara sunulan konseptleri ve bütçeleri bu alandan yönetin.</p>
+    </div>
+    <button class="btn btn-indigo px-4 py-2 rounded-3 fw-semibold text-white" style="background-color: #6366f1;" onclick="openAddModal()">
+        <i class="fa-solid fa-plus me-2"></i> Yeni Paket Ekle
+    </button>
+</div>
+
+<div class="mb-4" style="max-width: 400px;">
+    <div class="position-relative">
+        <i class="fa-solid fa-magnifying-glass text-secondary position-absolute top-50 translate-middle-y ms-3"></i>
+        <input type="text" id="packageSearchInput" class="form-control bg-dark border-secondary border-opacity-20 text-white rounded-3 py-2 ps-5" placeholder="Paket adı veya fiyat ara...">
+    </div>
+</div>
+
+<div class="p-4 rounded-4" style="background-color: rgba(11, 12, 16, 0.4); border: 1px solid rgba(255, 255, 255, 0.04);">
+    <div class="table-responsive">
+        <table class="table table-dark table-hover align-middle mb-0" style="--bs-table-bg: transparent; --bs-table-border-color: rgba(255,255,255,0.03);">
+            <thead>
+                <tr class="text-secondary small text-uppercase">
+                    <th class="py-3" style="width: 80px;">ID</th>
+                    <th class="py-3">Paket / Konsept Adı</th>
+                    <th class="py-3">Yatırım Bedeli</th>
+                    <th class="py-3 text-end">Aksiyonlar</th>
+                </tr>
+            </thead>
+            <tbody id="packages-table-body">
+                <tr>
+                    <td colspan="4" class="text-center py-5 text-secondary">
+                        <div class="spinner-border spinner-border-sm text-indigo me-2" role="status"></div>
+                        Paketler yükleniyor...
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="modal fade" id="packageModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-white rounded-4" style="background-color: #0b0c10; border: 1px solid rgba(255, 255, 255, 0.08);">
+            <div class="modal-header border-bottom border-dark border-opacity-50 py-3 px-4">
+                <h5 class="modal-title fw-bold" id="modalTitle">Paket Ekle</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4">
+                <form id="packageForm">
+                    <input type="hidden" id="packageId" name="PackageID" />
+
+                    <div class="mb-3">
+                        <label class="form-label text-secondary small text-uppercase fw-bold">Paket / Konsept Adı</label>
+                        <input type="text" class="form-control bg-dark border-secondary border-opacity-20 text-white rounded-3 py-2" id="packageName" name="PackageName" required placeholder="Örn: Drive-Thru Entegre Kampüs">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label text-secondary small text-uppercase fw-bold">Yatırım Bedeli</label>
+                        <input type="text" class="form-control bg-dark border-secondary border-opacity-20 text-white rounded-3 py-2" id="packagePrice" name="Price" required placeholder="Örn: 350.000 TL">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer border-top border-dark border-opacity-50 p-3 px-4">
+                <button type="button" class="btn btn-dark border border-secondary border-opacity-20 px-4 py-2 rounded-3 fw-semibold" data-bs-dismiss="modal">İptal</button>
+                <button type="button" class="btn text-white px-4 py-2 rounded-3 fw-semibold" style="background-color: #6366f1;" onclick="savePackage()">Kaydet</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        var packageModal;
+
+        $(document).ready(function () {
+            packageModal = new bootstrap.Modal(document.getElementById('packageModal'));
+            loadPackages();
+
+            // 🟢 YENİ: Canlı Arama Dinleyicisi
+            $('#packageSearchInput').on('keyup', function () {
+                var value = $(this).val().toLowerCase(); // Arama kutusuna girilen metni küçük harfe çevir
+
+                $('#packages-table-body tr').filter(function () {
+                    // Satır içindeki metinlerde aranan kelime var mı kontrol et ve yoksa gizle
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+                });
+            });
+        });
+
+        // 1. LİSTELEME
+        function loadPackages() {
+            $.ajax({
+                url: '/Admin/GetPackages',
+                type: 'GET',
+                dataType: 'json',
+                success: function (response) {
+                    var html = '';
+                    if (response && response.length > 0) {
+                        $.each(response, function (index, pack) {
+                            var priceDisplay = pack.price
+                                ? `<span class="badge bg-indigo bg-opacity-10 text-indigo border border-indigo border-opacity-20 px-3 py-1 rounded-pill fw-bold">${pack.price}</span>`
+                                : `<span class="text-white text-opacity-50 small">Belirtilmedi</span>`;
+
+                            html += `
+                                <tr id="package-row-${pack.packageID}">
+                                    <td class="text-secondary fw-medium">#${pack.packageID}</td>
+                                    <td><div class="fw-semibold text-white">${pack.packageName}</div></td>
+                                    <td>${priceDisplay}</td>
+                                    <td class="text-end">
+                                        <div class="d-flex justify-content-end gap-2">
+                                            <button class="btn btn-sm btn-action btn-edit border border-secondary border-opacity-20 text-white" onclick="editPackage(${pack.packageID})">
+                                                <i class="fa-solid fa-pen-to-square"></i>
+                                            </button>
+                                            <button class="btn btn-sm btn-action btn-delete border border-danger border-opacity-20 text-danger" onclick="deletePackage(${pack.packageID})">
+                                                <i class="fa-solid fa-trash-can"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            `;
+                        });
+                    } else {
+                        html = `<tr><td colspan="4" class="text-center py-5 text-secondary">Kayıtlı franchise paketi bulunamadı.</td></tr>`;
+                    }
+                    $('#packages-table-body').html(html);
+
+                    // Arama yapıldıktan sonra liste yenilenirse filtreyi koru
+                    $('#packageSearchInput').trigger('keyup');
+                }
+            });
+        }
+
+        // 2. EKLEME MODALINI AÇ
+        function openAddModal() {
+            $('#packageForm')[0].reset();
+            $('#packageId').val('');
+            $('#modalTitle').text('Yeni Paket Ekle');
+            packageModal.show();
+        }
+
+        // 3. DÜZENLEME VERİSİNİ GETİR VE MODALI AÇ
+        function editPackage(id) {
+            $.ajax({
+                url: '/Admin/GetPackageById',
+                type: 'GET',
+                data: { id: id },
+                success: function(pack) {
+                    if(pack) {
+                        $('#packageId').val(pack.packageID);
+                        $('#packageName').val(pack.packageName);
+                        $('#packagePrice').val(pack.price);
+                        $('#modalTitle').text('Paketi Düzenle');
+                        packageModal.show();
+                    }
+                }
+            });
+        }
+
+        // 4. KAYDET
+        function savePackage() {
+            var formData = $('#packageForm').serialize();
+            var id = $('#packageId').val();
+            var targetUrl = id ? '/Admin/UpdatePackage' : '/Admin/AddPackage';
+
+            $.ajax({
+                url: targetUrl,
+                type: 'POST',
+                data: formData,
+                success: function (response) {
+                    if (response.success) {
+                        packageModal.hide();
+                        loadPackages();
+                    } else {
+                        alert(response.message || "İşlem başarısız.");
+                    }
+                }
+            });
+        }
+
+        // 5. SİLME
+        function deletePackage(id) {
+            if (confirm("Bu franchise paketini silmek istediğinize emin misiniz? Bu pakete bağlı yatırımcılar etkilenebilir!")) {
+                $.ajax({
+                    url: '/Admin/DeletePackage',
+                    type: 'POST',
+                    data: { id: id },
+                    success: function (response) {
+                        if (response.success) {
+                            $(`#package-row-${id}`).fadeOut(400, function() { $(this).remove(); });
+                        } else {
+                            alert(response.message || "Silme işlemi yapılamadı.");
+                        }
+                    }
+                });
+            }
+        }
+    </script>
+
+    <style>
+        .btn-action {
+            background-color: transparent !important;
+            width: 36px;
+            height: 36px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+        }
+
+        .btn-edit:hover {
+            background-color: rgba(255, 255, 255, 0.05) !important;
+            border-color: #fff !important;
+        }
+
+        .btn-delete:hover {
+            background-color: #dc3545 !important;
+            color: #fff !important;
+            border-color: #dc3545 !important;
+            box-shadow: 0 0 10px rgba(220, 53, 69, 0.4);
+        }
+
+        .btn-indigo:hover {
+            background-color: #4f46e5 !important;
+            box-shadow: 0 0 15px rgba(99, 102, 241, 0.4);
+        }
+
+        .text-indigo {
+            color: #6366f1;
+        }
+
+        .border-indigo {
+            border-color: #6366f1;
+        }
+
+        .form-control:focus {
+            background-color: #111318 !important;
+            color: #fff;
+            border-color: #6366f1 !important;
+            box-shadow: 0 0 10px rgba(99, 102, 241, 0.2);
+        }
+    </style>
+}

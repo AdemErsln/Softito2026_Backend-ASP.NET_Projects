@@ -1,0 +1,202 @@
+@using Dapper_GymShop.Models.ShippingCompany
+@model IEnumerable<Product>
+
+@{
+    Layout = null;
+    ViewData["Title"] = "Gym Shop - Hoş Geldiniz";
+}
+
+<style>
+    :root {
+        --bg-color: #f7f9fa;
+        --card-bg: #ffffff;
+        --accent-color: #6c5ce7; /* Soft Mor */
+        --text-color: #2d3436;
+        --muted-text: #b2bec3;
+    }
+
+    body {
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .shop-container {
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 0 20px;
+    }
+
+    .section-title {
+        text-align: center;
+        margin-bottom: 40px;
+        font-weight: 600;
+        color: var(--text-color);
+    }
+
+    /* Ürün Kartları Grid Yapısı */
+    .products-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+        margin-bottom: 60px;
+    }
+
+    .product-card {
+        background: var(--card-bg);
+        border-radius: 16px;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+        padding: 20px;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 32px rgba(108, 92, 231, 0.1);
+    }
+
+    .product-image {
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+        border-radius: 12px;
+        background-color: #fafafa;
+        margin-bottom: 15px;
+    }
+
+    .product-name {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin: 10px 0;
+    }
+
+    .product-meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    .product-price {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: var(--accent-color);
+    }
+
+    .product-stock {
+        font-size: 0.85rem;
+        color: var(--muted-text);
+    }
+
+    .btn-buy {
+        display: block;
+        width: 100%;
+        background-color: var(--accent-color);
+        color: white;
+        border: none;
+        padding: 12px;
+        border-radius: 10px;
+        margin-top: 15px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background 0.2s;
+    }
+
+    .btn-buy:hover {
+        background-color: #5b4cc4;
+    }
+
+    /* Kargo Firmaları Alanı (Footer Üstü) */
+    .shipping-section {
+        background: var(--card-bg);
+        padding: 30px;
+        border-radius: 16px;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+        margin-top: 50px;
+    }
+
+    .shipping-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .shipping-item {
+        background: #f1f2f6;
+        padding: 15px 25px;
+        border-radius: 12px;
+        text-align: center;
+        min-width: 200px;
+    }
+
+    .shipping-name {
+        font-weight: 600;
+        display: block;
+    }
+
+    .shipping-detail {
+        font-size: 0.9rem;
+        color: #747d8c;
+    }
+</style>
+
+<div class="shop-container">
+    
+    <h2 class="section-title">Haftanın Öne Çıkan Ürünleri</h2>
+    <div class="products-grid">
+        @if (Model != null && Model.Any())
+        {
+            foreach (var product in Model)
+            {
+                <div class="product-card">
+                    <img src="@(string.IsNullOrEmpty(product.ImageURL) ? "/images/no-image.png" : product.ImageURL)" 
+                         alt="@product.ProductName" class="product-image" />
+                    
+                    <div class="product-name">@product.ProductName</div>
+                    
+                    <div class="product-meta">
+                        <span class="product-price">@product.Price.ToString("C2")</span>
+                        <span class="product-stock">Stok: @product.Stock</span>
+                    </div>
+
+                    <button class="btn-buy" onclick="alert('@product.ProductName için sipariş ekranına yönlendiriliyorsunuz!')">
+                        Satın Al
+                    </button>
+                </div>
+            }
+        }
+        else
+        {
+            <p class="text-center" style="grid-column: 1/-1;">Henüz ürün eklenmemiş.</p>
+        }
+    </div>
+
+    <div class="shipping-section">
+        <h3 class="text-center" style="font-weight:600;">Anlaşmalı Kargo Firmalarımız</h3>
+        <ul class="shipping-list">
+            @if (ViewBag.Shippings != null)
+            {
+                foreach (var shipping in (List<ShippingCompany>)ViewBag.Shippings)
+                {
+                    <li class="shipping-item">
+                        <span class="shipping-name">🚚 @shipping.CompanyName</span>
+                        <span class="shipping-detail">
+                            Ücret: @shipping.ShippingPrice.ToString("C2") <br />
+                            Teslimat: @shipping.EstimatedDeliveryDays Gün
+                        </span>
+                    </li>
+                }
+            }
+            else
+            {
+                <p>Kargo bilgisi yüklenemedi.</p>
+            }
+        </ul>
+    </div>
+
+</div>

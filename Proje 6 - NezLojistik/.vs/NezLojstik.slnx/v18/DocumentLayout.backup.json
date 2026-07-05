@@ -1,0 +1,358 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\adem.eraslan\\source\\repos\\NezLojstik\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2BC7CC58-5094-4C4A-BBE7-A444B14788E2}|NezLojistikMvc\\NezLojistikMvc.csproj|c:\\users\\adem.eraslan\\source\\repos\\nezlojstik\\nezlojistikmvc\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BC7CC58-5094-4C4A-BBE7-A444B14788E2}|NezLojistikMvc\\NezLojistikMvc.csproj|solutionrelative:nezlojistikmvc\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BC7CC58-5094-4C4A-BBE7-A444B14788E2}|NezLojistikMvc\\NezLojistikMvc.csproj|c:\\users\\adem.eraslan\\source\\repos\\nezlojstik\\nezlojistikmvc\\mvc_data\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BC7CC58-5094-4C4A-BBE7-A444B14788E2}|NezLojistikMvc\\NezLojistikMvc.csproj|solutionrelative:nezlojistikmvc\\mvc_data\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BC7CC58-5094-4C4A-BBE7-A444B14788E2}|NezLojistikMvc\\NezLojistikMvc.csproj|c:\\users\\adem.eraslan\\source\\repos\\nezlojstik\\nezlojistikmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BC7CC58-5094-4C4A-BBE7-A444B14788E2}|NezLojistikMvc\\NezLojistikMvc.csproj|solutionrelative:nezlojistikmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BC7CC58-5094-4C4A-BBE7-A444B14788E2}|NezLojistikMvc\\NezLojistikMvc.csproj|c:\\users\\adem.eraslan\\source\\repos\\nezlojstik\\nezlojistikmvc\\models\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BC7CC58-5094-4C4A-BBE7-A444B14788E2}|NezLojistikMvc\\NezLojistikMvc.csproj|solutionrelative:nezlojistikmvc\\models\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BC7CC58-5094-4C4A-BBE7-A444B14788E2}|NezLojistikMvc\\NezLojistikMvc.csproj|c:\\users\\adem.eraslan\\source\\repos\\nezlojstik\\nezlojistikmvc\\nezlojistikmvc.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{2BC7CC58-5094-4C4A-BBE7-A444B14788E2}|NezLojistikMvc\\NezLojistikMvc.csproj|solutionrelative:nezlojistikmvc\\nezlojistikmvc.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A305A7C-A81E-4E95-9BFB-11DE319C25AB}|NezLojstik\\NezLojstikApi.csproj|c:\\users\\adem.eraslan\\source\\repos\\nezlojstik\\nezlojstik\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A305A7C-A81E-4E95-9BFB-11DE319C25AB}|NezLojstik\\NezLojstikApi.csproj|solutionrelative:nezlojstik\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A305A7C-A81E-4E95-9BFB-11DE319C25AB}|NezLojstik\\NezLojstikApi.csproj|c:\\users\\adem.eraslan\\source\\repos\\nezlojstik\\nezlojstik\\nezlojstikapi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{2A305A7C-A81E-4E95-9BFB-11DE319C25AB}|NezLojstik\\NezLojstikApi.csproj|solutionrelative:nezlojstik\\nezlojstikapi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A305A7C-A81E-4E95-9BFB-11DE319C25AB}|NezLojstik\\NezLojstikApi.csproj|c:\\users\\adem.eraslan\\source\\repos\\nezlojstik\\nezlojstik\\controllers\\vehiclescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A305A7C-A81E-4E95-9BFB-11DE319C25AB}|NezLojstik\\NezLojstikApi.csproj|solutionrelative:nezlojstik\\controllers\\vehiclescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A305A7C-A81E-4E95-9BFB-11DE319C25AB}|NezLojstik\\NezLojstikApi.csproj|c:\\users\\adem.eraslan\\source\\repos\\nezlojstik\\nezlojstik\\controllers\\driverscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A305A7C-A81E-4E95-9BFB-11DE319C25AB}|NezLojstik\\NezLojstikApi.csproj|solutionrelative:nezlojstik\\controllers\\driverscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A305A7C-A81E-4E95-9BFB-11DE319C25AB}|NezLojstik\\NezLojstikApi.csproj|c:\\users\\adem.eraslan\\source\\repos\\nezlojstik\\nezlojstik\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2A305A7C-A81E-4E95-9BFB-11DE319C25AB}|NezLojstik\\NezLojstikApi.csproj|solutionrelative:nezlojstik\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A305A7C-A81E-4E95-9BFB-11DE319C25AB}|NezLojstik\\NezLojstikApi.csproj|c:\\users\\adem.eraslan\\source\\repos\\nezlojstik\\nezlojstik\\nezlojstikapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2A305A7C-A81E-4E95-9BFB-11DE319C25AB}|NezLojstik\\NezLojstikApi.csproj|solutionrelative:nezlojstik\\nezlojstikapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BC7CC58-5094-4C4A-BBE7-A444B14788E2}|NezLojistikMvc\\NezLojistikMvc.csproj|c:\\users\\adem.eraslan\\source\\repos\\nezlojstik\\nezlojistikmvc\\nezlojistikmvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2BC7CC58-5094-4C4A-BBE7-A444B14788E2}|NezLojistikMvc\\NezLojistikMvc.csproj|solutionrelative:nezlojistikmvc\\nezlojistikmvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A305A7C-A81E-4E95-9BFB-11DE319C25AB}|NezLojstik\\NezLojstikApi.csproj|c:\\users\\adem.eraslan\\source\\repos\\nezlojstik\\nezlojstik\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A305A7C-A81E-4E95-9BFB-11DE319C25AB}|NezLojstik\\NezLojstikApi.csproj|solutionrelative:nezlojstik\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A305A7C-A81E-4E95-9BFB-11DE319C25AB}|NezLojstik\\NezLojstikApi.csproj|c:\\users\\adem.eraslan\\source\\repos\\nezlojstik\\nezlojstik\\models\\drive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A305A7C-A81E-4E95-9BFB-11DE319C25AB}|NezLojstik\\NezLojstikApi.csproj|solutionrelative:nezlojstik\\models\\drive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A305A7C-A81E-4E95-9BFB-11DE319C25AB}|NezLojstik\\NezLojstikApi.csproj|c:\\users\\adem.eraslan\\source\\repos\\nezlojstik\\nezlojstik\\models\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A305A7C-A81E-4E95-9BFB-11DE319C25AB}|NezLojstik\\NezLojstikApi.csproj|solutionrelative:nezlojstik\\models\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A305A7C-A81E-4E95-9BFB-11DE319C25AB}|NezLojstik\\NezLojstikApi.csproj|c:\\users\\adem.eraslan\\source\\repos\\nezlojstik\\nezlojstik\\models\\depot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A305A7C-A81E-4E95-9BFB-11DE319C25AB}|NezLojstik\\NezLojstikApi.csproj|solutionrelative:nezlojstik\\models\\depot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A305A7C-A81E-4E95-9BFB-11DE319C25AB}|NezLojstik\\NezLojstikApi.csproj|c:\\users\\adem.eraslan\\source\\repos\\nezlojstik\\nezlojstik\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2A305A7C-A81E-4E95-9BFB-11DE319C25AB}|NezLojstik\\NezLojstikApi.csproj|solutionrelative:nezlojstik\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A305A7C-A81E-4E95-9BFB-11DE319C25AB}|NezLojstik\\NezLojstikApi.csproj|c:\\users\\adem.eraslan\\source\\repos\\nezlojstik\\nezlojstik\\controllers\\depotscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A305A7C-A81E-4E95-9BFB-11DE319C25AB}|NezLojstik\\NezLojstikApi.csproj|solutionrelative:nezlojstik\\controllers\\depotscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\adem.eraslan\\source\\repos\\NezLojstik\\NezLojstik\\Migrations\\20260623233922_Init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NezLojstik\\Migrations\\20260623233922_Init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A305A7C-A81E-4E95-9BFB-11DE319C25AB}|NezLojstik\\NezLojstikApi.csproj|c:\\users\\adem.eraslan\\source\\repos\\nezlojstik\\nezlojstik\\models\\apidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A305A7C-A81E-4E95-9BFB-11DE319C25AB}|NezLojstik\\NezLojstikApi.csproj|solutionrelative:nezlojstik\\models\\apidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Users.cs",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\NezLojstik\\NezLojistikMvc\\MVC_Data\\Users.cs",
+              "RelativeDocumentMoniker": "NezLojistikMvc\\MVC_Data\\Users.cs",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\NezLojstik\\NezLojistikMvc\\MVC_Data\\Users.cs",
+              "RelativeToolTip": "NezLojistikMvc\\MVC_Data\\Users.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-24T18:42:34.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Vehicle.cs",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\NezLojstik\\NezLojistikMvc\\Models\\Vehicle.cs",
+              "RelativeDocumentMoniker": "NezLojistikMvc\\Models\\Vehicle.cs",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\NezLojstik\\NezLojistikMvc\\Models\\Vehicle.cs",
+              "RelativeToolTip": "NezLojistikMvc\\Models\\Vehicle.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-24T18:41:27.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NezLojistikMvc",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\NezLojstik\\NezLojistikMvc\\NezLojistikMvc.csproj",
+              "RelativeDocumentMoniker": "NezLojistikMvc\\NezLojistikMvc.csproj",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\NezLojstik\\NezLojistikMvc\\NezLojistikMvc.csproj",
+              "RelativeToolTip": "NezLojistikMvc\\NezLojistikMvc.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-06-24T18:35:01.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\NezLojstik\\NezLojstik\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "NezLojstik\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\NezLojstik\\NezLojstik\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "NezLojstik\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-24T18:34:55.667Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NezLojstikApi",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\NezLojstik\\NezLojstik\\NezLojstikApi.csproj",
+              "RelativeDocumentMoniker": "NezLojstik\\NezLojstikApi.csproj",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\NezLojstik\\NezLojstik\\NezLojstikApi.csproj",
+              "RelativeToolTip": "NezLojstik\\NezLojstikApi.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-06-24T18:34:54.535Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "NezLojistikMvc",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\NezLojstik\\NezLojistikMvc\\NezLojistikMvc.csproj",
+              "RelativeDocumentMoniker": "NezLojistikMvc\\NezLojistikMvc.csproj",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\NezLojstik\\NezLojistikMvc\\NezLojistikMvc.csproj",
+              "RelativeToolTip": "NezLojistikMvc\\NezLojistikMvc.csproj",
+              "ViewState": "AgIAAAEAAACqmZmZmdkhwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-06-24T18:31:44.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\NezLojstik\\NezLojistikMvc\\Models\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "NezLojistikMvc\\Models\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\NezLojstik\\NezLojistikMvc\\Models\\AppDbContext.cs*",
+              "RelativeToolTip": "NezLojistikMvc\\Models\\AppDbContext.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-24T18:31:54.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "VehiclesController.cs",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\NezLojstik\\NezLojstik\\Controllers\\VehiclesController.cs",
+              "RelativeDocumentMoniker": "NezLojstik\\Controllers\\VehiclesController.cs",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\NezLojstik\\NezLojstik\\Controllers\\VehiclesController.cs",
+              "RelativeToolTip": "NezLojstik\\Controllers\\VehiclesController.cs",
+              "ViewState": "AgIAADsAAABQZmZmZmb+v0UAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-24T00:32:47.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DriversController.cs",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\NezLojstik\\NezLojstik\\Controllers\\DriversController.cs",
+              "RelativeDocumentMoniker": "NezLojstik\\Controllers\\DriversController.cs",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\NezLojstik\\NezLojstik\\Controllers\\DriversController.cs",
+              "RelativeToolTip": "NezLojstik\\Controllers\\DriversController.cs",
+              "ViewState": "AgIAABYAAAAAzczMzMz8vwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-24T00:32:21.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\NezLojstik\\NezLojstik\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "NezLojstik\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\NezLojstik\\NezLojstik\\Properties\\launchSettings.json",
+              "RelativeToolTip": "NezLojstik\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-24T00:18:23.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "NezLojstikApi",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\NezLojstik\\NezLojstik\\NezLojstikApi.csproj",
+              "RelativeDocumentMoniker": "NezLojstik\\NezLojstikApi.csproj",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\NezLojstik\\NezLojstik\\NezLojstikApi.csproj",
+              "RelativeToolTip": "NezLojstik\\NezLojstikApi.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-06-24T00:18:35.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "20260623233922_Init.cs",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\NezLojstik\\NezLojstik\\Migrations\\20260623233922_Init.cs",
+              "RelativeDocumentMoniker": "NezLojstik\\Migrations\\20260623233922_Init.cs",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\NezLojstik\\NezLojstik\\Migrations\\20260623233922_Init.cs",
+              "RelativeToolTip": "NezLojstik\\Migrations\\20260623233922_Init.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-23T23:39:23.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "DepotsController.cs",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\NezLojstik\\NezLojstik\\Controllers\\DepotsController.cs",
+              "RelativeDocumentMoniker": "NezLojstik\\Controllers\\DepotsController.cs",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\NezLojstik\\NezLojstik\\Controllers\\DepotsController.cs",
+              "RelativeToolTip": "NezLojstik\\Controllers\\DepotsController.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAuwEYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-23T23:29:40.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ApiDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\NezLojstik\\NezLojstik\\Models\\ApiDbContext.cs",
+              "RelativeDocumentMoniker": "NezLojstik\\Models\\ApiDbContext.cs",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\NezLojstik\\NezLojstik\\Models\\ApiDbContext.cs",
+              "RelativeToolTip": "NezLojstik\\Models\\ApiDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-23T23:27:13.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Drive.cs",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\NezLojstik\\NezLojstik\\Models\\Drive.cs",
+              "RelativeDocumentMoniker": "NezLojstik\\Models\\Drive.cs",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\NezLojstik\\NezLojstik\\Models\\Drive.cs",
+              "RelativeToolTip": "NezLojstik\\Models\\Drive.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-23T23:23:19.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Vehicle.cs",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\NezLojstik\\NezLojstik\\Models\\Vehicle.cs",
+              "RelativeDocumentMoniker": "NezLojstik\\Models\\Vehicle.cs",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\NezLojstik\\NezLojstik\\Models\\Vehicle.cs",
+              "RelativeToolTip": "NezLojstik\\Models\\Vehicle.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAiwAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-23T23:21:49.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Depot.cs",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\NezLojstik\\NezLojstik\\Models\\Depot.cs",
+              "RelativeDocumentMoniker": "NezLojstik\\Models\\Depot.cs",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\NezLojstik\\NezLojstik\\Models\\Depot.cs",
+              "RelativeToolTip": "NezLojstik\\Models\\Depot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-23T23:21:06.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\NezLojstik\\NezLojstik\\appsettings.json",
+              "RelativeDocumentMoniker": "NezLojstik\\appsettings.json",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\NezLojstik\\NezLojstik\\appsettings.json",
+              "RelativeToolTip": "NezLojstik\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAANDMzMzMLwAkAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-23T23:17:01.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\NezLojstik\\NezLojistikMvc\\Program.cs",
+              "RelativeDocumentMoniker": "NezLojistikMvc\\Program.cs",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\NezLojstik\\NezLojistikMvc\\Program.cs",
+              "RelativeToolTip": "NezLojistikMvc\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-23T23:14:02.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\adem.eraslan\\source\\repos\\NezLojstik\\NezLojstik\\Program.cs",
+              "RelativeDocumentMoniker": "NezLojstik\\Program.cs",
+              "ToolTip": "C:\\Users\\adem.eraslan\\source\\repos\\NezLojstik\\NezLojstik\\Program.cs",
+              "RelativeToolTip": "NezLojstik\\Program.cs",
+              "ViewState": "AgIAAAIAAABYmZmZmRkmwAUAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-23T22:48:48.872Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
