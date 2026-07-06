@@ -4815,11 +4815,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 6 - KahveOtomati\\KahveOtomati\\KahveOtomati.csproj",
+      "projectUniqueName": "C:\\Users\\adem_\\Documents\\Softito2026_Backend-ASP.NET_Projects\\Proje 8 - KahveOtomati\\KahveOtomati\\KahveOtomati.csproj",
       "projectName": "KahveOtomati",
-      "projectPath": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 6 - KahveOtomati\\KahveOtomati\\KahveOtomati.csproj",
+      "projectPath": "C:\\Users\\adem_\\Documents\\Softito2026_Backend-ASP.NET_Projects\\Proje 8 - KahveOtomati\\KahveOtomati\\KahveOtomati.csproj",
       "packagesPath": "C:\\Users\\adem_\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\adem_\\Desktop\\ummrundadegil\\Projeler\\Proje 6 - KahveOtomati\\KahveOtomati\\obj\\",
+      "outputPath": "C:\\Users\\adem_\\Documents\\Softito2026_Backend-ASP.NET_Projects\\Proje 8 - KahveOtomati\\KahveOtomati\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
