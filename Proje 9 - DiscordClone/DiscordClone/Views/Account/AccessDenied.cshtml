@@ -1,0 +1,20 @@
+@{
+    ViewData["Title"] = "Erişim Engellendi";
+}
+
+<div class="container py-5">
+    <div class="row justify-content-center align-items-center" style="min-height: 70vh;">
+        <div class="col-md-6 text-center">
+            <div class="discord-card">
+                <i class="bi bi-shield-slash-fill text-danger mb-4" style="font-size: 5rem;"></i>
+                <h2 class="text-white fw-bold mb-3">Erişim Yetkiniz Yok</h2>
+                <p class="text-muted-discord mb-4">
+                    Bu sayfayı görüntülemek için yeterli yetkiye sahip değilsiniz. Lütfen yönetici haklarına sahip bir hesapla giriş yapın.
+                </p>
+                <a class="btn btn-discord-primary px-4 py-2" asp-controller="Home" asp-action="Index">
+                    Ana Sayfaya Dön
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

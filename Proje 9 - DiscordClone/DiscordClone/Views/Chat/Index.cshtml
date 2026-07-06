@@ -1,0 +1,367 @@
+@model DiscordClone.Models.ChatVM
+
+@{
+    ViewData["Title"] = Model.ActiveServer != null ? Model.ActiveServer.Name : "Sohbet";
+}
+
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show position-absolute start-50 translate-middle-x mt-3" style="z-index: 9999;" role="alert">
+        <i class="bi bi-exclamation-triangle-fill me-2"></i> @TempData["Error"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+<div class="chat-layout">
+    <!-- PANE 1: Server Sidebar -->
+    <div class="server-sidebar">
+        <!-- Direct Messages Icon / Home -> Şimdi sohbeti yenileyecek şekilde ayarlandı -->
+        <a class="server-icon mb-2 hover-scale @(Model.ActiveServer == null ? "active" : "")" href="javascript:void(0);" onclick="window.location.reload();" title="Sohbeti Yenile">
+            <i class="bi bi-discord fs-4"></i>
+        </a>
+        <div class="border-bottom border-secondary border-opacity-25 w-50 mb-2"></div>
+
+        <!-- Servers list -->
+        @foreach (var server in Model.UserServers)
+        {
+            var serverInitials = string.Concat(server.Name.Split(' ').Select(w => w[0])).ToUpper();
+            if (serverInitials.Length > 3) serverInitials = serverInitials.Substring(0, 3);
+
+            <a href="@Url.Action("Index", "Chat", new { serverId = server.Id })" 
+               class="server-icon mb-2 hover-scale @(Model.ActiveServer?.Id == server.Id ? "active" : "")"
+               title="@server.Name">
+                @if (!string.IsNullOrEmpty(server.Photo) && server.Photo.StartsWith("/"))
+                {
+                    <img src="@server.Photo" alt="@server.Name" style="width: 100%; height: 100%; border-radius: inherit; object-fit: cover;" />
+                }
+                else
+                {
+                    <span>@serverInitials</span>
+                }
+            </a>
+        }
+
+        <!-- Add Server Icon -->
+        <button class="server-icon-btn mb-2 hover-scale" data-bs-toggle="modal" data-bs-target="#createServerModal" title="Sunucu Oluştur">
+            <i class="bi bi-plus-lg fs-4"></i>
+        </button>
+
+        <!-- Join Server Icon -->
+        <button class="server-icon-btn mb-2 hover-scale" style="color: #5865F2; border-color: rgba(88, 101, 242, 0.4);" data-bs-toggle="modal" data-bs-target="#joinServerModal" title="Sunucuya Katıl">
+            <i class="bi bi-compass fs-4"></i>
+        </button>
+    </div>
+
+    <!-- PANE 2: Channels Sidebar -->
+    <div class="channel-sidebar">
+        @if (Model.ActiveServer != null)
+        {
+            <!-- Server Header -->
+            <div class="p-3 shadow-sm border-bottom border-secondary border-opacity-25 d-flex align-items-center justify-content-between" style="background-color: var(--discord-sidebar); height: 48px;">
+                <span class="fw-bold text-white text-truncate me-2">@Model.ActiveServer.Name</span>
+                <span class="badge bg-secondary small cursor-pointer" onclick="navigator.clipboard.writeText('@Model.ActiveServer.InvitationCode'); alert('Davet kodu kopyalandı: @Model.ActiveServer.InvitationCode');" title="Kopyalamak için tıklayın">
+                    @Model.ActiveServer.InvitationCode
+                </span>
+            </div>
+
+            <!-- Channels list -->
+            <div class="pt-3 px-2 flex-grow-1">
+                <div class="d-flex align-items-center justify-content-between px-2 mb-2">
+                    <span class="text-uppercase text-muted-discord small fw-bold" style="font-size: 0.75rem; letter-spacing: 0.5px;">Metin Kanalları</span>
+                    @if (Model.ActiveServer.OwnerId == Model.CurrentUserId)
+                    {
+                        <i class="bi bi-plus-lg text-muted-discord cursor-pointer hover-white" data-bs-toggle="modal" data-bs-target="#createChannelModal" title="Kanal Oluştur"></i>
+                    }
+                </div>
+
+                @foreach (var channel in Model.Channels)
+                {
+                    <a href="@Url.Action("Index", "Chat", new { serverId = Model.ActiveServer.Id, channelId = channel.Id })" 
+                       class="channel-link @(Model.ActiveChannel?.Id == channel.Id ? "active" : "")">
+                        <i class="bi bi-hash me-2 fs-5"></i> @channel.Name
+                    </a>
+                }
+            </div>
+            
+            <!-- User Control Panel at bottom -->
+            <div class="p-2 border-top border-secondary border-opacity-25 d-flex align-items-center justify-content-between" style="background-color: #232428; height: 52px;">
+                <div class="d-flex align-items-center text-truncate">
+                    <div class="member-avatar bg-primary me-2">
+                        @User.Identity?.Name?[0].ToString().ToUpper()
+                    </div>
+                    <div class="d-flex flex-column text-truncate">
+                        <span class="text-white text-truncate small fw-bold">@User.Identity?.Name</span>
+                        <span class="text-muted-discord" style="font-size: 0.7rem;">Çevrimiçi</span>
+                    </div>
+                </div>
+                <form asp-controller="Account" asp-action="Logout" method="post" class="d-inline">
+                    <button type="submit" class="btn btn-sm btn-link text-muted-discord p-0 hover-white">
+                        <i class="bi bi-box-arrow-right fs-5"></i>
+                    </button>
+                </form>
+            </div>
+        }
+        else
+        {
+            <div class="p-3 text-center text-muted-discord mt-5 small">
+                Bir sunucu seçin veya yenisini oluşturun!
+            </div>
+        }
+    </div>
+
+    <!-- PANE 3: Chat Area -->
+    <div class="chat-area">
+        @if (Model.ActiveChannel != null)
+        {
+            <!-- Channel Header -->
+            <div class="px-3 border-bottom border-secondary border-opacity-25 d-flex align-items-center justify-content-between" style="background-color: var(--discord-dark); height: 48px;">
+                <div class="d-flex align-items-center">
+                    <i class="bi bi-hash fs-4 text-muted-discord me-2"></i>
+                    <span class="fw-bold text-white">@Model.ActiveChannel.Name</span>
+                </div>
+                
+                <!-- Auto Refresh Control in top-right -->
+                <div class="d-flex align-items-center gap-2">
+                    <button id="refreshBtn" onclick="window.location.reload();" class="btn btn-sm btn-outline-secondary text-muted-discord hover-white d-flex align-items-center gap-1 border-0" title="Şimdi Yenile">
+                        <i class="bi bi-arrow-clockwise fs-5"></i>
+                    </button>
+                    
+                    <div class="form-check form-switch m-0 d-flex align-items-center gap-2">
+                        <input class="form-check-input bg-dark border-secondary cursor-pointer" type="checkbox" id="autoRefreshSwitch">
+                        <label class="form-check-label text-muted-discord small user-select-none" for="autoRefreshSwitch" style="font-size: 0.8rem;">Oto Yenile (5s)</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Messages area -->
+            <div class="messages-container" id="messagesContainer">
+                @if (!Model.Messages.Any())
+                {
+                    <div class="my-auto text-center text-muted-discord">
+                        <i class="bi bi-chat-dots fs-1 mb-3"></i>
+                        <h5>Bu kanalın başlangıcı.</h5>
+                        <p class="small">Burada sohbeti başlatan ilk kişi sen ol!</p>
+                    </div>
+                }
+                else
+                {
+                    @foreach (var message in Model.Messages)
+                    {
+                        var senderName = message.Sender?.UserName ?? "Bilinmeyen Kullanıcı";
+                        var senderInitial = senderName[0].ToString().ToUpper();
+                        var timeString = message.SendDate.ToLocalTime().ToString("g");
+
+                        <div class="message-item">
+                            <div class="message-avatar">@senderInitial</div>
+                            <div>
+                                <div class="message-meta">
+                                    <span class="message-sender">@senderName</span>
+                                    <span class="message-date">@timeString</span>
+                                </div>
+                                <div class="message-content text-break">@message.Content</div>
+                            </div>
+                        </div>
+                    }
+                }
+            </div>
+
+            <!-- Message Input form -->
+            <div class="chat-input-container">
+                <form asp-controller="Chat" asp-action="SendMessage" method="post" id="sendMessageForm">
+                    <input type="hidden" name="channelId" value="@Model.ActiveChannel.Id" />
+                    <input type="text" name="content" class="form-control chat-input-box" 
+                           placeholder="# @Model.ActiveChannel.Name kanalına mesaj gönder" 
+                           autocomplete="off" required />
+                </form>
+            </div>
+        }
+        else
+        {
+            <div class="my-auto text-center text-muted-discord">
+                <i class="bi bi-arrow-left-circle fs-1 mb-3"></i>
+                <h4>Hoş Geldiniz!</h4>
+                <p>Mesajlaşmaya başlamak için bir sunucu ve kanal seçin.</p>
+            </div>
+        }
+    </div>
+
+    <!-- PANE 4: Server Members Sidebar -->
+    <div class="members-sidebar">
+        @if (Model.ActiveServer != null)
+        {
+            <span class="text-uppercase text-muted-discord small fw-bold px-2 mb-2" style="font-size: 0.75rem; letter-spacing: 0.5px;">
+                Üyeler — @Model.Members.Count()
+            </span>
+
+            @foreach (var member in Model.Members)
+            {
+                var userName = member.User?.UserName ?? "Bilinmeyen Üye";
+                var userInitial = userName[0].ToString().ToUpper();
+                var isOnline = member.User?.Status == "Online";
+
+                <div class="member-item">
+                    <div class="member-avatar">
+                        @userInitial
+                        <span class="status-indicator @(isOnline ? "status-online" : "status-offline")"></span>
+                    </div>
+                    <span class="text-truncate">
+                        @if (!string.IsNullOrEmpty(member.Nickname))
+                        {
+                            @member.Nickname
+                        }
+                        else
+                        {
+                            @userName
+                        }
+
+                        @if (member.ServerRole == "Owner")
+                        {
+                            <i class="bi bi-crown-fill text-warning ms-1" title="Sunucu Sahibi"></i>
+                        }
+                    </span>
+                </div>
+            }
+        }
+        else
+        {
+            <div class="text-center text-muted-discord mt-5 small">
+                Üye listesi yok.
+            </div>
+        }
+    </div>
+</div>
+
+<!-- ================= MODALS ================= -->
+
+<!-- Create Server Modal -->
+<div class="modal fade" id="createServerModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark text-white border-secondary">
+            <div class="modal-header border-secondary">
+                <h5 class="modal-title fw-bold">Sunucunu Özelleştir</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form asp-controller="Chat" asp-action="CreateServer" method="post" enctype="multipart/form-data">
+                <div class="modal-body">
+                    <p class="text-muted-discord small">Sunucuna bir isim ve isteğe bağlı bir ikon ver. İstediğin zaman değiştirebilirsin.</p>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Sunucu Adı</label>
+                        <input type="text" name="name" class="form-control" placeholder="Benim Havalı Sunucum" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Sunucu Resmi</label>
+                        <input type="file" name="file" accept="image/*" class="form-control" />
+                    </div>
+                </div>
+                <div class="modal-footer border-secondary">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                    <button type="submit" class="btn btn-discord-primary">Oluştur</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Join Server Modal -->
+<div class="modal fade" id="joinServerModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark text-white border-secondary">
+            <div class="modal-header border-secondary">
+                <h5 class="modal-title fw-bold">Bir Sunucuya Katıl</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form asp-controller="Chat" asp-action="JoinServer" method="post">
+                <div class="modal-body">
+                    <p class="text-muted-discord small">Mevcut bir sunucuya katılmak için davet kodunu (örneğin: ABC123DE) girin.</p>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Davet Kodu</label>
+                        <input type="text" name="inviteCode" class="form-control" placeholder="Örn: 9A2E8B12" required />
+                    </div>
+                </div>
+                <div class="modal-footer border-secondary">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                    <button type="submit" class="btn btn-success">Sunucuya Katıl</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Create Channel Modal -->
+@if (Model.ActiveServer != null)
+{
+    <div class="modal fade" id="createChannelModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark text-white border-secondary">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title fw-bold">Kanal Oluştur</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form asp-controller="Chat" asp-action="CreateChannel" method="post">
+                    <input type="hidden" name="serverId" value="@Model.ActiveServer.Id" />
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label class="form-label">Kanal Adı</label>
+                            <input type="text" name="name" class="form-control" placeholder="yeni-kanal" required />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Kanal Tipi</label>
+                            <select name="type" class="form-select">
+                                <option value="@ChannelType.Text">Metin Kanalı</option>
+                                <option value="@ChannelType.Voice">Ses Kanalı</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer border-secondary">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">İptal</button>
+                        <button type="submit" class="btn btn-discord-primary">Oluştur</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+}
+
+@section Scripts {
+    <script>
+        // Auto-scroll message feed to bottom on load
+        window.addEventListener('load', function() {
+            var messagesContainer = document.getElementById("messagesContainer");
+            if (messagesContainer) {
+                messagesContainer.scrollTop = messagesContainer.scrollHeight;
+            }
+
+            // Auto Refresh logic
+            var autoRefreshSwitch = document.getElementById("autoRefreshSwitch");
+            if (autoRefreshSwitch) {
+                // Restore state from localStorage
+                var isEnabled = localStorage.getItem("chatAutoRefresh") === "true";
+                autoRefreshSwitch.checked = isEnabled;
+                
+                var refreshInterval;
+                function startInterval() {
+                    refreshInterval = setInterval(function() {
+                        window.location.reload();
+                    }, 5000); // refresh every 5 seconds
+                }
+                
+                if (isEnabled) {
+                    startInterval();
+                }
+                
+                autoRefreshSwitch.addEventListener("change", function() {
+                    localStorage.setItem("chatAutoRefresh", autoRefreshSwitch.checked);
+                    if (autoRefreshSwitch.checked) {
+                        startInterval();
+                    } else {
+                        clearInterval(refreshInterval);
+                        window.location.reload(); // Refresh once to cancel any lingering states
+                    }
+                });
+            }
+        });
+    </script>
+}

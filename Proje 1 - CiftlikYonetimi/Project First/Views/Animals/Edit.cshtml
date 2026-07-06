@@ -1,0 +1,69 @@
+﻿
+@{
+    Layout = "~/Views/Shared/adminLayout.cshtml";
+}
+
+@model Project_First.Models.Animals
+
+
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h3 mb-0 text-gray-800">Hayvan Düzenleme</h1>
+    <a href="/Animals/Index" class="d-none d-sm-inline-block btn btn-sm btn-secondary shadow-sm">
+        <i class="fas fa-arrow-left fa-sm text-white-50 mr-1"></i> Listeye Geri Dön
+    </a>
+</div>
+
+<div class="row justify-content-center">
+    <div class="col-lg-8">
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-warning">Hayvan Bilgilerini Güncelle</h6>
+            </div>
+            <div class="card-body">
+                <form action="/Animals/Edit/@Model.Id" method="post">
+                    @Html.AntiForgeryToken()
+
+                    <input type="hidden" asp-for="Id" />
+
+                    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                    <div class="form-group mb-4">
+                        <label asp-for="Name" class="font-weight-bold text-dark">Hayvan Adı</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text bg-light"><i class="fas fa-signature text-warning"></i></span>
+                            </div>
+                            <input asp-for="Name" class="form-control" required />
+                        </div>
+                        <span asp-validation-for="Name" class="text-danger small"></span>
+                    </div>
+
+                    <div class="form-group mb-4">
+                        <label asp-for="AnimalTypeId" class="font-weight-bold text-dark">Hayvan Türü</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text bg-light"><i class="fas fa-paw text-warning"></i></span>
+                            </div>
+                            <select asp-for="AnimalTypeId" class="form-control" asp-items="ViewBag.AnimalTypesList" required>
+                                <option value="">-- Tür Değiştir --</option>
+                            </select>
+                        </div>
+                        <span asp-validation-for="AnimalTypeId" class="text-danger small"></span>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <div class="d-flex justify-content-end">
+                        <a href="/Animals/Index" class="btn btn-light mr-2">İptal</a>
+                        <button type="submit" class="btn btn-warning btn-icon-split">
+                            <span class="icon text-white-50">
+                                <i class="fas fa-sync-alt"></i>
+                            </span>
+                            <span class="text">Değişiklikleri Kaydet</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

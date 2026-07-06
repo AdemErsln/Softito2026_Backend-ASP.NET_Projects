@@ -1,0 +1,26 @@
+﻿@{
+    Layout = "~/Views/Shared/adminLayout.cshtml";
+}
+
+@model List<Project_First.Models.Animals>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Hayvan Adı</th>
+            <th>Tür</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Name</td>
+                <td>@item.AnimalType?.animal_type</td>
+            </tr>
+        }
+    </tbody>
+</table>

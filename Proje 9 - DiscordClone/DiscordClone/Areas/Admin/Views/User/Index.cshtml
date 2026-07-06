@@ -1,0 +1,56 @@
+@model IEnumerable<DiscordClone.Models.AppUser>
+
+@{
+    ViewData["Title"] = "Kullanıcı Yönetimi";
+}
+
+<div class="card bg-dark text-white border-secondary p-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h4 class="fw-bold text-white"><i class="bi bi-people-fill text-primary me-2"></i>Kullanıcılar</h4>
+        <div class="d-flex gap-2">
+            <a asp-controller="Home" asp-action="ExportUsersExcel" class="btn btn-sm btn-success d-flex align-items-center gap-1">
+                <i class="bi bi-file-earmark-excel-fill"></i> Excel
+            </a>
+            <a asp-controller="Home" asp-action="ExportUsersPdf" class="btn btn-sm btn-danger d-flex align-items-center gap-1">
+                <i class="bi bi-file-earmark-pdf-fill"></i> PDF
+            </a>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-dark table-hover table-striped border-secondary align-middle">
+            <thead>
+                <tr>
+                    <th>Kullanıcı Adı</th>
+                    <th>E-posta</th>
+                    <th>Durum</th>
+                    <th>Biyografi</th>
+                    <th>İşlemler</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var user in Model)
+                {
+                    <tr>
+                        <td class="text-white fw-bold">@user.UserName</td>
+                        <td>@user.Email</td>
+                        <td>
+                            <span class="badge @(user.Status == "Online" ? "bg-success" : "bg-secondary")">
+                                @user.Status
+                            </span>
+                        </td>
+                        <td class="text-truncate" style="max-width: 200px;">@user.Bio</td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@user.Id" class="btn btn-sm btn-outline-warning me-2">
+                                <i class="bi bi-pencil-square"></i> Düzenle
+                            </a>
+                            <a asp-action="Delete" asp-route-id="@user.Id" class="btn btn-sm btn-outline-danger">
+                                <i class="bi bi-trash"></i> Sil
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

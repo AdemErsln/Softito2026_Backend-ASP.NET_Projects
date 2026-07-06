@@ -1,0 +1,21 @@
+﻿
+@{
+    Layout = "~/Views/Shared/adminLayout.cshtml";
+}
+@model Project_First.Models.Animals
+
+<form asp-action="AddAnimal" method="post">
+
+    <div>
+        <label>Name</label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+
+    <div>
+        <label>Animal Type Id</label>
+        <input asp-for="AnimalTypeId" class="form-control" />
+    </div>
+
+    <button type="submit">Save</button>
+
+</form>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Disaccord Admin Paneli</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom site.css -->
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <div class="admin-layout">
+        <!-- Admin Navigation Sidebar -->
+        <div class="admin-sidebar shadow-sm">
+            <!-- Sidebar Header -->
+            <div class="p-4 border-bottom border-secondary border-opacity-25 d-flex align-items-center" style="height: 64px;">
+                <i class="bi bi-shield-fill-check text-warning me-3 fs-4"></i>
+                <span class="text-white fw-bold tracking-wide fs-5">DISACCORD ADMIN</span>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="flex-grow-1 pt-2" style="overflow-y: auto;">
+                <a href="@Url.Action("Index", "Home", new { area = "Admin" })" class="admin-nav-link">
+                    <i class="bi bi-speedometer2"></i> Kontrol Paneli
+                </a>
+
+                <div class="text-uppercase text-muted-discord small fw-bold px-4 pt-3 pb-1" style="font-size: 0.7rem; letter-spacing: 0.5px; opacity: 0.6;">Veri Yönetimi (CRUD)</div>
+
+                <a href="@Url.Action("Index", "User", new { area = "Admin" })" class="admin-nav-link">
+                    <i class="bi bi-people"></i> Kullanıcılar
+                </a>
+                <a href="@Url.Action("Index", "Server", new { area = "Admin" })" class="admin-nav-link">
+                    <i class="bi bi-server"></i> Sunucular
+                </a>
+                <a href="@Url.Action("Index", "Channel", new { area = "Admin" })" class="admin-nav-link">
+                    <i class="bi bi-hash"></i> Kanallar
+                </a>
+                <a href="@Url.Action("Index", "Message", new { area = "Admin" })" class="admin-nav-link">
+                    <i class="bi bi-chat-left-text"></i> Mesajlar
+                </a>
+                <a href="@Url.Action("Index", "ServerMember", new { area = "Admin" })" class="admin-nav-link">
+                    <i class="bi bi-person-badge"></i> Sunucu Üyeleri
+                </a>
+                <a href="@Url.Action("Index", "Friendship", new { area = "Admin" })" class="admin-nav-link">
+                    <i class="bi bi-person-heart"></i> Arkadaşlıklar
+                </a>
+
+                <div class="text-uppercase text-muted-discord small fw-bold px-4 pt-3 pb-1" style="font-size: 0.7rem; letter-spacing: 0.5px; opacity: 0.6;">Raporlama</div>
+
+                <a href="@Url.Action("ExportExcel", "Home", new { area = "Admin" })" class="admin-nav-link text-success">
+                    <i class="bi bi-file-earmark-excel"></i> Excel Raporu Al
+                </a>
+                <a href="@Url.Action("ExportPdf", "Home", new { area = "Admin" })" class="admin-nav-link text-danger">
+                    <i class="bi bi-file-earmark-pdf"></i> PDF Raporu Al
+                </a>
+
+                <div class="border-bottom border-secondary border-opacity-25 my-3 mx-3"></div>
+
+                <a href="@Url.Action("Index", "Home", new { area = "" })" class="admin-nav-link">
+                    <i class="bi bi-box-arrow-left"></i> Arayüze Dön
+                </a>
+            </div>
+
+            <!-- Footer / Logged-in Account Info -->
+            <div class="p-3 border-top border-secondary border-opacity-25 d-flex align-items-center justify-content-between" style="background-color: #232428; height: 56px;">
+                <div class="text-truncate">
+                    <div class="text-white small fw-bold text-truncate">@User.Identity?.Name</div>
+                    <div class="text-muted-discord" style="font-size: 0.7rem;">Sistem Yöneticisi</div>
+                </div>
+                <form asp-area="" asp-controller="Account" asp-action="Logout" method="post" class="d-inline">
+                    <button type="submit" class="btn btn-sm btn-link text-muted-discord p-0 hover-white">
+                        <i class="bi bi-box-arrow-right fs-5"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Main Body Area -->
+        <div class="admin-content">
+            @RenderBody()
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

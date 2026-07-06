@@ -1,0 +1,25 @@
+@model DiscordClone.Models.Friendship
+
+@{
+    ViewData["Title"] = "İlişki Sil";
+}
+
+<div class="card bg-dark text-white border-danger p-4" style="max-width: 600px;">
+    <h4 class="fw-bold text-danger mb-4"><i class="bi bi-exclamation-triangle-fill me-2"></i>İlişkiyi Sil</h4>
+    
+    <p class="text-white">Aşağıdaki arkadaşlık/ilişki kaydını silmek istediğinizden emin misiniz?</p>
+    <div class="p-3 bg-black bg-opacity-40 rounded mb-4 text-start">
+        <div class="mb-2"><span class="text-muted-discord">Gönderen:</span> <strong class="text-white">@Model.Sender?.UserName</strong></div>
+        <div class="mb-2"><span class="text-muted-discord">Alıcı:</span> <strong class="text-white">@Model.Receiver?.UserName</strong></div>
+        <div class="mb-2"><span class="text-muted-discord">Durum:</span> <strong class="text-white">@(Model.Status == FriendshipStatus.Accepted ? "Kabul Edildi" : (Model.Status == FriendshipStatus.Blocked ? "Engellendi" : "Beklemede"))</strong></div>
+        <div><span class="text-muted-discord">Oluşturulma:</span> <strong class="text-white">@Model.CreatedDate.ToLocalTime().ToString("g")</strong></div>
+    </div>
+
+    <form asp-action="Delete" method="post">
+        <input type="hidden" asp-for="Id" />
+        <div class="d-flex gap-2">
+            <button type="submit" class="btn btn-danger px-4">Evet, Sil</button>
+            <a asp-action="Index" class="btn btn-outline-light px-4">İptal</a>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="DiscordClone.Data/DiscordClone.Data.csproj" />
+  <Project Path="DiscordClone.Model/DiscordClone.Model.csproj" />
+  <Project Path="DiscordClone/DiscordClone.csproj" />
+</Solution>

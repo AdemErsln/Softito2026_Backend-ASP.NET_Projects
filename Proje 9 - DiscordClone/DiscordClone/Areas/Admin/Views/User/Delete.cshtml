@@ -1,0 +1,24 @@
+@model DiscordClone.Models.AppUser
+
+@{
+    ViewData["Title"] = "Kullanıcı Sil";
+}
+
+<div class="card bg-dark text-white border-danger p-4" style="max-width: 600px;">
+    <h4 class="fw-bold text-danger mb-4"><i class="bi bi-exclamation-triangle-fill me-2"></i>Kullanıcıyı Sil</h4>
+    
+    <p class="text-white">Aşağıdaki kullanıcıyı silmek istediğinizden emin misiniz?</p>
+    <div class="p-3 bg-black bg-opacity-40 rounded mb-4 text-start">
+        <div class="mb-2"><span class="text-muted-discord">Kullanıcı Adı:</span> <strong class="text-white">@Model.UserName</strong></div>
+        <div class="mb-2"><span class="text-muted-discord">E-posta:</span> <strong class="text-white">@Model.Email</strong></div>
+        <div><span class="text-muted-discord">Biyografi:</span> <span class="text-muted-discord">@Model.Bio</span></div>
+    </div>
+
+    <form asp-action="Delete" method="post">
+        <input type="hidden" asp-for="Id" />
+        <div class="d-flex gap-2">
+            <button type="submit" class="btn btn-danger px-4">Evet, Sil</button>
+            <a asp-action="Index" class="btn btn-outline-light px-4">İptal</a>
+        </div>
+    </form>
+</div>

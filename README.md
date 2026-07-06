@@ -4,15 +4,16 @@ Bu çalışma alanı, modern web mimarileri, veri erişim teknolojileri (EF Core
 
 ---
 
-## 📗 Proje 1 — BorrowBookManager
+## 📗 Proje 1 — Çiftlik Yönetimi (CiftlikYonetimi)
 **Teknoloji:** ASP.NET Core MVC · EF Core Code-First · SQL Server
 
-Kitap ödünç alma yönetim sistemi. Code-First yaklaşımıyla veritabanı şeması oluşturulmuş; ödünç işlemleri, üyeler ve kitaplar için tam CRUD desteği sağlanmıştır. Raporlama sayfasında LINQ sorgulamalarıyla özet istatistikler sunulur ve bu veriler Excel ile PDF formatında indirilebilir.
+Çiftlik hayvanlarının, yem stoklarının ve üretilen çiftlik ürünlerinin yönetimini sağlayan bilgi sistemi. Code-First yaklaşımıyla kurgulanan veritabanı yapısı sayesinde hayvan türleri ve hayvanlar arasında ilişkisel bir veri tabanı şeması sunar. Admin paneli üzerinden çiftlikteki tüm hayvanların takibi, yeni hayvan eklenmesi, yem stok durumlarının izlenmesi ve günlük üretim çıktılarının raporlanması gerçekleştirilir.
 
 ### Öne Çıkan Özellikler:
-* EF Core Code-First & Migration
-* LINQ tabanlı raporlama
-* EPPlus ile Excel, QuestPDF ile PDF çıktısı
+* EF Core Code-First & Migration Yönetimi
+* Bire-Çok (One-to-Many) Veritabanı İlişkileri (Hayvanlar & Hayvan Türleri)
+* Yönetici Paneli (Admin Dashboard) üzerinden Hayvan ve Ürün Kayıt Süreçleri
+* Yem Stok Takip Sistemi (Miktar ve Tür bazlı) ve Günlük Çiftlik Üretim Verileri
 
 ---
 
@@ -71,45 +72,44 @@ Franchise bayileri ve yatırımcı paketlerinin yönetildiği, sayfa yenilenmede
 ## 🚚 Proje 6 — NezLojistik
 **Teknoloji:** ASP.NET Core Web API · ASP.NET Core MVC (Client) · EF Core Code-First · SQL Server
 
-Depo, araç ve sürücü yönetimini sağlayan lojistik takip sistemi. Web API arka ucu ve MVC ön yüzü (Client) olarak ikiye ayrılmıştır. API üzerinden dinamik CRUD işlemleri gerçekleştirilir ve araç durumları, depolar arası taşıma verileri saklanır.
+Depo, araç ve sürücü yönetimini sağlayan lojistik takip sistemi. Web API arka ucu ve MVC ön yüzü (Client) olarak ikiye ayrılmıştır. API üzerinden dinamik CRUD işlemleri, arama, PDF/Excel çıktısı ve Login/Register süreçleri gerçekleştirilmektedir.
 
 ### Öne Çıkan Özellikler:
 * Web API & MVC İstemci Mimarisi (Client-Server Separation)
 * EF Core Code-First Veritabanı İlişkileri
-* Depo, Araç ve Sürücü Takip Modelleri
+* CRUD, Arama, PDF/Excel Raporlama ve Login/Register Entegrasyonu
 
 ---
 
-## ☕ Proje 7 — KahveOtomati
-**Teknoloji:** ASP.NET Core Web API · EF Core Code-First · SQL Server · Scalar API Dokümantasyonu
+## 🏋️‍♂️ Proje 7 — Dapper_GymShop
+**Teknoloji:** ASP.NET Core MVC · Dapper Micro-ORM · SQL Server Stored Procedures & ADO.NET
 
-Kahve makinesinin malzeme stok durumlarını, ürün fiyatlarını ve satış kayıtlarını yöneten arka uç REST API servisi. EF Core Code-First veritabanı yapısıyla siparişleri ve ürün stoklarını yönetir.
-
-### Öne Çıkan Özellikler:
-* RESTful Web API Tasarımı
-* Scalar API / Swagger Dokümantasyonu
-* Malzeme, Ürün ve Stok Kontrol Algoritmaları
-
----
-
-## 🏋️‍♂️ Proje 8 — GymShop
-**Teknoloji:** ASP.NET Core MVC · Dapper Micro-ORM · SQL Server Stored Procedures
-
-Dapper Micro-ORM ve SQL Server Stored Procedure'leri kullanılarak geliştirilmiş fitness salonu yönetim ve e-ticaret vitrini. Ürün yönetimi, kargo firması yönetimi, sipariş takibi ve admin kayıt sistemini içerir. Ürün envanteri için Excel ve PDF raporlama çıktıları sunar.
+Dapper Micro-ORM ve SQL Server Stored Procedure'leri ile ADO.NET teknolojisi kullanılarak geliştirilmiş fitness salonu yönetim ve e-ticaret vitrini. CRUD işlemleri, arama filtreleri, PDF/Excel raporlama ve Login/Register işlemleri barındırır.
 
 ### Öne Çıkan Özellikler:
 * Dapper ile Yüksek Performanslı Veri Erişimi
-* Tamamen Stored Procedure Tabanlı Mimari
-* QuestPDF ve EPPlus Raporlama Entegrasyonu
+* Stored Procedure & ADO.NET Tabanlı Mimari
+* CRUD, Arama, Login/Register ve EPPlus (Excel) & QuestPDF (PDF) Raporlaması
 
 ---
 
-## 📱 Proje 9 — QRCodeGenerator
-**Teknoloji:** ASP.NET Core MVC · QRCoder Kütüphanesi · SQL Server
+## 🔌 Proje 8 — Dapper API & MVC Projesi (Eklenecek)
+**Teknoloji:** ASP.NET Core Web API · ASP.NET Core MVC · Dapper · SQL Server Stored Procedures & ADO.NET
 
-Metin, URL veya telefon numaralarını dinamik olarak QR kod görseline dönüştüren ve üretilen kodları veritabanında saklayan QR kod yönetim sistemi. Üretilen QR kodlar PNG formatında indirilebilir ve geçmişe dönük arama ile listelenebilir.
+Dapper kütüphanesi, Stored Procedure ve ADO.NET teknolojisi kullanılarak API ve MVC mimarisinde geliştirilecek proje. Kullanıcı arayüzünden API aracılığıyla CRUD işlemleri, arama, PDF/Excel çıktıları ve Login/Register işlemlerini yönetecektir.
+
+---
+
+## 🏗️ Proje 9 — Discord Clone (DiscordClone)
+**Teknoloji:** ASP.NET Core MVC · EF Core Code-First · N-Tier (N-Katmanlı) Mimari · Repository & Unit of Work · SQL Server · Identity
+
+Repository ve Unit of Work tasarım desenleri kullanılarak çok katmanlı (Presentation, Data, Model) mimaride geliştirilmiş kapsamlı Discord klonu. Kullanıcılar ASP.NET Core Identity ile güvenli bir şekilde üye olabilir, giriş yapabilir, sunucular ve kanallar oluşturarak mesajlaşabilirler. Arkadaşlık sistemi (Beklemede, Kabul Edildi, Engellendi) ve sunucu üyelik yönetimi gibi gelişmiş sosyal ağ özelliklerine sahiptir.
 
 ### Öne Çıkan Özellikler:
-* QRCoder ile Dinamik QR Kod Üretimi
-* Üretilen QR Kodların İndirilmesi ve Saklanması
-* Geçmiş Kod Arama ve Filtreleme
+* Çok Katmanlı Mimari (Presentation, Data Access ve Domain Models ayrımı)
+* Repository ve Unit of Work Tasarım Desenleri ile gevşek bağlı veri erişim katmanı
+* ASP.NET Core Identity ile Özelleştirilmiş Üyelik & Rol Yönetimi
+* Sunucu (Server), Kanal (Channel) ve Anlık Mesajlaşma (Message) Yönetimi
+* Detaylı Arkadaşlık (Friendship) ve Sunucu Üyeliği İlişkisel Veri Modelleri
+* DbSeeder ile Başlangıç Rollerinin ve Yönetici Hesaplarının Otomatik Oluşturulması
+* Admin Paneli (Dedicated Area) ile Tüm Sunucu, Kanal, Mesaj ve Kullanıcı Kontrolü

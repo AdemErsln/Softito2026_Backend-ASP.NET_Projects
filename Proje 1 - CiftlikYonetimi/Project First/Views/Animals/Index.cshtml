@@ -1,0 +1,87 @@
+@{
+    Layout = "~/Views/Shared/adminLayout.cshtml";
+}
+
+@model IEnumerable<Project_First.Models.Animals>
+
+
+<!-- Sayfa Başlığı ve Sağ Üstteki Butonlar -->
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h3 mb-0 text-gray-800">Hayvan Yönetimi</h1>
+    <div>
+        <a href="/Animals/ExportToExcel" class="d-none d-sm-inline-block btn btn-sm btn-success shadow-sm mr-2">
+            <i class="fas fa-file-excel fa-sm text-white-50 mr-1"></i> Excel Raporu
+        </a>
+        <a href="/Animals/ExportToPdf" class="d-none d-sm-inline-block btn btn-sm btn-danger shadow-sm mr-2">
+            <i class="fas fa-file-pdf fa-sm text-white-50 mr-1"></i> PDF Raporu
+        </a>
+        <a href="/Animals/Create" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+            <i class="fas fa-plus fa-sm text-white-50 mr-1"></i> Yeni Hayvan Ekle
+        </a>
+    </div>
+</div>
+
+<!-- Tablo Kartı (DataTales Card) -->
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">Kayıtlı Hayvan Listesi</h6>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped table-hover" id="dataTable" width="100%" cellspacing="0">
+                <thead class="thead-light">
+                    <tr>
+                        <th style="width: 10%;">ID</th>
+                        <th>Hayvan Adı</th>
+                        <th>Türü</th>
+                        <th style="width: 20%;" class="text-center">İşlemler</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model != null && Model.Any())
+                    {
+                        foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.Id</td>
+                                <td>@item.Name</td>
+                                <td>
+                                    <!-- AnimalTypes tablosundan gelen tür ismi -->
+                                    <span class="badge badge-info">
+                                        @(item.AnimalType != null ? item.AnimalType.animal_type : "Belirtilmemiş")
+                                    </span>
+                                </td>
+                                <td class="text-center">
+                                    <div class="btn-group" role="group">
+                                        <a href="/Animals/Edit/@item.Id" class="btn btn-sm btn-warning btn-icon-split mr-2">
+                                            <span class="icon text-white-50">
+                                                <i class="fas fa-edit"></i>
+                                            </span>
+                                            <span class="text">Güncelle</span>
+                                        </a>
+                                        <a href="/Animals/Delete/@item.Id" class="btn btn-sm btn-danger btn-icon-split"
+                                           onclick="return confirm('@item.Name isimli hayvanı silmek istediğinize emin misiniz?');">
+                                            <span class="icon text-white-50">
+                                                <i class="fas fa-trash"></i>
+                                            </span>
+                                            <span class="text">Sil</span>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="4" class="text-center text-muted py-4">
+                                <i class="fas fa-folder-open fa-2x mb-2 d-block"></i>
+                                Sistemde henüz kayıtlı bir hayvan bulunamadı.
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,61 @@
+@model IEnumerable<DiscordClone.Models.Friendship>
+
+@{
+    ViewData["Title"] = "Arkadaşlık Yönetimi";
+}
+
+<div class="card bg-dark text-white border-secondary p-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h4 class="fw-bold text-white"><i class="bi bi-person-heart text-primary me-2"></i>Arkadaşlıklar</h4>
+        <div class="d-flex gap-2 align-items-center">
+            <a asp-controller="Home" asp-action="ExportFriendshipsExcel" class="btn btn-sm btn-success d-flex align-items-center gap-1">
+                <i class="bi bi-file-earmark-excel-fill"></i> Excel
+            </a>
+            <a asp-controller="Home" asp-action="ExportFriendshipsPdf" class="btn btn-sm btn-danger d-flex align-items-center gap-1">
+                <i class="bi bi-file-earmark-pdf-fill"></i> PDF
+            </a>
+            <a asp-action="Create" class="btn btn-sm btn-discord-primary hover-scale ms-2">
+                <i class="bi bi-plus-circle-fill me-1"></i> İlişki Ekle
+            </a>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-dark table-hover table-striped border-secondary align-middle">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Gönderen</th>
+                    <th>Alıcı</th>
+                    <th>Durum</th>
+                    <th>Oluşturulma Tarihi</th>
+                    <th>İşlemler</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var friendship in Model)
+                {
+                    <tr>
+                        <td>@friendship.Id</td>
+                        <td class="text-white fw-bold">@friendship.Sender?.UserName</td>
+                        <td class="text-white fw-bold">@friendship.Receiver?.UserName</td>
+                        <td>
+                            <span class="badge @(friendship.Status == FriendshipStatus.Accepted ? "bg-success" : (friendship.Status == FriendshipStatus.Blocked ? "bg-danger" : "bg-warning text-dark"))">
+                                @(friendship.Status == FriendshipStatus.Accepted ? "Kabul Edildi" : (friendship.Status == FriendshipStatus.Blocked ? "Engellendi" : "Beklemede"))
+                            </span>
+                        </td>
+                        <td>@friendship.CreatedDate.ToLocalTime().ToString("g")</td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@friendship.Id" class="btn btn-sm btn-outline-warning me-2">
+                                <i class="bi bi-pencil-square"></i> Düzenle
+                            </a>
+                            <a asp-action="Delete" asp-route-id="@friendship.Id" class="btn btn-sm btn-outline-danger">
+                                <i class="bi bi-trash"></i> Sil
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

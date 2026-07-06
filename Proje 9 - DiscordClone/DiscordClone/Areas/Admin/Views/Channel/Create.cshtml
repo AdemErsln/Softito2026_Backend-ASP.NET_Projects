@@ -1,0 +1,41 @@
+@model DiscordClone.Models.Channel
+
+@{
+    ViewData["Title"] = "Kanal Oluştur";
+}
+
+<div class="card bg-dark text-white border-secondary p-4" style="max-width: 600px;">
+    <h4 class="fw-bold text-white mb-4"><i class="bi bi-plus-circle text-primary me-2"></i>Yeni Kanal Oluştur</h4>
+
+    <form asp-action="Create" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+        <div class="mb-3">
+            <label asp-for="Name" class="form-label">Kanal Adı</label>
+            <input asp-for="Name" class="form-control" placeholder="Örn: sohbet-odasi" required />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="ServerId" class="form-label">Sunucu</label>
+            <select asp-for="ServerId" asp-items="ViewBag.ServerList" class="form-select" required>
+                <option disabled selected>-- Sunucu Seçin --</option>
+            </select>
+            <span asp-validation-for="ServerId" class="text-danger"></span>
+        </div>
+
+        <div class="mb-4">
+            <label asp-for="Type" class="form-label">Kanal Tipi</label>
+            <select asp-for="Type" class="form-select" required>
+                <option value="@ChannelType.Text">Metin Kanalı</option>
+                <option value="@ChannelType.Voice">Ses Kanalı</option>
+            </select>
+            <span asp-validation-for="Type" class="text-danger"></span>
+        </div>
+
+        <div class="d-flex gap-2">
+            <button type="submit" class="btn btn-discord-primary px-4">Oluştur</button>
+            <a asp-action="Index" class="btn btn-outline-light px-4">İptal</a>
+        </div>
+    </form>
+</div>
