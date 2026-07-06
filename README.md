@@ -77,7 +77,9 @@ ADO.NET teknolojisi kullanılarak performansı yüksek şekilde kurgulanmış ot
 
 ### 📸 Ekran Görüntüleri:
 <p align="left">
-  <img src="screenshots/Proje 4 - NezHotel/Home.png" width="350" alt="Ana Sayfa" />
+  <img src="screenshots/Proje 4 - NezHotel/Home.png" width="260" alt="Ana Sayfa" />
+  <img src="screenshots/Proje 4 - NezHotel/Account_Login.png" width="260" alt="Kullanıcı Girişi" />
+  <img src="screenshots/Proje 4 - NezHotel/Account_Register.png" width="260" alt="Kullanıcı Kaydı" />
 </p>
 
 ---
@@ -153,7 +155,6 @@ Akıllı kahve otomatlarının takibi, içecek stokları, malzeme yönetimi, sat
 
 ### 📸 Ekran Görüntüleri:
 <p align="left">
-  <img src="screenshots/Proje 8 - KahveOtomati/Home.png" width="260" alt="API Welcome" />
   <img src="screenshots/Proje 8 - KahveOtomati/swagger_index.html.png" width="260" alt="Swagger Arayüzü" />
   <img src="screenshots/Proje 8 - KahveOtomati/scalar_v1.png" width="260" alt="Scalar Dokümantasyon" />
 </p>
@@ -176,7 +177,7 @@ Repository ve Unit of Work tasarım desenleri kullanılarak çok katmanlı (Pres
 
 ### 📸 Ekran Görüntüleri:
 <p align="left">
-  <img src="screenshots/Proje 9 - DiscordClone/Home.png" width="260" alt="Landing Page" />
-  <img src="screenshots/Proje 9 - DiscordClone/Chat.png" width="260" alt="Sohbet Arayüzü" />
-  <img src="screenshots/Proje 9 - DiscordClone/Admin.png" width="260" alt="Admin Yönetim" />
+  <img src="screenshots/Proje 9 - DiscordClone/Home.png" width="260" alt="Giriş Sayfası" />
+  <img src="screenshots/Proje 9 - DiscordClone/Account_Login.png" width="260" alt="Giriş Yap" />
+  <img src="screenshots/Proje 9 - DiscordClone/Chat.png" width="260" alt="Mesajlaşma Paneli" />
 </p>

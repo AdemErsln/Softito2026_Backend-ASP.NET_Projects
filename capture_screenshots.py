@@ -70,7 +70,32 @@ def find_mvc_routes(project_dir):
     routes = ["/"]  # Base URL
     views_dir = os.path.join(project_dir, "Views")
     areas_dir = os.path.join(project_dir, "Areas")
+    pages_dir = os.path.join(project_dir, "Pages")
     
+    # Razor Pages
+    if os.path.exists(pages_dir):
+        for root, dirs, files in os.walk(pages_dir):
+            if "Shared" in root:
+                continue
+            for file in files:
+                if file.endswith(".cshtml") and not file.startswith("_"):
+                    rel_path = os.path.relpath(os.path.join(root, file), pages_dir)
+                    rel_route = os.path.splitext(rel_path)[0].replace(os.sep, "/")
+                    
+                    if rel_route.lower() == "index":
+                        continue  # already covered by "/"
+                    
+                    if rel_route.lower().endswith("/index"):
+                        route = "/" + rel_route[:-6]
+                    else:
+                        route = "/" + rel_route
+                        
+                    base_name = os.path.splitext(file)[0].lower()
+                    if base_name in ["duzenle", "sil", "edit", "delete", "details", "update"]:
+                        route += "/1"
+                        
+                    routes.append(route)
+                    
     # Standard Views
     if os.path.exists(views_dir):
         for controller in os.listdir(views_dir):
@@ -241,7 +266,7 @@ def main():
                     full_url = f"{url}{route}"
                     safe_route_name = re.sub(r'[\\/*?:"<>|]', "_", route.strip("/")).replace(" ", "_")
                     if not safe_route_name:
-                        safe_route_name = "Home"
+                        safe_route_name = "Api_Root" if is_api else "Home"
                     
                     output_file = os.path.abspath(os.path.join(proj_screenshot_dir, f"{safe_route_name}.png"))
                     capture_screenshot(full_url, output_file)
