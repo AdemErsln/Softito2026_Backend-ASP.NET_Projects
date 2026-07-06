@@ -93,10 +93,16 @@ Dapper Micro-ORM ve SQL Server Stored Procedure'leri ile ADO.NET teknolojisi kul
 
 ---
 
-## 🔌 Proje 8 — Dapper API & MVC Projesi (Eklenecek)
-**Teknoloji:** ASP.NET Core Web API · ASP.NET Core MVC · Dapper · SQL Server Stored Procedures & ADO.NET
+## ☕ Proje 8 — Kahve Otomatı (KahveOtomati)
+**Teknoloji:** ASP.NET Core Web API · EF Core Code-First · SQL Server · Scalar API Documentation
 
-Dapper kütüphanesi, Stored Procedure ve ADO.NET teknolojisi kullanılarak API ve MVC mimarisinde geliştirilecek proje. Kullanıcı arayüzünden API aracılığıyla CRUD işlemleri, arama, PDF/Excel çıktıları ve Login/Register işlemlerini yönetecektir.
+Akıllı kahve otomatlarının takibi, içecek stokları, malzeme yönetimi, satış takibi ve arıza kayıtlarının yönetilmesini sağlayan modern bir Web API projesi. Scalar ile entegre edilmiş interaktif dokümantasyonu sayesinde tüm uç noktalar (endpoints) kolayca test edilebilir.
+
+### Öne Çıkan Özellikler:
+* EF Core Code-First ile Tasarlanmış İlişkisel Veritabanı Modelleri
+* İçecekler (Icecekler), Satışlar (Satislar), Malzeme Stoku (MalzemeStoklari) ve Arıza Kayıtları (ArizaKayitlari) Yönetimi
+* Scalar ve OpenAPI Entegrasyonu ile Modern API Test Arayüzü
+* SQL Server ile Güçlü Veri Yönetimi
 
 ---
 
