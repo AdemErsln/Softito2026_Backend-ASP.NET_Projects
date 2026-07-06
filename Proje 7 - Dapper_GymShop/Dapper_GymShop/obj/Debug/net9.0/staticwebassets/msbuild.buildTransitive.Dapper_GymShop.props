@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\Dapper_GymShop.props" />
-</Project>

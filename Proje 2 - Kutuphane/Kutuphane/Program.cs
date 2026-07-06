@@ -51,4 +51,54 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}")
     .WithStaticAssets();
 
+using (var scope = app.Services.CreateScope())
+{
+    try
+    {
+        var context = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+        context.Database.Migrate();
+        
+        if (!context.Authors.Any())
+        {
+            context.Authors.AddRange(
+                new Author { Name = "Yaşar Kemal", Country = "Türkiye" },
+                new Author { Name = "Fyodor Dostoyevski", Country = "Rusya" },
+                new Author { Name = "George Orwell", Country = "İngiltere" }
+            );
+            context.SaveChanges();
+        }
+        
+        if (!context.Books.Any())
+        {
+            var yasar = context.Authors.FirstOrDefault(a => a.Name == "Yaşar Kemal");
+            var dostoyevski = context.Authors.FirstOrDefault(a => a.Name == "Fyodor Dostoyevski");
+            var orwell = context.Authors.FirstOrDefault(a => a.Name == "George Orwell");
+            
+            context.Books.AddRange(
+                new Book { Title = "İnce Memed", PublishYear = 1955, AuthorId = yasar?.AuthorId ?? 1 },
+                new Book { Title = "Suç ve Ceza", PublishYear = 1866, AuthorId = dostoyevski?.AuthorId ?? 2 },
+                new Book { Title = "1984", PublishYear = 1949, AuthorId = orwell?.AuthorId ?? 3 }
+            );
+            context.SaveChanges();
+        }
+        
+        if (!context.Borrowers.Any())
+        {
+            var book = context.Books.FirstOrDefault();
+            if (book != null)
+            {
+                context.Borrowers.AddRange(
+                    new Borrower { FullName = "Ahmet Yılmaz", BorrowDate = DateTime.Now.AddDays(-5), BookId = book.BookId },
+                    new Borrower { FullName = "Ayşe Kaya", BorrowDate = DateTime.Now.AddDays(-2), BookId = book.BookId }
+                );
+                context.SaveChanges();
+            }
+        }
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Error seeding database: {ex.Message}");
+    }
+}
+
 app.Run();

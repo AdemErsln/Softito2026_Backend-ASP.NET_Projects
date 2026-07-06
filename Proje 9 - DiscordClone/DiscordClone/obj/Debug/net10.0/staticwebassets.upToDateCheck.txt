@@ -1,4 +1,0 @@
-C:\Users\adem.eraslan\Desktop\DiscordClone\DiscordClone\wwwroot\css\site.css
-wwwroot\css\site.css
-wwwroot\img\serverpics\66ffd6d2-5272-4804-a0a3-197f9f0a5084.png
-wwwroot\img\serverpics\97170c98-b1b5-48ba-b32a-6aebcaf1dcf9.png

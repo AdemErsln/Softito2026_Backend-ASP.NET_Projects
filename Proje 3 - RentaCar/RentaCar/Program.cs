@@ -50,4 +50,57 @@ app.MapControllerRoute(
     .WithStaticAssets();
 
 
+using (var scope = app.Services.CreateScope())
+{
+    try
+    {
+        var context = scope.ServiceProvider.GetRequiredService<ApplicationDBContext>();
+        context.Database.Migrate();
+        
+        if (!context.Araclar.Any())
+        {
+            context.Araclar.AddRange(
+                new RentACar.Models.Araclars { Plaka = "34ABC123", Marka = "BMW", Model = "320i", Yil = 2022, GunlukUcret = 1500, Durum = "Müsait" },
+                new RentACar.Models.Araclars { Plaka = "06XYZ987", Marka = "Audi", Model = "A4", Yil = 2021, GunlukUcret = 1400, Durum = "Müsait" },
+                new RentACar.Models.Araclars { Plaka = "35QWE456", Marka = "Fiat", Model = "Egea", Yil = 2023, GunlukUcret = 800, Durum = "Müsait" }
+            );
+            context.SaveChanges();
+        }
+        
+        if (!context.kullanicilars.Any())
+        {
+            context.kullanicilars.AddRange(
+                new RentacCar.Model.Kullanicilar { AdSoyad = "Adem Erslan", yas = 25, Telefon = "05555555555" },
+                new RentacCar.Model.Kullanicilar { AdSoyad = "Ahmet Yılmaz", yas = 30, Telefon = "05321234567" }
+            );
+            context.SaveChanges();
+        }
+        
+        if (!context.Kiralamas.Any())
+        {
+            var car = context.Araclar.FirstOrDefault();
+            var customer = context.kullanicilars.FirstOrDefault();
+            if (car != null && customer != null)
+            {
+                context.Kiralamas.Add(
+                    new RentacCar.Model.Kiralama
+                    {
+                        CarId = car.CarId,
+                        CustomerId = customer.Id,
+                        AlisTarihi = DateTime.Now.AddDays(-3),
+                        IadeTarihi = DateTime.Now.AddDays(2),
+                        ToplamTutar = car.GunlukUcret * 5,
+                        Durum = "Aktif"
+                    }
+                );
+                context.SaveChanges();
+            }
+        }
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Error seeding database: {ex.Message}");
+    }
+}
+
 app.Run();
