@@ -1,0 +1,96 @@
+@model IEnumerable<NezLojistikMvc.Models.Vehicle>
+@{
+    ViewData["Title"] = "Araç Yönetimi - Nez Lojistik";
+}
+
+<div class="admin-layout">
+    <div class="admin-sidebar">
+        <div class="sidebar-logo">
+            <h2>NEZ LOJİSTİK</h2>
+            <p>Yönetim Sistemi</p>
+        </div>
+        <div class="sidebar-nav">
+            <a asp-action="Panel"><span class="nav-icon">📊</span> Panel Özet</a>
+            <a asp-action="Depots"><span class="nav-icon">🏢</span> Depolar (API)</a>
+            <a asp-action="Drivers"><span class="nav-icon">👤</span> Sürücüler (API)</a>
+            <a asp-action="Vehicles" class="active"><span class="nav-icon">🚚</span> Araçlar (API)</a>
+        </div>
+        <div class="sidebar-footer">
+            <a asp-action="Logout">Oturumu Kapat</a>
+        </div>
+    </div>
+
+    <div class="admin-main">
+        <div class="admin-header">
+            <h1>Araçlar <span>(API)</span></h1>
+            <button onclick="toggleForm()" class="btn-add">+ Yeni Araç Ekle</button>
+        </div>
+
+        <!-- Add Form -->
+        <div id="addVehicleForm" class="add-form">
+            <h3>Yeni Araç Kaydı</h3>
+            <form asp-action="AddVehicle" method="post">
+                <div class="form-row">
+                    <input type="text" name="Plate" placeholder="Plaka" required />
+                    <input type="text" name="Brand" placeholder="Marka / Model" required />
+                    <input type="number" name="Capacity" placeholder="Kapasite (Ton)" required min="1" />
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn-add">Kaydet</button>
+                    <button type="button" onclick="toggleForm()" class="btn-delete" style="background:transparent; border-color:var(--glass-border); color:var(--gray);">İptal</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="data-section">
+            <div class="data-section-header">
+                <h2>Araç Listesi</h2>
+            </div>
+            
+            @if (Model == null || !Model.Any())
+            {
+                <div class="empty-state">
+                    <p>Sistemde henüz kayıtlı araç bulunmamaktadır veya API bağlantısı sağlanamadı.</p>
+                </div>
+            }
+            else
+            {
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Plaka</th>
+                            <th>Marka / Model</th>
+                            <th>Kapasite (Ton)</th>
+                            <th style="width: 100px; text-align: right;">İşlemler</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var vehicle in Model)
+                        {
+                            <tr>
+                                <td>@vehicle.Id</td>
+                                <td>@vehicle.Plate</td>
+                                <td>@vehicle.Brand</td>
+                                <td>@vehicle.Capacity Ton</td>
+                                <td style="text-align: right;">
+                                    <form asp-action="DeleteVehicle" method="post" style="display:inline;" onsubmit="return confirm('Bu aracı silmek istediğinize emin misiniz?');">
+                                        <input type="hidden" name="id" value="@vehicle.Id" />
+                                        <button type="submit" class="btn-delete">Sil</button>
+                                    </form>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleForm() {
+        var form = document.getElementById("addVehicleForm");
+        form.classList.toggle("show");
+    }
+</script>

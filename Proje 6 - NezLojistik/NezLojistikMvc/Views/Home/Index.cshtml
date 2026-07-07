@@ -1,328 +1,41 @@
 @{
-    ViewData["Title"] = "Lojistik Takip Paneli";
+    ViewData["Title"] = "Ana Sayfa - Nez Lojistik";
 }
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-<style>
-    body {
-        font-family: 'Outfit', sans-serif;
-        background: linear-gradient(135deg, #090d16 0%, #111827 100%) !important;
-        color: #f1f5f9 !important;
-        min-height: 100vh;
-        overflow-x: hidden;
-    }
-
-    /* Override default container wrapper */
-    .container {
-        max-width: 100% !important;
-        padding: 0 !important;
-    }
-    
-    main.pb-3 {
-        padding-bottom: 0 !important;
-    }
-
-    .navbar, footer {
-        display: none !important;
-    }
-
-    /* Premium Custom Navigation */
-    .custom-nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1.25rem 4rem;
-        background: rgba(9, 13, 22, 0.6);
-        backdrop-filter: blur(20px);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-        position: sticky;
-        top: 0;
-        z-index: 100;
-    }
-
-    .brand {
-        font-size: 1.6rem;
-        font-weight: 800;
-        color: #38bdf8;
-        display: flex;
-        align-items: center;
-        gap: 0.75rem;
-        text-decoration: none;
-        letter-spacing: 0.5px;
-    }
-
-    .brand i {
-        color: #6366f1;
-        filter: drop-shadow(0 0 8px rgba(99, 102, 241, 0.6));
-    }
-
-    .nav-actions {
-        display: flex;
-        gap: 1.25rem;
-    }
-
-    .btn-custom {
-        padding: 0.65rem 1.6rem;
-        border-radius: 10px;
-        font-size: 0.95rem;
-        font-weight: 600;
-        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        text-decoration: none;
-        display: inline-flex;
-        align-items: center;
-        gap: 0.6rem;
-    }
-
-    .btn-login {
-        background: rgba(255, 255, 255, 0.05);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        color: #e2e8f0;
-    }
-
-    .btn-login:hover {
-        background: rgba(255, 255, 255, 0.12);
-        border-color: rgba(255, 255, 255, 0.25);
-        color: #ffffff;
-        transform: translateY(-2px);
-    }
-
-    .btn-primary-custom {
-        background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
-        border: none;
-        color: #ffffff;
-        box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
-    }
-
-    .btn-primary-custom:hover {
-        box-shadow: 0 6px 20px rgba(99, 102, 241, 0.55);
-        transform: translateY(-2px);
-        color: #ffffff;
-    }
-
-    /* Hero Section */
-    .hero-container {
-        max-width: 1200px;
-        margin: 5rem auto 3rem;
-        padding: 0 2rem;
-        text-align: center;
-        position: relative;
-    }
-
-    .hero-container::before {
-        content: "";
-        position: absolute;
-        width: 300px;
-        height: 300px;
-        background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
-        top: -100px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: -1;
-        pointer-events: none;
-    }
-
-    .hero-title {
-        font-size: 3.8rem;
-        font-weight: 800;
-        line-height: 1.15;
-        background: linear-gradient(135deg, #ffffff 40%, #94a3b8 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        margin-bottom: 1.5rem;
-        letter-spacing: -1px;
-    }
-
-    .hero-subtitle {
-        font-size: 1.25rem;
-        color: #94a3b8;
-        max-width: 650px;
-        margin: 0 auto 3.5rem;
-        font-weight: 400;
-        line-height: 1.6;
-    }
-
-    /* Shipment Tracking Glass Card */
-    .tracking-card {
-        background: rgba(17, 24, 39, 0.5);
-        backdrop-filter: blur(20px);
-        border: 1px solid rgba(255, 255, 255, 0.08);
-        border-radius: 24px;
-        padding: 3rem;
-        max-width: 800px;
-        margin: 0 auto 6rem;
-        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-    }
-
-    .tracking-input-group {
-        display: flex;
-        gap: 1.25rem;
-        margin-bottom: 1.75rem;
-    }
-
-    .tracking-input {
-        flex: 1;
-        background: rgba(9, 13, 22, 0.7);
-        border: 1px solid rgba(255, 255, 255, 0.12);
-        border-radius: 14px;
-        padding: 1.1rem 1.6rem;
-        color: #ffffff;
-        font-size: 1.15rem;
-        transition: all 0.3s;
-        font-family: inherit;
-    }
-
-    .tracking-input:focus {
-        outline: none;
-        border-color: #6366f1;
-        box-shadow: 0 0 15px rgba(99, 102, 241, 0.3);
-    }
-
-    .btn-track {
-        background: linear-gradient(135deg, #0ea5e9 0%, #2563eb 100%);
-        border: none;
-        border-radius: 14px;
-        color: white;
-        padding: 0 2.8rem;
-        font-weight: 700;
-        font-size: 1.1rem;
-        cursor: pointer;
-        display: inline-flex;
-        align-items: center;
-        gap: 0.75rem;
-        box-shadow: 0 6px 20px rgba(14, 165, 233, 0.4);
-        transition: all 0.3s;
-    }
-
-    .btn-track:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 8px 25px rgba(14, 165, 233, 0.55);
-    }
-
-    /* Stats Section */
-    .stats-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-        gap: 2.5rem;
-        max-width: 1100px;
-        margin: 0 auto 6rem;
-    }
-
-    .stat-card {
-        background: rgba(17, 24, 39, 0.35);
-        border: 1px solid rgba(255, 255, 255, 0.06);
-        border-radius: 20px;
-        padding: 2.5rem 2rem;
-        text-align: center;
-        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    .stat-card:hover {
-        transform: translateY(-8px);
-        background: rgba(17, 24, 39, 0.55);
-        border-color: rgba(99, 102, 241, 0.3);
-        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-    }
-
-    .stat-icon {
-        font-size: 2.5rem;
-        color: #38bdf8;
-        margin-bottom: 1.25rem;
-        display: inline-block;
-        transition: transform 0.3s;
-    }
-
-    .stat-card:hover .stat-icon {
-        transform: scale(1.1);
-    }
-
-    .stat-value {
-        font-size: 2.8rem;
-        font-weight: 800;
-        color: #ffffff;
-        margin-bottom: 0.5rem;
-        letter-spacing: -0.5px;
-    }
-
-    .stat-label {
-        font-size: 1rem;
-        color: #94a3b8;
-        font-weight: 500;
-        letter-spacing: 0.2px;
-    }
-
-    /* Footer area */
-    .custom-footer {
-        padding: 3rem 0;
-        background: rgba(9, 13, 22, 0.9);
-        border-top: 1px solid rgba(255, 255, 255, 0.05);
-        text-align: center;
-        color: #64748b;
-        font-size: 0.95rem;
-    }
-</style>
-
-<div class="custom-nav">
-    <a href="/" class="brand">
-        <i class="fa-solid fa-truck-fast"></i>
-        <span>NEZ LOJİSTİK</span>
-    </a>
-    <div class="nav-actions">
-        <a href="/Account/Login" class="btn-custom btn-login">
-            <i class="fa-solid fa-right-to-bracket"></i> Giriş Yap
-        </a>
-        <a href="/Admin" class="btn-custom btn-primary-custom">
-            <i class="fa-solid fa-gauge"></i> Yönetim Paneli
-        </a>
-    </div>
-</div>
-
-<div class="hero-container">
-    <h1 class="hero-title">Akıllı Lojistik & Depolama Çözümleri</h1>
-    <p class="hero-subtitle">
-        Nez Lojistik akıllı takip altyapısı ve araç filosu yönetimi ile gönderileriniz, depolarınız ve sürücüleriniz tek bir güvenli çatı altında.
-    </p>
-
-    <div class="tracking-card">
-        <h3 class="mb-4 text-start font-weight-bold" style="color: #38bdf8; display: flex; align-items: center; gap: 0.5rem;">
-            <i class="fa-solid fa-location-dot"></i> Gönderi Sorgula
-        </h3>
-        <div class="tracking-input-group">
-            <input type="text" class="tracking-input" placeholder="Örn: NZ-9827361-TR" value="NZ-2026-TR881" />
-            <button class="btn-track">
-                <i class="fa-solid fa-magnifying-glass"></i> Sorgula
-            </button>
+<div class="landing-hero">
+    <nav class="landing-nav">
+        <div class="landing-logo">NEZ LOJİSTİK</div>
+        <div class="landing-nav-links">
+            <a asp-controller="Account" asp-action="Login" class="btn-outline">Kullanıcı Girişi</a>
+            <a asp-controller="Admin" asp-action="Login" class="btn-primary">Yönetici Paneli</a>
         </div>
-        <p class="text-muted text-start mb-0 font-weight-light" style="font-size: 0.9rem;">
-            * 12 haneli Nez takip kodunuz ile anlık konum ve durum bilgisini izleyebilirsiniz.
-        </p>
-    </div>
+    </nav>
 
-    <div class="stats-grid">
-        <div class="stat-card">
-            <div class="stat-icon" style="color: #6366f1;"><i class="fa-solid fa-boxes-stacked"></i></div>
-            <div class="stat-value">1,250+</div>
-            <div class="stat-label">Aktif Sevkiyat</div>
-        </div>
-        <div class="stat-card">
-            <div class="stat-icon" style="color: #0ea5e9;"><i class="fa-solid fa-truck-moving"></i></div>
-            <div class="stat-value">45+</div>
-            <div class="stat-label">Lojistik Araç</div>
-        </div>
-        <div class="stat-card">
-            <div class="stat-icon" style="color: #10b981;"><i class="fa-solid fa-warehouse"></i></div>
-            <div class="stat-value">12</div>
-            <div class="stat-label">Akıllı Depo</div>
-        </div>
-        <div class="stat-card">
-            <div class="stat-icon" style="color: #f59e0b;"><i class="fa-solid fa-id-card"></i></div>
-            <div class="stat-value">99.8%</div>
-            <div class="stat-label">Zamanında Teslimat</div>
+    <div class="landing-content">
+        <div class="landing-badge">Yeni Nesil Taşımacılık & Depolama</div>
+        <h1>Lojistikte Güven ve <br/><span>Hızın Yeni Adresi</span></h1>
+        <p>Gelişmiş veri altyapımız, deneyimli sürücülerimiz ve modern depolarımızla sevkiyatlarınızı güvenle yönetiyor, bölgelere özel taşımacılık çözümleri sunuyoruz.</p>
+        <div class="landing-buttons">
+            <a asp-controller="Account" asp-action="Login" class="btn-primary">Sürücü & Personel Girişi</a>
+            <a asp-controller="Admin" asp-action="Login" class="btn-outline">Yönetici Girişi</a>
         </div>
     </div>
-</div>
 
-<div class="custom-footer">
-    &copy; 2026 Nez Lojistik A.Ş. Tüm Hakları Saklıdır.
+    <div class="features-section">
+        <div class="feature-card">
+            <div class="feature-icon">🚚</div>
+            <h3>Geniş Araç Filosu</h3>
+            <p>Modern, yüksek kapasiteli ve düzenli bakımı yapılan tır ve kamyonlarımızla her bölgeye kesintisiz sevkiyat.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🏢</div>
+            <h3>Stratejik Depolar</h3>
+            <p>Ülke genelinde stratejik noktalarda konumlandırılmış, yüksek güvenlikli ve modern depolama alanları.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🗺️</div>
+            <h3>Bölgesel Yönetim</h3>
+            <p>Her kullanıcıya ve personele özel olarak atanmış çalışma bölgeleri ile optimize edilmiş yerel operasyonlar.</p>
+        </div>
+    </div>
 </div>

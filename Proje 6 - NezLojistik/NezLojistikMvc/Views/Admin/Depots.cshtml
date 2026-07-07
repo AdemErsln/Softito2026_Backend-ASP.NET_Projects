@@ -1,0 +1,96 @@
+@model IEnumerable<NezLojistikMvc.Models.Depot>
+@{
+    ViewData["Title"] = "Depo Yönetimi - Nez Lojistik";
+}
+
+<div class="admin-layout">
+    <div class="admin-sidebar">
+        <div class="sidebar-logo">
+            <h2>NEZ LOJİSTİK</h2>
+            <p>Yönetim Sistemi</p>
+        </div>
+        <div class="sidebar-nav">
+            <a asp-action="Panel"><span class="nav-icon">📊</span> Panel Özet</a>
+            <a asp-action="Depots" class="active"><span class="nav-icon">🏢</span> Depolar (API)</a>
+            <a asp-action="Drivers"><span class="nav-icon">👤</span> Sürücüler (API)</a>
+            <a asp-action="Vehicles"><span class="nav-icon">🚚</span> Araçlar (API)</a>
+        </div>
+        <div class="sidebar-footer">
+            <a asp-action="Logout">Oturumu Kapat</a>
+        </div>
+    </div>
+
+    <div class="admin-main">
+        <div class="admin-header">
+            <h1>Depolar <span>(API)</span></h1>
+            <button onclick="toggleForm()" class="btn-add">+ Yeni Depo Ekle</button>
+        </div>
+
+        <!-- Add Form -->
+        <div id="addDepotForm" class="add-form">
+            <h3>Yeni Depo Kaydı</h3>
+            <form asp-action="AddDepot" method="post">
+                <div class="form-row">
+                    <input type="text" name="DepotName" placeholder="Depo Adı" required />
+                    <input type="text" name="Address" placeholder="Adres" required />
+                    <input type="text" name="City" placeholder="Şehir" required />
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn-add">Kaydet</button>
+                    <button type="button" onclick="toggleForm()" class="btn-delete" style="background:transparent; border-color:var(--glass-border); color:var(--gray);">İptal</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="data-section">
+            <div class="data-section-header">
+                <h2>Depo Listesi</h2>
+            </div>
+            
+            @if (Model == null || !Model.Any())
+            {
+                <div class="empty-state">
+                    <p>Sistemde henüz kayıtlı depo bulunmamaktadır veya API bağlantısı sağlanamadı.</p>
+                </div>
+            }
+            else
+            {
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Depo Adı</th>
+                            <th>Adres</th>
+                            <th>Şehir</th>
+                            <th style="width: 100px; text-align: right;">İşlemler</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var depot in Model)
+                        {
+                            <tr>
+                                <td>@depot.Id</td>
+                                <td>@depot.DepotName</td>
+                                <td>@depot.Address</td>
+                                <td>@depot.City</td>
+                                <td style="text-align: right;">
+                                    <form asp-action="DeleteDepot" method="post" style="display:inline;" onsubmit="return confirm('Bu depoyu silmek istediğinize emin misiniz?');">
+                                        <input type="hidden" name="id" value="@depot.Id" />
+                                        <button type="submit" class="btn-delete">Sil</button>
+                                    </form>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleForm() {
+        var form = document.getElementById("addDepotForm");
+        form.classList.toggle("show");
+    }
+</script>

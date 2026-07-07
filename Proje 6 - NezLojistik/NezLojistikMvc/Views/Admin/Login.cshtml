@@ -1,12 +1,18 @@
 @model NezLojistikMvc.Models.LoginViewModel
 @{
-    ViewData["Title"] = "Giriş Yap - Nez Lojistik";
+    ViewData["Title"] = "Yönetici Girişi - Nez Lojistik";
 }
 
 <div class="login-page">
     <div class="login-card">
-        <h2>Kullanıcı Girişi</h2>
-        <p class="login-subtitle">Nez Lojistik Personel ve Sürücü Paneli</p>
+        <h2>Yönetici Girişi</h2>
+        <p class="login-subtitle">Nez Lojistik Yönetim Paneli</p>
+
+        <div style="background: rgba(6,182,212,0.1); border: 1px solid rgba(6,182,212,0.2); padding: 12px; border-radius: var(--radius-sm); margin-bottom: 20px; font-size: 0.85rem; line-height: 1.5;">
+            <strong style="color: var(--accent);">Giriş Bilgileri (Veritabanı Seed):</strong><br/>
+            E-Posta: <code style="color: var(--light);">admin@nez.com</code><br/>
+            Şifre: <code style="color: var(--light);">admin123</code>
+        </div>
 
         @if (ViewBag.Error != null)
         {
@@ -17,8 +23,8 @@
 
         <form asp-action="Login" method="post">
             <div class="form-group">
-                <label asp-for="Email">E-Posta Adresi</label>
-                <input asp-for="Email" type="email" placeholder="ornek@nez.com" required autocomplete="username" />
+                <label asp-for="Email">Admin E-Posta</label>
+                <input asp-for="Email" type="email" placeholder="admin@nez.com" required autocomplete="username" />
                 <span asp-validation-for="Email" class="validation-error"></span>
             </div>
 
@@ -28,10 +34,9 @@
                 <span asp-validation-for="Password" class="validation-error"></span>
             </div>
 
-            <button type="submit" class="login-btn">Giriş Yap</button>
+            <button type="submit" class="login-btn" style="background: linear-gradient(135deg, var(--accent), var(--primary));">Yönetim Girişi</button>
         </form>
 
-        <a asp-action="Register" class="login-back" style="margin-top: 15px; color: var(--primary-light);">Yeni hesap oluştur (Kayıt Ol)</a>
         <a asp-controller="Home" asp-action="Index" class="login-back">← Ana Sayfaya Dön</a>
     </div>
 </div>

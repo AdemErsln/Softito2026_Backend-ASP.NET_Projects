@@ -1,0 +1,96 @@
+@model IEnumerable<NezLojistikMvc.Models.Driver>
+@{
+    ViewData["Title"] = "Sürücü Yönetimi - Nez Lojistik";
+}
+
+<div class="admin-layout">
+    <div class="admin-sidebar">
+        <div class="sidebar-logo">
+            <h2>NEZ LOJİSTİK</h2>
+            <p>Yönetim Sistemi</p>
+        </div>
+        <div class="sidebar-nav">
+            <a asp-action="Panel"><span class="nav-icon">📊</span> Panel Özet</a>
+            <a asp-action="Depots"><span class="nav-icon">🏢</span> Depolar (API)</a>
+            <a asp-action="Drivers" class="active"><span class="nav-icon">👤</span> Sürücüler (API)</a>
+            <a asp-action="Vehicles"><span class="nav-icon">🚚</span> Araçlar (API)</a>
+        </div>
+        <div class="sidebar-footer">
+            <a asp-action="Logout">Oturumu Kapat</a>
+        </div>
+    </div>
+
+    <div class="admin-main">
+        <div class="admin-header">
+            <h1>Sürücüler <span>(API)</span></h1>
+            <button onclick="toggleForm()" class="btn-add">+ Yeni Sürücü Ekle</button>
+        </div>
+
+        <!-- Add Form -->
+        <div id="addDriverForm" class="add-form">
+            <h3>Yeni Sürücü Kaydı</h3>
+            <form asp-action="AddDriver" method="post">
+                <div class="form-row">
+                    <input type="text" name="FullName" placeholder="Adı Soyadı" required />
+                    <input type="text" name="PhoneNumber" placeholder="Telefon Numarası" required />
+                    <input type="text" name="LicenseNumber" placeholder="Ehliyet No" required />
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn-add">Kaydet</button>
+                    <button type="button" onclick="toggleForm()" class="btn-delete" style="background:transparent; border-color:var(--glass-border); color:var(--gray);">İptal</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="data-section">
+            <div class="data-section-header">
+                <h2>Sürücü Listesi</h2>
+            </div>
+            
+            @if (Model == null || !Model.Any())
+            {
+                <div class="empty-state">
+                    <p>Sistemde henüz kayıtlı sürücü bulunmamaktadır veya API bağlantısı sağlanamadı.</p>
+                </div>
+            }
+            else
+            {
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Adı Soyadı</th>
+                            <th>Telefon No</th>
+                            <th>Ehliyet No</th>
+                            <th style="width: 100px; text-align: right;">İşlemler</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var driver in Model)
+                        {
+                            <tr>
+                                <td>@driver.Id</td>
+                                <td>@driver.FullName</td>
+                                <td>@driver.PhoneNumber</td>
+                                <td>@driver.LicenseNumber</td>
+                                <td style="text-align: right;">
+                                    <form asp-action="DeleteDriver" method="post" style="display:inline;" onsubmit="return confirm('Bu sürücüyü silmek istediğinize emin misiniz?');">
+                                        <input type="hidden" name="id" value="@driver.Id" />
+                                        <button type="submit" class="btn-delete">Sil</button>
+                                    </form>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleForm() {
+        var form = document.getElementById("addDriverForm");
+        form.classList.toggle("show");
+    }
+</script>

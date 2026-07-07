@@ -1,0 +1,28 @@
+@{
+    ViewData["Title"] = "Kullanıcı Paneli - Nez Lojistik";
+}
+
+<div class="dashboard-page">
+    <div class="dash-header">
+        <h1>Hoş Geldiniz, <span>@ViewBag.FullName</span></h1>
+        <a asp-action="Logout" class="btn-logout">Oturumu Kapat</a>
+    </div>
+
+    <div class="region-card">
+        <div class="region-icon">📍</div>
+        <h2>Yetkili Olduğunuz Bölge</h2>
+        <div class="region-name">@ViewBag.Bolge</div>
+        <p class="region-detail">Bu bölgeye ait sevkiyat, araç koordinasyon ve sürücü görevlerini yönetmeye yetkilisiniz.</p>
+
+        <div class="info-grid">
+            <div class="info-item">
+                <div class="info-label">E-Posta</div>
+                <div class="info-value">@ViewBag.Email</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">Kullanıcı Rolü</div>
+                <div class="info-value">Bölge Personeli</div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,61 @@
+@model NezLojistikMvc.Models.RegisterViewModel
+@{
+    ViewData["Title"] = "Kayıt Ol - Nez Lojistik";
+}
+
+<div class="login-page">
+    <div class="login-card">
+        <h2>Yeni Kullanıcı Kaydı</h2>
+        <p class="login-subtitle">Bölge Personeli veya Sürücü Hesabı Oluşturun</p>
+
+        @if (ViewBag.Error != null)
+        {
+            <div class="login-error">
+                @ViewBag.Error
+            </div>
+        }
+
+        <form asp-action="Register" method="post">
+            <div class="form-group">
+                <label asp-for="FullName">Ad Soyad</label>
+                <input asp-for="FullName" type="text" placeholder="Ahmet Yılmaz" required />
+                <span asp-validation-for="FullName" class="validation-error"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Email">E-Posta Adresi</label>
+                <input asp-for="Email" type="email" placeholder="ornek@nez.com" required autocomplete="username" />
+                <span asp-validation-for="Email" class="validation-error"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Password">Şifre</label>
+                <input asp-for="Password" type="password" placeholder="••••••••" required autocomplete="new-password" />
+                <span asp-validation-for="Password" class="validation-error"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Bolge">Hizmet Bölgesi</label>
+                <select asp-for="Bolge" required style="width: 100%; padding: 12px 16px; background: rgba(255,255,255,0.05); border: 1.5px solid var(--glass-border); border-radius: var(--radius-sm); color: var(--light); font-size: 0.95rem; font-family: 'Inter', sans-serif; outline: none; cursor: pointer; transition: all 0.3s;">
+                    <option value="" disabled selected style="background: var(--dark); color: var(--gray);">Bölge Seçiniz</option>
+                    <option value="Marmara Bölgesi" style="background: var(--dark);">Marmara Bölgesi</option>
+                    <option value="Ege Bölgesi" style="background: var(--dark);">Ege Bölgesi</option>
+                    <option value="Akdeniz Bölgesi" style="background: var(--dark);">Akdeniz Bölgesi</option>
+                    <option value="İç Anadolu Bölgesi" style="background: var(--dark);">İç Anadolu Bölgesi</option>
+                    <option value="Karadeniz Bölgesi" style="background: var(--dark);">Karadeniz Bölgesi</option>
+                    <option value="Doğu Anadolu Bölgesi" style="background: var(--dark);">Doğu Anadolu Bölgesi</option>
+                    <option value="Güneydoğu Anadolu Bölgesi" style="background: var(--dark);">Güneydoğu Anadolu Bölgesi</option>
+                </select>
+                <span asp-validation-for="Bolge" class="validation-error"></span>
+            </div>
+
+            <button type="submit" class="login-btn">Kayıt Ol & Giriş Yap</button>
+        </form>
+
+        <a asp-action="Login" class="login-back">Zaten hesabınız var mı? Giriş yapın</a>
+    </div>
+</div>
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}

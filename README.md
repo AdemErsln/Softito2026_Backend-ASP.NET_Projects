@@ -116,10 +116,14 @@ Depo, araç ve sürücü yönetimini sağlayan lojistik takip sistemi. Web API a
 
 ### 📸 Ekran Görüntüleri:
 <p align="left">
-  <img src="screenshots/Proje 6 - NezLojistik/Home.png" width="260" alt="Ana Sayfa" />
-  <img src="screenshots/Proje 6 - NezLojistik/Account_Login.png" width="260" alt="Kullanıcı Girişi" />
-  <img src="screenshots/Proje 6 - NezLojistik/Admin.png" width="260" alt="Yönetim Paneli" />
-  <img src="screenshots/Proje 6 - NezLojistik/swagger_index.html.png" width="260" alt="Swagger API Dokümanı" />
+  <img src="screenshots/Proje 6 - NezLojistik/Home.png" width="230" alt="Ana Sayfa" />
+  <img src="screenshots/Proje 6 - NezLojistik/Account_Login.png" width="230" alt="Kullanıcı Girişi" />
+  <img src="screenshots/Proje 6 - NezLojistik/Account_Dashboard.png" width="230" alt="Kullanıcı Paneli" />
+  <img src="screenshots/Proje 6 - NezLojistik/Admin_Panel.png" width="230" alt="Yönetim Paneli" />
+  <img src="screenshots/Proje 6 - NezLojistik/Admin_Depots.png" width="230" alt="Depo Yönetimi" />
+  <img src="screenshots/Proje 6 - NezLojistik/Admin_Drivers.png" width="230" alt="Sürücü Yönetimi" />
+  <img src="screenshots/Proje 6 - NezLojistik/Admin_Vehicles.png" width="230" alt="Araç Yönetimi" />
+  <img src="screenshots/Proje 6 - NezLojistik/swagger_index.html.png" width="230" alt="Swagger API Dokümanı" />
 </p>
 
 ---

@@ -1,4 +1,4 @@
-﻿namespace NezLojstikApi.Models
+namespace NezLojistikMvc.Models
 {
     public class Driver
     {

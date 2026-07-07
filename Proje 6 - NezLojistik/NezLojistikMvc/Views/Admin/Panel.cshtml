@@ -1,0 +1,57 @@
+@{
+    ViewData["Title"] = "Yönetim Paneli - Nez Lojistik";
+}
+
+<div class="admin-layout">
+    <div class="admin-sidebar">
+        <div class="sidebar-logo">
+            <h2>NEZ LOJİSTİK</h2>
+            <p>Yönetim Sistemi</p>
+        </div>
+        <div class="sidebar-nav">
+            <a asp-action="Panel" class="active"><span class="nav-icon">📊</span> Panel Özet</a>
+            <a asp-action="Depots"><span class="nav-icon">🏢</span> Depolar (API)</a>
+            <a asp-action="Drivers"><span class="nav-icon">👤</span> Sürücüler (API)</a>
+            <a asp-action="Vehicles"><span class="nav-icon">🚚</span> Araçlar (API)</a>
+        </div>
+        <div class="sidebar-footer">
+            <a asp-action="Logout">Oturumu Kapat</a>
+        </div>
+    </div>
+
+    <div class="admin-main">
+        <div class="admin-header">
+            <h1>Yönetim Paneli <span>Özet</span></h1>
+            <div style="font-size: 0.9rem; color: var(--gray);">Hoş geldiniz, <strong>@ViewBag.AdminName</strong></div>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon purple">🏢</div>
+                <div class="stat-value">Aktif</div>
+                <div class="stat-label">Depo Yönetimi</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon cyan">👤</div>
+                <div class="stat-value">Lisanslı</div>
+                <div class="stat-label">Sürücü Portföyü</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon green">🚚</div>
+                <div class="stat-value">Tüm</div>
+                <div class="stat-label">Taşıt Filosu</div>
+            </div>
+        </div>
+
+        <div class="data-section">
+            <div class="data-section-header">
+                <h2>Sistem Durumu</h2>
+            </div>
+            <p style="color: var(--gray); line-height: 1.6; font-size: 0.95rem;">
+                Nez Lojistik Yönetim Paneline hoş geldiniz. Sol menü üzerinden API servisleri aracılığıyla yönetilen 
+                <strong>Depo</strong>, <strong>Sürücü</strong> ve <strong>Araç</strong> verilerinizi görüntüleyebilir, yeni kayıtlar ekleyebilir veya mevcut kayıtları silebilirsiniz. 
+                Bu veriler doğrudan arka planda çalışan API mikroservisinden çekilmektedir.
+            </p>
+        </div>
+    </div>
+</div>
