@@ -114,8 +114,42 @@ def main():
         proj_screenshot_dir = os.path.abspath(os.path.join(OUTPUT_DIR, re.sub(r'[\\/*?:"<>|]', "", proj_name).strip()))
         
         is_api = "api" in subproj_name.lower() or "api" in proj_name.lower() or "otomati" in subproj_name.lower()
+        
+        # Check Program.cs for Swagger/Scalar
+        has_scalar = False
+        has_swagger = False
+        program_cs = os.path.join(csproj_dir, "Program.cs")
+        if os.path.exists(program_cs):
+            try:
+                with open(program_cs, "r", encoding="utf-8-sig") as f:
+                    content = f.read()
+                    if "MapScalarApiReference" in content:
+                        has_scalar = True
+                    if "UseSwagger" in content:
+                        has_swagger = True
+            except Exception as e:
+                print(f"Error reading Program.cs for {proj_name}: {e}")
+
+        routes = []
         if is_api:
-            routes = ["/scalar/v1", "/swagger/index.html", "/"]
+            if has_scalar:
+                routes.append("/scalar/v1")
+            if has_swagger:
+                routes.append("/swagger/index.html")
+            
+            # Check if there is an MVC sibling project in the same folder
+            has_mvc_sibling = False
+            parent_dir = os.path.dirname(csproj_dir)
+            if os.path.exists(parent_dir):
+                for root, dirs, files in os.walk(parent_dir):
+                    if "bin" in root or "obj" in root:
+                        continue
+                    if any(f.endswith(".csproj") for f in files) and root != csproj_dir:
+                        if "api" not in os.path.basename(root).lower():
+                            has_mvc_sibling = True
+                            break
+            if not has_mvc_sibling:
+                routes.append("/")
         else:
             routes = find_mvc_routes(csproj_dir)
             
@@ -123,7 +157,7 @@ def main():
         for route in routes:
             safe_route_name = re.sub(r'[\\/*?:"<>|]', "_", route.strip("/")).replace(" ", "_")
             if not safe_route_name:
-                safe_route_name = "Api_Root" if is_api else "Home"
+                safe_route_name = "Home"
             expected_files.add(f"{safe_route_name}.png")
             
         if proj_screenshot_dir not in dir_to_expected_files:

@@ -211,8 +211,58 @@ def capture_project_screenshots_selenium(url, proj_name, routes_to_capture, proj
             login_route = next((r for r in routes_to_capture if "login" in r.lower()), "/Account/Login")
             login_url = f"{url}{login_route}"
             print(f"Project requires authentication. Login URL: {login_url}")
-            
+
+        routes_to_capture_now = []
+        authenticated_routes = []
+
+        # Determine which routes can be captured logged out vs logged in
         if needs_login:
+            for route in routes_to_capture:
+                r_lower = route.lower()
+                # 1. Auth-specific pages (login, register, access denied) MUST be captured logged out
+                if "login" in r_lower or "register" in r_lower or "accessdenied" in r_lower:
+                    routes_to_capture_now.append(route)
+                else:
+                    # 2. Check if a route redirects to login when logged out
+                    full_url = f"{url}{route}"
+                    try:
+                        driver.get(full_url)
+                        time.sleep(1.0)
+                        curr_url_lower = driver.current_url.lower()
+                        if "login" in curr_url_lower or "accessdenied" in curr_url_lower or "signin" in curr_url_lower:
+                            # It redirected to login/auth page! So it requires authentication
+                            authenticated_routes.append(route)
+                        else:
+                            # It did not redirect, meaning it's a public page. Capture it now.
+                            routes_to_capture_now.append(route)
+                    except Exception as e:
+                        # Fallback: if check fails, assume it requires auth if it's admin or similar, or just capture now
+                        if "admin" in r_lower:
+                            authenticated_routes.append(route)
+                        else:
+                            routes_to_capture_now.append(route)
+        else:
+            routes_to_capture_now = routes_to_capture
+
+        # Step 1: Capture unauthenticated and public pages
+        for route in routes_to_capture_now:
+            full_url = f"{url}{route}"
+            safe_route_name = re.sub(r'[\\/*?:"<>|]', "_", route.strip("/")).replace(" ", "_")
+            if not safe_route_name:
+                safe_route_name = "Api_Root" if is_api else "Home"
+                
+            output_file = os.path.abspath(os.path.join(proj_screenshot_dir, f"{safe_route_name}.png"))
+            print(f"Capturing unauthenticated route: {full_url} -> {output_file}")
+            try:
+                driver.get(full_url)
+                time.sleep(2.0)
+                driver.save_screenshot(output_file)
+                print(f"  Saved: {os.path.basename(output_file)}")
+            except Exception as e:
+                print(f"  Error capturing route {route}: {e}")
+
+        # Step 2: Perform Login/Registration if needed
+        if needs_login and authenticated_routes:
             # 1. Registration
             register_route = next((r for r in routes_to_capture if "register" in r.lower()), "/Account/Register")
             register_url = f"{url}{register_route}"
@@ -349,23 +399,22 @@ def capture_project_screenshots_selenium(url, proj_name, routes_to_capture, proj
                     time.sleep(3.0)
             except Exception as log_ex:
                 print(f"Login form submit failed: {log_ex}")
-                
-        # Take screenshots
-        for route in routes_to_capture:
-            full_url = f"{url}{route}"
-            safe_route_name = re.sub(r'[\\/*?:"<>|]', "_", route.strip("/")).replace(" ", "_")
-            if not safe_route_name:
-                safe_route_name = "Api_Root" if is_api else "Home"
-                
-            output_file = os.path.abspath(os.path.join(proj_screenshot_dir, f"{safe_route_name}.png"))
-            print(f"Capturing screenshot: {full_url} -> {output_file}")
-            try:
-                driver.get(full_url)
-                time.sleep(2.0)
-                driver.save_screenshot(output_file)
-                print(f"  Saved: {os.path.basename(output_file)}")
-            except Exception as e:
-                print(f"  Error capturing route {route}: {e}")
+
+            # Step 3: Capture authenticated routes
+            for route in authenticated_routes:
+                full_url = f"{url}{route}"
+                safe_route_name = re.sub(r'[\\/*?:"<>|]', "_", route.strip("/")).replace(" ", "_")
+                if not safe_route_name:
+                    safe_route_name = "Home"
+                output_file = os.path.abspath(os.path.join(proj_screenshot_dir, f"{safe_route_name}.png"))
+                print(f"Capturing authenticated route: {full_url} -> {output_file}")
+                try:
+                    driver.get(full_url)
+                    time.sleep(2.0)
+                    driver.save_screenshot(output_file)
+                    print(f"  Saved: {os.path.basename(output_file)}")
+                except Exception as e:
+                    print(f"  Error capturing route {route}: {e}")
     finally:
         driver.quit()
 
@@ -416,13 +465,43 @@ def main():
         routes_to_capture = []
         is_api = "api" in subproj_name.lower() or "api" in proj_name.lower() or "otomati" in subproj_name.lower()
         
+        # Check Program.cs for Swagger/Scalar
+        has_scalar = False
+        has_swagger = False
+        program_cs = os.path.join(csproj_dir, "Program.cs")
+        if os.path.exists(program_cs):
+            try:
+                with open(program_cs, "r", encoding="utf-8-sig") as f:
+                    content = f.read()
+                    if "MapScalarApiReference" in content:
+                        has_scalar = True
+                    if "UseSwagger" in content:
+                        has_swagger = True
+            except Exception as e:
+                print(f"Error reading Program.cs for {proj_name}: {e}")
+
         if is_api:
-            # It's an API, capture Scalar and Swagger docs
-            routes_to_capture = [
-                "/scalar/v1",
-                "/swagger/index.html",
-                "/"
-            ]
+            # It's an API, capture Scalar and Swagger docs if configured
+            if has_scalar:
+                routes_to_capture.append("/scalar/v1")
+            if has_swagger:
+                routes_to_capture.append("/swagger/index.html")
+            
+            # Check if there is an MVC sibling project in the same folder
+            has_mvc_sibling = False
+            parent_dir = os.path.dirname(csproj_dir)
+            if os.path.exists(parent_dir):
+                for root, dirs, files in os.walk(parent_dir):
+                    if "bin" in root or "obj" in root:
+                        continue
+                    if any(f.endswith(".csproj") for f in files) and root != csproj_dir:
+                        # Found another csproj in the same Proje folder
+                        if "api" not in os.path.basename(root).lower():
+                            has_mvc_sibling = True
+                            break
+            
+            if not has_mvc_sibling:
+                routes_to_capture.append("/")
         else:
             # MVC project, discover views
             routes_to_capture = find_mvc_routes(csproj_dir)
