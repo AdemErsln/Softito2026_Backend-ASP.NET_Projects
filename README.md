@@ -116,7 +116,9 @@ Depo, araç ve sürücü yönetimini sağlayan lojistik takip sistemi. Web API a
 
 ### 📸 Ekran Görüntüleri:
 <p align="left">
-  <img src="screenshots/Proje 6 - NezLojistik/Home.png" width="260" alt="MVC Ana Sayfa" />
+  <img src="screenshots/Proje 6 - NezLojistik/Home.png" width="260" alt="Ana Sayfa" />
+  <img src="screenshots/Proje 6 - NezLojistik/Account_Login.png" width="260" alt="Kullanıcı Girişi" />
+  <img src="screenshots/Proje 6 - NezLojistik/Admin.png" width="260" alt="Yönetim Paneli" />
   <img src="screenshots/Proje 6 - NezLojistik/swagger_index.html.png" width="260" alt="Swagger API Dokümanı" />
 </p>
 
