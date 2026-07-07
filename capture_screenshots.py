@@ -5,6 +5,8 @@ import json
 import socket
 import sys
 import re
+from selenium import webdriver
+from selenium.webdriver.common.by import By
 
 # Configuration
 CHROME_PATH = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
@@ -89,7 +91,7 @@ def find_mvc_routes(project_dir):
                         route = "/" + rel_route[:-6]
                     else:
                         route = "/" + rel_route
-                        
+                    
                     base_name = os.path.splitext(file)[0].lower()
                     if base_name in ["duzenle", "sil", "edit", "delete", "details", "update"]:
                         route += "/1"
@@ -113,7 +115,7 @@ def find_mvc_routes(project_dir):
                             if view_name.lower() in ["edit", "delete", "details", "update"]:
                                 routes.append(f"/{controller}/{view_name}/1")
                             else:
-                                routes.append(f"/{controller}/{view_name}")
+                                    routes.append(f"/{controller}/{view_name}")
                             
     # Areas (e.g. Admin)
     if os.path.exists(areas_dir):
@@ -187,6 +189,186 @@ def capture_screenshot(url, output_path):
         print(f"  Error capturing screenshot: {e}")
     return False
 
+def capture_project_screenshots_selenium(url, proj_name, routes_to_capture, proj_screenshot_dir, is_api):
+    options = webdriver.ChromeOptions()
+    options.add_argument('--headless=new')
+    options.add_argument('--disable-gpu')
+    options.add_argument('--window-size=1280,800')
+    options.add_argument('--ignore-certificate-errors')
+    if os.path.exists(CHROME_PATH):
+        options.binary_location = CHROME_PATH
+        
+    driver = webdriver.Chrome(options=options)
+    
+    try:
+        # Determine if authentication is needed
+        is_auth_project = any("login" in r.lower() for r in routes_to_capture)
+        needs_login = False
+        login_url = None
+        
+        if not is_api and is_auth_project:
+            needs_login = True
+            login_route = next((r for r in routes_to_capture if "login" in r.lower()), "/Account/Login")
+            login_url = f"{url}{login_route}"
+            print(f"Project requires authentication. Login URL: {login_url}")
+            
+        if needs_login:
+            # 1. Registration
+            register_route = next((r for r in routes_to_capture if "register" in r.lower()), "/Account/Register")
+            register_url = f"{url}{register_route}"
+            print(f"Attempting user registration at: {register_url}")
+            try:
+                driver.get(register_url)
+                time.sleep(2.5)
+                
+                if "register" in driver.current_url.lower():
+                    username_field = None
+                    for name in ["Username", "username", "Email", "email"]:
+                        try:
+                            username_field = driver.find_element(By.NAME, name)
+                            if username_field:
+                                break
+                        except:
+                            pass
+                    
+                    if not username_field:
+                        for selector in ["#username", "#Username", "input[type='text']"]:
+                            try:
+                                username_field = driver.find_element(By.CSS_SELECTOR, selector)
+                                if username_field:
+                                    break
+                            except:
+                                pass
+                                
+                    password_inputs = driver.find_elements(By.CSS_SELECTOR, "input[type='password']")
+                    
+                    u_val = "admin"
+                    e_val = "admin@disaccord.com" if "discord" in proj_name.lower() else "admin@example.com"
+                    p_val = "Admin123!" if "discord" in proj_name.lower() else "AdminPassword123!"
+                    
+                    if username_field:
+                        username_field.clear()
+                        if "email" in (username_field.get_attribute("name") or "").lower():
+                            username_field.send_keys(e_val)
+                        else:
+                            username_field.send_keys(u_val)
+                            
+                    email_field = None
+                    try:
+                        email_field = driver.find_element(By.NAME, "Email")
+                    except:
+                        try:
+                            email_field = driver.find_element(By.NAME, "email")
+                        except:
+                            pass
+                    if email_field and email_field != username_field:
+                        email_field.clear()
+                        email_field.send_keys(e_val)
+                        
+                    for pf in password_inputs:
+                        pf.clear()
+                        pf.send_keys(p_val)
+                        
+                    submit_btn = None
+                    for selector in ["button[type='submit']", "input[type='submit']", ".btn-submit", ".btn-primary"]:
+                        try:
+                            submit_btn = driver.find_element(By.CSS_SELECTOR, selector)
+                            if submit_btn:
+                                break
+                        except:
+                            pass
+                    if submit_btn:
+                        submit_btn.click()
+                        print("Registration form submitted.")
+                        time.sleep(3.0)
+            except Exception as reg_ex:
+                print(f"Registration step skipped or failed: {reg_ex}")
+                
+            # 2. Login
+            print(f"Navigating to login page: {login_url}")
+            driver.get(login_url)
+            time.sleep(2.5)
+            
+            try:
+                username_field = None
+                for name in ["Username", "username", "Email", "email"]:
+                    try:
+                        username_field = driver.find_element(By.NAME, name)
+                        if username_field:
+                            break
+                    except:
+                        pass
+                
+                if not username_field:
+                    for selector in ["#username", "#Username", "input[type='text']", "input[type='email']"]:
+                        try:
+                            username_field = driver.find_element(By.CSS_SELECTOR, selector)
+                            if username_field:
+                                break
+                        except:
+                            pass
+                            
+                password_field = None
+                try:
+                    password_field = driver.find_element(By.NAME, "Password")
+                except:
+                    try:
+                        password_field = driver.find_element(By.NAME, "password")
+                    except:
+                        try:
+                            password_field = driver.find_element(By.CSS_SELECTOR, "input[type='password']")
+                        except:
+                            pass
+                            
+                u_val = "admin"
+                e_val = "admin@disaccord.com" if "discord" in proj_name.lower() else "admin@example.com"
+                p_val = "Admin123!" if "discord" in proj_name.lower() else "AdminPassword123!"
+                
+                if username_field:
+                    username_field.clear()
+                    if "email" in (username_field.get_attribute("name") or "").lower() or "email" in (username_field.get_attribute("id") or "").lower():
+                        username_field.send_keys(e_val)
+                    else:
+                        username_field.send_keys(u_val)
+                        
+                if password_field:
+                    password_field.clear()
+                    password_field.send_keys(p_val)
+                    
+                submit_btn = None
+                for selector in ["button[type='submit']", "input[type='submit']", ".btn-submit", ".btn-primary"]:
+                    try:
+                        submit_btn = driver.find_element(By.CSS_SELECTOR, selector)
+                        if submit_btn:
+                            break
+                    except:
+                        pass
+                if submit_btn:
+                    submit_btn.click()
+                    print("Login form submitted.")
+                    time.sleep(3.0)
+            except Exception as log_ex:
+                print(f"Login form submit failed: {log_ex}")
+                
+        # Take screenshots
+        for route in routes_to_capture:
+            full_url = f"{url}{route}"
+            safe_route_name = re.sub(r'[\\/*?:"<>|]', "_", route.strip("/")).replace(" ", "_")
+            if not safe_route_name:
+                safe_route_name = "Api_Root" if is_api else "Home"
+                
+            output_file = os.path.abspath(os.path.join(proj_screenshot_dir, f"{safe_route_name}.png"))
+            print(f"Capturing screenshot: {full_url} -> {output_file}")
+            try:
+                driver.get(full_url)
+                time.sleep(2.0)
+                driver.save_screenshot(output_file)
+                print(f"  Saved: {os.path.basename(output_file)}")
+            except Exception as e:
+                print(f"  Error capturing route {route}: {e}")
+    finally:
+        driver.quit()
+
 def clean_project_name(csproj_path):
     parts = csproj_path.split(os.sep)
     for part in parts:
@@ -196,6 +378,12 @@ def clean_project_name(csproj_path):
 
 def main():
     print("=== ASP.NET CORE PORTFOLIO SCREENSHOT AUTOMATION ===")
+    
+    # Filter by command-line arguments if provided
+    filter_proj = None
+    if len(sys.argv) > 1:
+        filter_proj = sys.argv[1].lower()
+        print(f"Filtering projects matching: '{filter_proj}'")
     
     # 1. Kill existing dotnet processes to prevent port conflicts
     kill_existing_dotnet()
@@ -208,6 +396,9 @@ def main():
     
     for csproj in web_projects:
         proj_name = clean_project_name(csproj)
+        if filter_proj and filter_proj not in proj_name.lower():
+            continue
+            
         csproj_dir = os.path.dirname(csproj)
         subproj_name = os.path.splitext(os.path.basename(csproj))[0]
         
@@ -261,15 +452,8 @@ def main():
                 proj_screenshot_dir = os.path.join(OUTPUT_DIR, re.sub(r'[\\/*?:"<>|]', "", proj_name).strip())
                 os.makedirs(proj_screenshot_dir, exist_ok=True)
                 
-                # Take screenshots
-                for route in routes_to_capture:
-                    full_url = f"{url}{route}"
-                    safe_route_name = re.sub(r'[\\/*?:"<>|]', "_", route.strip("/")).replace(" ", "_")
-                    if not safe_route_name:
-                        safe_route_name = "Api_Root" if is_api else "Home"
-                    
-                    output_file = os.path.abspath(os.path.join(proj_screenshot_dir, f"{safe_route_name}.png"))
-                    capture_screenshot(full_url, output_file)
+                # Capture screenshots using Selenium
+                capture_project_screenshots_selenium(url, proj_name, routes_to_capture, proj_screenshot_dir, is_api)
             else:
                 print(f"FAILED: Server for {proj_name} did not start in {WAIT_TIMEOUT} seconds.")
                 
