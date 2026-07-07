@@ -1,0 +1,71 @@
+@model StudentViewModel
+@{
+    ViewData["Title"] = $"{Model.FirstName} {Model.LastName} Profilini Düzenle";
+    var classrooms = ViewBag.Classrooms as List<ClassroomViewModel> ?? new List<ClassroomViewModel>();
+}
+
+<div class="max-w-xl mx-auto space-y-6">
+    <div class="flex items-center gap-4">
+        <a href="/Student" class="text-sm font-semibold text-indigo-400 hover:underline">← Öğrencilere Geri Dön</a>
+    </div>
+
+    <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl space-y-6">
+        <div>
+            <h2 class="text-2xl font-bold text-white">Öğrenci Bilgilerini Düzenle</h2>
+            <p class="text-xs text-slate-400 mt-1">Öğrenci bilgilerini güncelleyin veya sınıf transferini gerçekleştirin.</p>
+        </div>
+
+        <form asp-action="Edit" method="post" class="space-y-5">
+            <input type="hidden" asp-for="ID" />
+            <div asp-validation-summary="ModelOnly" class="text-sm text-red-400"></div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="space-y-2">
+                    <label asp-for="FirstName" class="text-xs font-semibold text-slate-400">Öğrenci Adı</label>
+                    <input asp-for="FirstName" type="text" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-2.5 text-sm text-slate-200 outline-none focus:border-indigo-500 transition" />
+                    <span asp-validation-for="FirstName" class="text-xs text-red-400"></span>
+                </div>
+                <div class="space-y-2">
+                    <label asp-for="LastName" class="text-xs font-semibold text-slate-400">Öğrenci Soyadı</label>
+                    <input asp-for="LastName" type="text" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-2.5 text-sm text-slate-200 outline-none focus:border-indigo-500 transition" />
+                    <span asp-validation-for="LastName" class="text-xs text-red-400"></span>
+                </div>
+            </div>
+
+            <div class="space-y-2">
+                <label asp-for="StudentNumber" class="text-xs font-semibold text-slate-400">Öğrenci Numarası</label>
+                <input asp-for="StudentNumber" type="text" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-2.5 text-sm text-slate-200 outline-none focus:border-indigo-500 transition" />
+                <span asp-validation-for="StudentNumber" class="text-xs text-red-400"></span>
+            </div>
+
+            <div class="space-y-2">
+                <label asp-for="Email" class="text-xs font-semibold text-slate-400">E-posta Adresi</label>
+                <input asp-for="Email" type="email" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-2.5 text-sm text-slate-200 outline-none focus:border-indigo-500 transition" />
+                <span asp-validation-for="Email" class="text-xs text-red-400"></span>
+            </div>
+
+            <div class="space-y-2">
+                <label asp-for="ClassroomId" class="text-xs font-semibold text-slate-400">Sınıf / Şube</label>
+                <select asp-for="ClassroomId" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-2.5 text-sm text-slate-200 outline-none focus:border-indigo-500 transition">
+                    <option value="">-- Sınıfsız / Boşta --</option>
+                    @foreach (var classroom in classrooms)
+                    {
+                        var isCurrentClass = classroom.ID == Model.ClassroomId;
+                        var isFull = classroom.StudentCount >= classroom.Capacity && !isCurrentClass;
+                        
+                        <option value="@classroom.ID" selected="@(isCurrentClass ? "selected" : null)" disabled="@(isFull ? "disabled" : null)">
+                            @classroom.Name (@classroom.Location) @(isFull ? "(DOLU)" : $"({classroom.StudentCount}/{classroom.Capacity})")
+                        </option>
+                    }
+                </select>
+                <span asp-validation-for="ClassroomId" class="text-xs text-red-400"></span>
+            </div>
+
+            <div class="pt-2">
+                <button type="submit" class="w-full py-3 bg-indigo-600 hover:bg-indigo-500 transition duration-200 rounded-xl font-bold text-sm text-white shadow-lg shadow-indigo-500/20">
+                    Değişiklikleri Kaydet
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

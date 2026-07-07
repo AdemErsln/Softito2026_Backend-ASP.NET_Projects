@@ -1,0 +1,210 @@
+@model IEnumerable<ClassroomViewModel>
+@{
+    ViewData["Title"] = "Öğrenci Portalı";
+    Layout = "_StudentLayout";
+    var classrooms = ViewBag.Classrooms as List<ClassroomViewModel> ?? new List<ClassroomViewModel>();
+}
+
+<div class="space-y-6">
+    
+    <!-- Title Headers from screenshot -->
+    <div class="space-y-1">
+        <h2 class="text-3xl font-black theme-text-main tracking-tight">Sınıflarım</h2>
+        <p class="text-xs theme-text-muted font-semibold uppercase tracking-wider">Sınıflara genel bakış</p>
+    </div>
+
+    <!-- Filter Tab Controls, Sorting, & Search from screenshot -->
+    <div class="space-y-4 theme-bg-card p-5 rounded-2xl border theme-border">
+        <!-- Tabs Row -->
+        <div class="flex flex-wrap gap-2 border-b theme-border pb-3">
+            <button id="tab-all" onclick="filterClassrooms('all')" class="tab-btn px-4 py-2 text-xs font-bold rounded-lg bg-indigo-600 text-white transition">Tümü</button>
+            <button id="tab-has-space" onclick="filterClassrooms('has-space')" class="tab-btn px-4 py-2 text-xs font-bold rounded-lg theme-text-muted hover:theme-text-main transition">Boş Yer Olanlar</button>
+            <button id="tab-full" onclick="filterClassrooms('full')" class="tab-btn px-4 py-2 text-xs font-bold rounded-lg theme-text-muted hover:theme-text-main transition">Dolu Sınıflar</button>
+        </div>
+
+        <!-- Filter Inputs Row -->
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex flex-1 w-full gap-3">
+                <!-- Sorting -->
+                <div class="w-full sm:w-56">
+                    <select id="sort-select" onchange="sortClassrooms()" class="w-full theme-bg-input theme-border border rounded-xl px-4 py-2.5 text-xs theme-text-main outline-none focus:border-indigo-500 transition">
+                        <option value="name-asc">Sınıf adına göre sırala</option>
+                        <option value="name-desc">Sınıf adına göre (Z-A)</option>
+                        <option value="capacity-desc">Kapasiteye göre (Azalan)</option>
+                        <option value="capacity-asc">Kapasiteye göre (Artan)</option>
+                    </select>
+                </div>
+
+                <!-- Search Input -->
+                <div class="relative flex-1">
+                    <span class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none theme-text-muted text-sm font-bold">🔍</span>
+                    <input id="search-input" type="text" onkeyup="searchClassrooms()" placeholder="Sınıf veya lokasyon ara..." class="w-full theme-bg-input theme-border border rounded-xl pl-10 pr-4 py-2.5 text-xs theme-text-main outline-none focus:border-indigo-500 transition" />
+                </div>
+            </div>
+
+            <!-- Layout Icons -->
+            <div class="flex gap-1.5 self-end sm:self-center">
+                <button class="p-2.5 theme-bg-app border theme-border theme-text-muted rounded-lg hover:opacity-85 transition" title="Kart Görünümü">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zM1 10.5A1.5 1.5 0 0 1 2.5 9h-3zM2.5 9a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Classroom Cards Grid -->
+    <div id="classroom-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        @if (classrooms.Any())
+        {
+            foreach (var classroom in classrooms)
+            {
+                var isFull = classroom.StudentCount >= classroom.Capacity;
+                var fillPercent = classroom.Capacity > 0 ? (classroom.StudentCount * 100) / classroom.Capacity : 0;
+                var progressColor = fillPercent >= 100 ? "bg-red-500" : (fillPercent >= 80 ? "bg-amber-500" : "bg-emerald-500");
+                
+                <div class="classroom-card theme-bg-card border theme-border rounded-3xl overflow-hidden hover:-translate-y-1 transition duration-300 flex flex-col justify-between" 
+                     data-name="@classroom.Name" 
+                     data-capacity="@classroom.Capacity" 
+                     data-students="@classroom.StudentCount" 
+                     data-location="@(classroom.Location ?? "")"
+                     data-full="@(isFull ? "true" : "false")">
+                     
+                    <!-- Cover gradient -->
+                    <div class="h-44 bg-gradient-to-br from-indigo-700/80 to-purple-800/80 p-6 flex flex-col justify-between relative">
+                        <div class="absolute inset-0 bg-slate-950/20 mix-blend-overlay"></div>
+                        
+                        <!-- Floating Badge -->
+                        <div class="flex justify-between items-start z-10">
+                            <span class="text-[10px] font-black uppercase tracking-wider bg-white/10 backdrop-blur px-3 py-1 rounded-full text-indigo-200 border border-white/10">
+                                SchoolPortal Sınıfı
+                            </span>
+                        </div>
+
+                        <!-- Class Logo / Icon visual -->
+                        <div class="flex justify-between items-end z-10 mt-auto">
+                            <div class="flex items-center gap-2">
+                                <div class="w-10 h-10 rounded-xl bg-white/10 backdrop-blur flex items-center justify-center text-xl text-white font-bold border border-white/20">
+                                    🏫
+                                </div>
+                                <div>
+                                    <h4 class="text-xs font-semibold text-white/70">Derslik Bilgisi</h4>
+                                    <p class="text-[10px] text-indigo-300 font-bold uppercase">Active</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card Body -->
+                    <div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
+                        <div class="space-y-1">
+                            <h3 class="text-lg font-bold theme-text-main leading-snug">@classroom.Name Sınıf Eğitimi</h3>
+                            <p class="text-xs theme-text-muted">Lokasyon: <b class="theme-text-main">@(classroom.Location ?? "Belirtilmemiş")</b></p>
+                        </div>
+
+                        <!-- Progress indicator -->
+                        <div class="space-y-2 mt-2">
+                            <div class="flex justify-between text-xs font-semibold theme-text-muted">
+                                <span>@classroom.StudentCount / @classroom.Capacity Öğrenci</span>
+                                <span>%@fillPercent Dolu</span>
+                            </div>
+                            <div class="w-full h-2.5 theme-bg-input rounded-full overflow-hidden border theme-border">
+                                <div class="h-full @progressColor rounded-full transition-all duration-500" style="width: @(Math.Min(fillPercent, 100))%"></div>
+                            </div>
+                        </div>
+
+                        <!-- Action Button -->
+                        <div class="pt-4 border-t theme-border mt-auto">
+                            <a href="/Home/ClassroomDetails/@classroom.ID" class="w-full text-center block py-3 rounded-xl bg-indigo-500/10 border border-indigo-500/20 hover:bg-indigo-500/20 text-indigo-400 font-bold text-xs uppercase tracking-wider transition">
+                                Sınıfı Görüntüle
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <div class="col-span-full py-16 text-center theme-text-muted theme-bg-card border theme-border rounded-3xl">
+                Sistemde kayıtlı sınıf bulunamadı.
+            </div>
+        }
+    </div>
+</div>
+
+<!-- Dynamic Search, Sort and Filter Scripts -->
+@section Scripts {
+    <script>
+        let currentFilter = 'all';
+
+        function filterClassrooms(filterType) {
+            currentFilter = filterType;
+            
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('bg-indigo-600', 'text-white');
+                btn.classList.add('theme-text-muted');
+            });
+            
+            const activeBtn = document.getElementById('tab-' + filterType);
+            if(activeBtn) {
+                activeBtn.classList.remove('theme-text-muted');
+                activeBtn.classList.add('bg-indigo-600', 'text-white');
+            }
+
+            applyFiltersAndSearch();
+        }
+
+        function searchClassrooms() {
+            applyFiltersAndSearch();
+        }
+
+        function applyFiltersAndSearch() {
+            const query = document.getElementById('search-input').value.toLowerCase();
+            const cards = document.querySelectorAll('.classroom-card');
+
+            cards.forEach(card => {
+                const name = card.getAttribute('data-name').toLowerCase();
+                const location = card.getAttribute('data-location').toLowerCase();
+                const isFull = card.getAttribute('data-full') === 'true';
+
+                let matchesFilter = true;
+                if (currentFilter === 'full') matchesFilter = isFull;
+                else if (currentFilter === 'has-space') matchesFilter = !isFull;
+
+                const matchesSearch = name.includes(query) || location.includes(query);
+
+                if (matchesFilter && matchesSearch) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        function sortClassrooms() {
+            const sortType = document.getElementById('sort-select').value;
+            const grid = document.getElementById('classroom-grid');
+            const cards = Array.from(grid.querySelectorAll('.classroom-card'));
+
+            cards.sort((a, b) => {
+                const nameA = a.getAttribute('data-name');
+                const nameB = b.getAttribute('data-name');
+                const capA = parseInt(a.getAttribute('data-capacity'));
+                const capB = parseInt(b.getAttribute('data-capacity'));
+
+                if (sortType === 'name-asc') {
+                    return nameA.localeCompare(nameB);
+                } else if (sortType === 'name-desc') {
+                    return nameB.localeCompare(nameA);
+                } else if (sortType === 'capacity-desc') {
+                    return capB - capA;
+                } else if (sortType === 'capacity-asc') {
+                    return capA - capB;
+                }
+                return 0;
+            });
+
+            cards.forEach(card => grid.appendChild(card));
+        }
+    </script>
+}

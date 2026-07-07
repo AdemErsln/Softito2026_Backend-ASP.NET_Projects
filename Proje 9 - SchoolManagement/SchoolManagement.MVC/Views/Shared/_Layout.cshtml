@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="tr" class="h-full">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SchoolAdmin</title>
+    <!-- Pre-load theme script to prevent layout flash -->
+    <script>
+        (function() {
+            var savedTheme = localStorage.getItem('school-theme') || 'dark';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        })();
+    </script>
+    <!-- Tailwind CSS v4 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@@tailwindcss/browser@4"></script>
+    <style>
+        /* 🎨 Çoklu Tema Değişkenleri */
+        :root, [data-theme="dark"] {
+            --bg-app: #0f172a;
+            --bg-card: #1e293b;
+            --border-color: #334155;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #6366f1;
+            --accent-hover: #4f46e5;
+            --bg-input: #0f172a;
+            --logo-color: #818cf8;
+        }
+
+        [data-theme="light"] {
+            --bg-app: #f8fafc;
+            --bg-card: #ffffff;
+            --border-color: #e2e8f0;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --accent: #4f46e5;
+            --accent-hover: #4338ca;
+            --bg-input: #f1f5f9;
+            --logo-color: #4f46e5;
+        }
+
+        [data-theme="kitty"] {
+            --bg-app: #fff1f2;
+            --bg-card: #ffffff;
+            --border-color: #ffe4e6;
+            --text-main: #4c0519;
+            --text-muted: #fda4af;
+            --accent: #db2777;
+            --accent-hover: #be185d;
+            --bg-input: #fff1f2;
+            --logo-color: #ec4899;
+        }
+
+        [data-theme="green"] {
+            --bg-app: #064e3b;
+            --bg-card: #022c22;
+            --border-color: #0f766e;
+            --text-main: #f0fdf4;
+            --text-muted: #a7f3d0;
+            --accent: #10b981;
+            --accent-hover: #059669;
+            --bg-input: #022c22;
+            --logo-color: #34d399;
+        }
+
+        [data-theme="cheese"] {
+            --bg-app: #fef9c3;
+            --bg-card: #fffbeb;
+            --border-color: #fef08a;
+            --text-main: #78350f;
+            --text-muted: #b45309;
+            --accent: #ca8a04;
+            --accent-hover: #a16207;
+            --bg-input: #fef9c3;
+            --logo-color: #eab308;
+        }
+
+        /* Global Temel Stiller */
+        body {
+            background-color: var(--bg-app);
+            color: var(--text-main);
+            transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+        }
+
+        /* Peynir teması için özel arka plan görseli */
+        [data-theme="cheese"] body {
+            background-image: url('/images/cheese_bg.png');
+            background-repeat: repeat;
+        }
+
+        /* Tema Sınıf Eşlemeleri */
+        .theme-bg-app { background-color: var(--bg-app) !important; }
+        .theme-bg-card { background-color: var(--bg-card) !important; }
+        .theme-border { border-color: var(--border-color) !important; }
+        .theme-text-main { color: var(--text-main) !important; }
+        .theme-text-muted { color: var(--text-muted) !important; }
+        .theme-accent-bg { background-color: var(--accent) !important; }
+        .theme-accent-bg-hover:hover { background-color: var(--accent-hover) !important; }
+        .theme-accent-text { color: var(--accent) !important; }
+        .theme-bg-input { background-color: var(--bg-input) !important; }
+        .theme-logo { color: var(--logo-color) !important; }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #090d16;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 9999px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #334155;
+        }
+    </style>
+</head>
+<body class="h-full flex flex-col md:flex-row overflow-hidden">
+
+    <!-- Sidebar (Theme Card background and theme border) -->
+    <aside class="w-full md:w-64 border-b md:border-b-0 md:border-r flex flex-col shrink-0 theme-bg-card theme-border">
+        <div class="p-6 border-b flex items-center justify-between theme-border">
+            <a href="/" class="flex items-center gap-2">
+                <span class="text-2xl font-black tracking-wider theme-logo">SchoolAdmin</span>
+            </a>
+        </div>
+        <nav class="flex-1 p-4 space-y-2 overflow-y-auto">
+            @if (User.Identity?.IsAuthenticated == true)
+            {
+                <a href="/Admin/Dashboard" class="flex items-center gap-3 px-4 py-3 text-sm font-semibold rounded-xl theme-text-muted hover:theme-text-main hover:theme-bg-app transition duration-200">
+                    <span>📊</span> Dashboard
+                </a>
+                <a href="/Classroom" class="flex items-center gap-3 px-4 py-3 text-sm font-semibold rounded-xl theme-text-muted hover:theme-text-main hover:theme-bg-app transition duration-200">
+                    <span>🏫</span> Sınıf Yönetimi
+                </a>
+                <a href="/Student" class="flex items-center gap-3 px-4 py-3 text-sm font-semibold rounded-xl theme-text-muted hover:theme-text-main hover:theme-bg-app transition duration-200">
+                    <span>🎓</span> Öğrenci Yönetimi
+                </a>
+                <a href="/Account/Logout" class="flex items-center gap-3 px-4 py-3 text-sm font-semibold rounded-xl text-red-500 hover:theme-bg-app transition duration-200 mt-8">
+                    <span>🚪</span> Çıkış Yap
+                </a>
+            }
+            else
+            {
+                <a href="/" class="flex items-center gap-3 px-4 py-3 text-sm font-semibold rounded-xl theme-text-muted hover:theme-text-main hover:theme-bg-app transition duration-200">
+                    <span>🏛️</span> Öğrenci Portalı
+                </a>
+                <a href="/Account/Login" class="flex items-center gap-3 px-4 py-3 text-sm font-semibold rounded-xl theme-text-muted hover:theme-text-main hover:theme-bg-app transition duration-200">
+                    <span>🔐</span> Yönetici Girişi
+                </a>
+            }
+        </nav>
+        <div class="p-4 border-t text-xs theme-text-muted text-center theme-border">
+            © 2026 SchoolAdmin v1.0
+        </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="flex-1 flex flex-col overflow-hidden theme-bg-app">
+        <!-- Top bar header -->
+        <header class="h-16 border-b flex items-center justify-between px-6 shrink-0 backdrop-blur theme-bg-card/80 theme-border">
+            <h1 class="text-lg font-bold theme-text-main">@ViewData["Title"]</h1>
+            
+            <div class="flex items-center gap-4">
+                
+                <!-- Tema Seçici (Dropdown) -->
+                <div class="relative inline-block text-left">
+                    <select onchange="changeTheme(this.value)" id="theme-select" class="theme-bg-input theme-border border text-xs font-semibold rounded-xl px-3 py-2 theme-text-main outline-none transition cursor-pointer">
+                        <option value="dark">🌙 Karanlık</option>
+                        <option value="light">☀️ Beyaz</option>
+                        <option value="kitty">🎀 Hello Kitty</option>
+                        <option value="green">🟢 Yeşil</option>
+                        <option value="cheese">🧀 Peynir</option>
+                    </select>
+                </div>
+
+                <span class="text-xs theme-bg-app px-3 py-1.5 rounded-full theme-accent-text font-semibold tracking-wider uppercase">Yönetici Paneli</span>
+            </div>
+        </header>
+
+        <!-- Main Body -->
+        <div class="flex-1 overflow-y-auto p-6 md:p-8">
+            @if (TempData["Success"] != null)
+            {
+                <div class="mb-6 p-4 rounded-xl border border-emerald-500/30 bg-emerald-500/10 text-emerald-400 text-sm font-medium flex items-center gap-3 animate-fade-in">
+                    <span>✅</span> @TempData["Success"]
+                </div>
+            }
+            @if (TempData["Error"] != null)
+            {
+                <div class="mb-6 p-4 rounded-xl border border-red-500/30 bg-red-500/10 text-red-400 text-sm font-medium flex items-center gap-3 animate-fade-in">
+                    <span>❌</span> @TempData["Error"]
+                </div>
+            }
+
+            @RenderBody()
+        </div>
+    </main>
+
+    <script>
+        function changeTheme(theme) {
+            document.documentElement.setAttribute('data-theme', theme);
+            localStorage.setItem('school-theme', theme);
+            document.querySelectorAll('#theme-select').forEach(select => {
+                select.value = theme;
+            });
+        }
+        
+        document.addEventListener("DOMContentLoaded", function() {
+            var activeTheme = localStorage.getItem('school-theme') || 'dark';
+            document.querySelectorAll('#theme-select').forEach(select => {
+                select.value = activeTheme;
+            });
+        });
+    </script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

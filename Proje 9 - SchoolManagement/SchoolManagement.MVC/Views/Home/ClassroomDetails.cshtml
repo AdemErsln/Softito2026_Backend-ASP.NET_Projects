@@ -1,0 +1,90 @@
+@model ClassroomViewModel
+@{
+    ViewData["Title"] = $"{Model.Name} Detayı";
+    Layout = "_StudentLayout";
+    var students = ViewBag.Students as List<StudentViewModel> ?? new List<StudentViewModel>();
+}
+
+<div class="space-y-8">
+    <div class="flex items-center gap-4">
+        <a href="/" class="text-sm font-semibold text-indigo-400 hover:underline">← Sınıflara Geri Dön</a>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        
+        <!-- Left: Classroom Info Card -->
+        <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl space-y-6 h-fit">
+            <div>
+                <span class="text-xs font-semibold text-slate-500 uppercase tracking-widest">Sınıf Bilgileri</span>
+                <h2 class="text-3xl font-black text-white mt-1">@Model.Name</h2>
+            </div>
+            
+            <div class="space-y-4">
+                <div class="flex justify-between text-sm py-2 border-b border-slate-800/60">
+                    <span class="text-slate-400">Lokasyon:</span>
+                    <span class="font-bold text-slate-200">@(Model.Location ?? "Belirtilmemiş")</span>
+                </div>
+                <div class="flex justify-between text-sm py-2 border-b border-slate-800/60">
+                    <span class="text-slate-400">Kapasite:</span>
+                    <span class="font-bold text-slate-200">@Model.Capacity Öğrenci</span>
+                </div>
+                <div class="flex justify-between text-sm py-2 border-b border-slate-800/60">
+                    <span class="text-slate-400">Mevcut Öğrenci:</span>
+                    <span class="font-bold text-slate-200">@Model.StudentCount Öğrenci</span>
+                </div>
+                <div>
+                    @{
+                        var pct = Model.Capacity > 0 ? (Model.StudentCount * 100) / Model.Capacity : 0;
+                        var color = pct >= 100 ? "bg-red-500" : (pct >= 80 ? "bg-amber-500" : "bg-indigo-500");
+                    }
+                    <div class="flex justify-between text-xs text-slate-400 mb-2">
+                        <span>Doluluk Oranı:</span>
+                        <span>%@pct</span>
+                    </div>
+                    <div class="w-full h-2.5 bg-slate-800 rounded-full overflow-hidden">
+                        <div class="h-full @color rounded-full" style="width: @(Math.Min(pct, 100))%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right: Students List -->
+        <div class="lg:col-span-2 bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden p-6 space-y-4">
+            <div>
+                <h3 class="text-lg font-bold text-white">Sınıftaki Öğrenciler</h3>
+                <p class="text-xs text-slate-400 mt-1">Bu sınıfta kayıtlı öğrencilerin güncel listesi.</p>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="w-full text-left text-sm border-collapse">
+                    <thead>
+                        <tr class="text-xs font-semibold text-slate-400 border-b border-slate-800 bg-slate-950/40 uppercase">
+                            <th class="px-6 py-3.5">Öğrenci No</th>
+                            <th class="px-6 py-3.5">Ad Soyad</th>
+                            <th class="px-6 py-3.5">E-posta</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-800">
+                        @if (students.Any())
+                        {
+                            foreach (var student in students)
+                            {
+                                <tr class="hover:bg-slate-800/20 transition">
+                                    <td class="px-6 py-4 font-semibold text-slate-300">@student.StudentNumber</td>
+                                    <td class="px-6 py-4 text-slate-200">@student.FirstName @student.LastName</td>
+                                    <td class="px-6 py-4 text-slate-400">@(student.Email ?? "-")</td>
+                                </tr>
+                            }
+                        }
+                        else
+                        {
+                            <tr>
+                                <td colspan="3" class="px-6 py-12 text-center text-slate-500">Bu sınıfta kayıtlı hiçbir öğrenci bulunmamaktadır.</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

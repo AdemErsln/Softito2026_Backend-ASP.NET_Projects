@@ -294,7 +294,12 @@ def capture_project_screenshots_selenium(url, proj_name, routes_to_capture, proj
                     
                     u_val = "admin"
                     e_val = "admin@disaccord.com" if "discord" in proj_name.lower() else "admin@example.com"
-                    p_val = "Admin123!" if "discord" in proj_name.lower() else "AdminPassword123!"
+                    if "school" in proj_name.lower() or "okul" in proj_name.lower():
+                        p_val = "123456"
+                    elif "discord" in proj_name.lower():
+                        p_val = "Admin123!"
+                    else:
+                        p_val = "AdminPassword123!"
                     
                     if username_field:
                         username_field.clear()
@@ -372,7 +377,12 @@ def capture_project_screenshots_selenium(url, proj_name, routes_to_capture, proj
                             
                 u_val = "admin"
                 e_val = "admin@disaccord.com" if "discord" in proj_name.lower() else "admin@example.com"
-                p_val = "Admin123!" if "discord" in proj_name.lower() else "AdminPassword123!"
+                if "school" in proj_name.lower() or "okul" in proj_name.lower():
+                    p_val = "123456"
+                elif "discord" in proj_name.lower():
+                    p_val = "Admin123!"
+                else:
+                    p_val = "AdminPassword123!"
                 
                 if username_field:
                     username_field.clear()
@@ -510,6 +520,40 @@ def main():
         for r in routes_to_capture:
             print(f"  - {url}{r}")
             
+        # Check if there is an API sibling project to start first in the background
+        api_sibling_process = None
+        if not is_api:
+            parent_dir = os.path.dirname(csproj_dir)
+            if os.path.exists(parent_dir):
+                for root, dirs, files in os.walk(parent_dir):
+                    if "bin" in root or "obj" in root:
+                        continue
+                    for f in files:
+                        if f.endswith(".csproj") and "api" in f.lower() and os.path.join(root, f) != csproj:
+                            api_csproj = os.path.join(root, f)
+                            api_url = parse_url_from_launch_settings(root)
+                            if not api_url:
+                                api_url = "http://localhost:5000"
+                            api_url = api_url.replace("0.0.0.0", "localhost")
+                            
+                            print(f"\nDetected API sibling: {f} at {api_url}. Starting in background...")
+                            try:
+                                api_sibling_process = subprocess.Popen(
+                                    ["dotnet", "run", "--project", api_csproj],
+                                    stdout=subprocess.DEVNULL,
+                                    stderr=subprocess.DEVNULL,
+                                    creationflags=subprocess.CREATE_NEW_PROCESS_GROUP if sys.platform == "win32" else 0
+                                )
+                                # Wait for API server to respond
+                                if wait_for_server(api_url, timeout=WAIT_TIMEOUT):
+                                    print(f"API sibling is up and running.")
+                                    time.sleep(2.0)
+                                else:
+                                    print(f"WARNING: API sibling at {api_url} did not start.")
+                            except Exception as api_err:
+                                print(f"Error starting API sibling: {api_err}")
+                            break
+
         # Run dotnet in the foreground (direct output to console)
         print(f"\nRunning command: dotnet run --project \"{csproj}\"")
         process = None
@@ -548,6 +592,14 @@ def main():
                     process.wait()
                 print("Process stopped. Freeing up ports...")
                 time.sleep(2.0)
+            if api_sibling_process:
+                print(f"Stopping API sibling process...")
+                if sys.platform == "win32":
+                    subprocess.run(["taskkill", "/F", "/T", "/PID", str(api_sibling_process.pid)], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                else:
+                    api_sibling_process.terminate()
+                    api_sibling_process.wait()
+                time.sleep(1.0)
 
     print("\nAll projects processed. Screenshots saved in the 'screenshots' directory.")
 

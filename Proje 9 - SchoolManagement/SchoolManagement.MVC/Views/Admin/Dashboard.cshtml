@@ -1,0 +1,133 @@
+@{
+    ViewData["Title"] = "Dashboard";
+    var classrooms = ViewBag.Classrooms as List<ClassroomViewModel> ?? new List<ClassroomViewModel>();
+    var recentStudents = ViewBag.RecentStudents as List<StudentViewModel> ?? new List<StudentViewModel>();
+}
+
+@if (ViewBag.Error != null)
+{
+    <div class="p-6 rounded-2xl border border-red-500/20 bg-red-500/5 text-red-400 mb-8 flex flex-col gap-2">
+        <h3 class="text-lg font-bold">API Bağlantı Hatası</h3>
+        <p class="text-sm text-red-400/80">@ViewBag.Error</p>
+        <p class="text-xs theme-text-muted mt-2">API projesinin çalıştığından ve <b>appsettings.json</b> dosyasındaki BaseUrl ayarının doğru olduğundan emin olunuz.</p>
+    </div>
+}
+
+<div class="space-y-8">
+    <!-- Stat Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="theme-bg-card border theme-border p-6 rounded-2xl flex items-center gap-4">
+            <div class="p-4 rounded-xl theme-bg-input theme-accent-text text-2xl">
+                🎓
+            </div>
+            <div>
+                <p class="text-xs font-semibold theme-text-muted uppercase tracking-wider">Toplam Öğrenci</p>
+                <p class="text-3xl font-black theme-text-main mt-1">@ViewBag.StudentsCount</p>
+            </div>
+        </div>
+
+        <div class="theme-bg-card border theme-border p-6 rounded-2xl flex items-center gap-4">
+            <div class="p-4 rounded-xl theme-bg-input text-emerald-400 text-2xl">
+                🏫
+            </div>
+            <div>
+                <p class="text-xs font-semibold theme-text-muted uppercase tracking-wider">Toplam Sınıf</p>
+                <p class="text-3xl font-black theme-text-main mt-1">@ViewBag.ClassroomsCount</p>
+            </div>
+        </div>
+
+        <div class="theme-bg-card border theme-border p-6 rounded-2xl flex items-center gap-4">
+            <div class="p-4 rounded-xl theme-bg-input text-amber-400 text-2xl">
+                ⚠️
+            </div>
+            <div>
+                <p class="text-xs font-semibold theme-text-muted uppercase tracking-wider">Sınıfsız Öğrenci</p>
+                <p class="text-3xl font-black theme-text-main mt-1">@ViewBag.UnassignedStudentsCount</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        
+        <!-- Sınıflar Listesi -->
+        <div class="theme-bg-card border theme-border rounded-2xl p-6 space-y-4">
+            <div class="flex justify-between items-center pb-2 border-b theme-border">
+                <h3 class="text-base font-bold theme-text-main">Sınıf Doluluk Oranları</h3>
+                <a href="/Classroom" class="text-xs theme-logo hover:underline">Tümünü Yönet</a>
+            </div>
+            <div class="space-y-4">
+                @if (classrooms.Any())
+                {
+                    foreach (var classroom in classrooms)
+                    {
+                        var fillPercent = classroom.Capacity > 0 ? (classroom.StudentCount * 100) / classroom.Capacity : 0;
+                        var progressColor = fillPercent >= 100 ? "bg-red-500" : (fillPercent >= 80 ? "bg-amber-500" : "bg-indigo-500");
+                        
+                        <div class="space-y-2">
+                            <div class="flex justify-between text-sm">
+                                <span class="font-bold theme-text-main">@classroom.Name <span class="text-xs theme-text-muted font-normal">(@classroom.Location)</span></span>
+                                <span class="theme-text-muted">@classroom.StudentCount / @classroom.Capacity Öğrenci</span>
+                            </div>
+                            <div class="h-2.5 w-full theme-bg-input rounded-full overflow-hidden">
+                                <div class="h-full @progressColor rounded-full transition-all duration-500" style="width: @(fillPercent)%"></div>
+                            </div>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <p class="text-sm theme-text-muted text-center py-6">Kayıtlı sınıf bulunamadı.</p>
+                }
+            </div>
+        </div>
+
+        <!-- Son Öğrenciler -->
+        <div class="theme-bg-card border theme-border rounded-2xl p-6 flex flex-col">
+            <div class="flex justify-between items-center pb-2 border-b theme-border mb-4">
+                <h3 class="text-base font-bold theme-text-main">Son Kayıt Olan Öğrenciler</h3>
+                <a href="/Student" class="text-xs theme-logo hover:underline">Tümünü Yönet</a>
+            </div>
+            <div class="flex-1 overflow-x-auto">
+                <table class="w-full text-left text-sm border-collapse">
+                    <thead>
+                        <tr class="text-xs font-semibold theme-text-muted border-b theme-border uppercase">
+                            <th class="py-2.5">Öğrenci No</th>
+                            <th class="py-2.5">Ad Soyad</th>
+                            <th class="py-2.5">Sınıf</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y theme-border">
+                        @if (recentStudents.Any())
+                        {
+                            foreach (var student in recentStudents)
+                            {
+                                <tr class="hover:theme-bg-app transition">
+                                    <td class="py-3 font-semibold theme-logo">@student.StudentNumber</td>
+                                    <td class="py-3 theme-text-main">@student.FirstName @student.LastName</td>
+                                    <td class="py-3">
+                                        @if (student.ClassroomId != null)
+                                        {
+                                            <span class="inline-flex px-2 py-0.5 rounded-md text-xs font-semibold bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">@student.ClassroomName</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="inline-flex px-2 py-0.5 rounded-md text-xs font-semibold bg-amber-500/10 text-amber-400 border border-amber-500/20">Sınıfsız</span>
+                                        }
+                                    </td>
+                                </tr>
+                            }
+                        }
+                        else
+                        {
+                            <tr>
+                                <td colspan="3" class="py-8 text-center theme-text-muted">Kayıtlı öğrenci bulunamadı.</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,62 @@
+@{
+    ViewData["Title"] = "Giriş Yap";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="tr" class="h-full bg-slate-950 text-slate-100">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giriş Yap - SchoolAdmin</title>
+    <!-- Tailwind CSS v4 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@@tailwindcss/browser@4"></script>
+</head>
+<body class="h-full flex items-center justify-center p-6 bg-slate-950">
+
+    <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
+        <div class="absolute -top-40 -left-40 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-40 -right-40 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="w-full max-w-md bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-3xl shadow-2xl relative z-10 space-y-6">
+        
+        <div class="text-center space-y-2">
+            <h2 class="text-3xl font-black tracking-wider text-indigo-400">SchoolAdmin</h2>
+            <p class="text-xs text-slate-400">Yönetim paneline erişmek için giriş yapın.</p>
+        </div>
+
+        @if (ViewBag.Error != null)
+        {
+            <div class="p-4 rounded-xl border border-red-500/30 bg-red-500/10 text-red-400 text-sm font-medium flex items-center gap-2">
+                <span>⚠️</span> @ViewBag.Error
+            </div>
+        }
+
+        <form asp-action="Login" method="post" class="space-y-4">
+            <input type="hidden" name="returnUrl" value="@ViewBag.ReturnUrl" />
+
+            <div class="space-y-1.5">
+                <label class="text-xs font-semibold text-slate-400">Kullanıcı Adı</label>
+                <input type="text" name="username" placeholder="admin" required class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-200 outline-none focus:border-indigo-500 transition" />
+            </div>
+
+            <div class="space-y-1.5">
+                <label class="text-xs font-semibold text-slate-400">Şifre</label>
+                <input type="password" name="password" placeholder="••••••" required class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-200 outline-none focus:border-indigo-500 transition" />
+            </div>
+
+            <div class="pt-3">
+                <button type="submit" class="w-full py-3 bg-indigo-600 hover:bg-indigo-500 transition duration-200 rounded-xl font-bold text-sm text-white shadow-lg shadow-indigo-500/20">
+                    Giriş Yap
+                </button>
+            </div>
+        </form>
+
+        <div class="text-center border-t border-slate-800/60 pt-4">
+            <a href="/" class="text-xs text-indigo-400 hover:underline">← Öğrenci Portalına Dön</a>
+        </div>
+    </div>
+
+</body>
+</html>

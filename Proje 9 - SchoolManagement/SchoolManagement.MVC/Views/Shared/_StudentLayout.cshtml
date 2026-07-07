@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="tr" class="h-full">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SchoolPortal</title>
+    <!-- Pre-load theme script to prevent layout flash -->
+    <script>
+        (function() {
+            var savedTheme = localStorage.getItem('school-theme') || 'dark';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        })();
+    </script>
+    <!-- Tailwind CSS v4 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@@tailwindcss/browser@4"></script>
+    <style>
+        /* 🎨 Çoklu Tema Değişkenleri */
+        :root, [data-theme="dark"] {
+            --bg-app: #0f172a;
+            --bg-card: #1e293b;
+            --border-color: #334155;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #6366f1;
+            --accent-hover: #4f46e5;
+            --bg-input: #0f172a;
+            --logo-color: #818cf8;
+        }
+
+        [data-theme="light"] {
+            --bg-app: #f8fafc;
+            --bg-card: #ffffff;
+            --border-color: #e2e8f0;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --accent: #4f46e5;
+            --accent-hover: #4338ca;
+            --bg-input: #f1f5f9;
+            --logo-color: #4f46e5;
+        }
+
+        [data-theme="kitty"] {
+            --bg-app: #fff1f2;
+            --bg-card: #ffffff;
+            --border-color: #ffe4e6;
+            --text-main: #4c0519;
+            --text-muted: #fda4af;
+            --accent: #db2777;
+            --accent-hover: #be185d;
+            --bg-input: #fff1f2;
+            --logo-color: #ec4899;
+        }
+
+        [data-theme="green"] {
+            --bg-app: #064e3b;
+            --bg-card: #022c22;
+            --border-color: #0f766e;
+            --text-main: #f0fdf4;
+            --text-muted: #a7f3d0;
+            --accent: #10b981;
+            --accent-hover: #059669;
+            --bg-input: #022c22;
+            --logo-color: #34d399;
+        }
+
+        [data-theme="cheese"] {
+            --bg-app: #fef9c3;
+            --bg-card: #fffbeb;
+            --border-color: #fef08a;
+            --text-main: #78350f;
+            --text-muted: #b45309;
+            --accent: #ca8a04;
+            --accent-hover: #a16207;
+            --bg-input: #fef9c3;
+            --logo-color: #eab308;
+        }
+
+        /* Global Temel Stiller */
+        body {
+            background-color: var(--bg-app);
+            color: var(--text-main);
+            transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+        }
+
+        /* Peynir teması için özel arka plan görseli */
+        [data-theme="cheese"] body {
+            background-image: url('/images/cheese_bg.png');
+            background-repeat: repeat;
+        }
+
+        /* Tema Sınıf Eşlemeleri */
+        .theme-bg-app { background-color: var(--bg-app) !important; }
+        .theme-bg-card { background-color: var(--bg-card) !important; }
+        .theme-border { border-color: var(--border-color) !important; }
+        .theme-text-main { color: var(--text-main) !important; }
+        .theme-text-muted { color: var(--text-muted) !important; }
+        .theme-accent-bg { background-color: var(--accent) !important; }
+        .theme-accent-bg-hover:hover { background-color: var(--accent-hover) !important; }
+        .theme-accent-text { color: var(--accent) !important; }
+        .theme-bg-input { background-color: var(--bg-input) !important; }
+        .theme-logo { color: var(--logo-color) !important; }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #090d16;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 9999px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #334155;
+        }
+    </style>
+</head>
+<body class="h-full flex flex-col overflow-y-auto">
+
+    <!-- Top Navbar -->
+    <header class="sticky top-0 z-50 w-full border-b backdrop-blur-md theme-border theme-bg-card/80">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="flex h-16 items-center justify-between">
+                
+                <!-- Left Logo & Links -->
+                <div class="flex items-center gap-8">
+                    <a href="/" class="flex items-center gap-2">
+                        <span class="text-2xl font-black tracking-wider theme-logo">SchoolPortal</span>
+                    </a>
+                    
+                    <nav class="hidden md:flex items-center gap-6">
+                        <a href="/" class="text-sm font-semibold theme-text-main hover:opacity-80 transition">Sınıflarım</a>
+                        <a href="#" class="text-sm font-semibold theme-text-muted hover:theme-text-main transition">Ana Sayfa</a>
+                        <a href="#" class="text-sm font-semibold theme-text-muted hover:theme-text-main transition">Duyurular</a>
+                    </nav>
+                </div>
+
+                <!-- Right Menu: Theme Selector & Auth Buttons -->
+                <div class="flex items-center gap-4">
+                    
+                    <!-- Tema Seçici (Dropdown) -->
+                    <div class="relative inline-block text-left">
+                        <select onchange="changeTheme(this.value)" id="theme-select" class="theme-bg-input theme-border border text-xs font-semibold rounded-xl px-3 py-2 theme-text-main outline-none transition cursor-pointer">
+                            <option value="dark">🌙 Karanlık</option>
+                            <option value="light">☀️ Beyaz</option>
+                            <option value="kitty">🎀 Hello Kitty</option>
+                            <option value="green">🟢 Yeşil</option>
+                            <option value="cheese">🧀 Peynir</option>
+                        </select>
+                    </div>
+
+                    @if (User.Identity?.IsAuthenticated == true)
+                    {
+                        <span class="text-xs theme-text-muted theme-bg-app px-3 py-1.5 rounded-full font-medium">Admin: @User.Identity.Name</span>
+                        <a href="/Admin/Dashboard" class="text-xs font-bold theme-accent-bg theme-accent-bg-hover text-white px-4 py-2 rounded-xl transition shadow-lg">Yönetim Paneli</a>
+                        <a href="/Account/Logout" class="text-xs font-semibold text-red-500 hover:underline">Çıkış</a>
+                    }
+                    else
+                    {
+                        <a href="/Account/Login" class="text-xs font-bold bg-indigo-600/10 border border-indigo-500/20 hover:bg-indigo-600/20 text-indigo-400 px-4 py-2.5 rounded-xl transition">Yönetici Girişi</a>
+                    }
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="flex-1">
+        <div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+            @RenderBody()
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t theme-border theme-bg-card py-6 mt-12">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center text-xs theme-text-muted">
+            © 2026 SchoolPortal. Tüm Hakları Saklıdır.
+        </div>
+    </footer>
+
+    <script>
+        function changeTheme(theme) {
+            document.documentElement.setAttribute('data-theme', theme);
+            localStorage.setItem('school-theme', theme);
+            document.querySelectorAll('#theme-select').forEach(select => {
+                select.value = theme;
+            });
+        }
+        
+        document.addEventListener("DOMContentLoaded", function() {
+            var activeTheme = localStorage.getItem('school-theme') || 'dark';
+            document.querySelectorAll('#theme-select').forEach(select => {
+                select.value = activeTheme;
+            });
+        });
+    </script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

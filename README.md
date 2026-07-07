@@ -1,6 +1,6 @@
 # 🚀 ASP.NET Core & C# Proje Portföyü
 
-Bu çalışma alanı, modern web mimarileri, veri erişim teknolojileri (EF Core, ADO.NET, Dapper) ve kurumsal raporlama entegrasyonlarını içeren 9 adet C# projesinden oluşmaktadır.
+Bu çalışma alanı, modern web mimarileri, veri erişim teknolojileri (EF Core, ADO.NET, Dapper) ve kurumsal raporlama entegrasyonlarını içeren 10 adet C# projesinden oluşmaktadır.
 
 ---
 
@@ -166,7 +166,29 @@ Akıllı kahve otomatlarının takibi, içecek stokları, malzeme yönetimi, sat
 
 ---
 
-## 🏗️ Proje 9 — Discord Clone (DiscordClone)
+## 🏗️ Proje 9 — Okul Yönetim Sistemi (SchoolManagement)
+**Teknoloji:** ASP.NET Core MVC · ASP.NET Core Web API · Dapper ORM · SQL Server · Cookie Authentication · Tailwind CSS
+
+Okul yöneticilerinin sınıfları ve öğrencileri kolayca yönetmesini, öğrencilerin ise kayıtlı oldukları sınıf bilgilerini, kapasiteleri ve lokasyonları görüntülemesini sağlayan, Web API ve MVC mimarisinde tasarlanmış çift katmanlı yönetim sistemi. Dapper ORM kullanılarak yüksek performanslı SQL Server veritabanı sorgulamaları yapılmıştır. Admin paneli üzerinden öğrenci kaydetme, düzenleme, sınıf atama ve kapasite kontrolü işlemleri gerçekleştirilir.
+
+### Öne Çıkan Özellikler:
+* Web API ve MVC ayrık mimarisi ile servis tabanlı entegrasyon
+* Dapper ORM ve Microsoft.Data.SqlClient ile doğrudan, yüksek performanslı veritabanı erişimi
+* Cookie tabanlı yetkilendirme ve kimlik doğrulama mekanizması
+* Dinamik doluluk oranları ve öğrenci istatistikleri sunan modern Admin Dashboard
+* Sınıflara öğrenci atama, kapasite takibi ve yerleşim kontrolü
+* Responsive ve modern arayüz tasarımı (Tailwind CSS tabanlı karanlık tema)
+
+### 📸 Ekran Görüntüleri:
+<p align="left">
+  <img src="screenshots/Proje 9 - SchoolManagement/Home.png" width="260" alt="Öğrenci Portalı" />
+  <img src="screenshots/Proje 9 - SchoolManagement/Admin_Dashboard.png" width="260" alt="Yönetici Dashboard" />
+  <img src="screenshots/Proje 9 - SchoolManagement/Student.png" width="260" alt="Öğrenci Yönetimi" />
+</p>
+
+---
+
+## 🏗️ Proje 10 — Discord Clone (DiscordClone)
 **Teknoloji:** ASP.NET Core MVC · EF Core Code-First · N-Tier (N-Katmanlı) Mimari · Repository & Unit of Work · SQL Server · Identity
 
 Repository ve Unit of Work tasarım desenleri kullanılarak çok katmanlı (Presentation, Data, Model) mimaride geliştirilmiş kapsamlı Discord klonu. Kullanıcılar ASP.NET Core Identity ile güvenli bir şekilde üye olabilir, giriş yapabilir, sunucular ve kanallar oluşturarak mesajlaşabilirler. Arkadaşlık sistemi (Beklemede, Kabul Edildi, Engellendi) ve sunucu üyelik yönetimi gibi gelişmiş sosyal ağ özelliklerine sahiptir.
@@ -182,7 +204,7 @@ Repository ve Unit of Work tasarım desenleri kullanılarak çok katmanlı (Pres
 
 ### 📸 Ekran Görüntüleri:
 <p align="left">
-  <img src="screenshots/Proje 9 - DiscordClone/Home.png" width="260" alt="Giriş Sayfası" />
-  <img src="screenshots/Proje 9 - DiscordClone/Chat.png" width="260" alt="Mesajlaşma Paneli" />
-  <img src="screenshots/Proje 9 - DiscordClone/Admin.png" width="260" alt="Yönetici Paneli" />
+  <img src="screenshots/Proje 10 - DiscordClone/Home.png" width="260" alt="Giriş Sayfası" />
+  <img src="screenshots/Proje 10 - DiscordClone/Chat.png" width="260" alt="Mesajlaşma Paneli" />
+  <img src="screenshots/Proje 10 - DiscordClone/Admin.png" width="260" alt="Yönetici Paneli" />
 </p>
