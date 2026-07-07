@@ -249,7 +249,7 @@ def capture_project_screenshots_selenium(url, proj_name, routes_to_capture, proj
             full_url = f"{url}{route}"
             safe_route_name = re.sub(r'[\\/*?:"<>|]', "_", route.strip("/")).replace(" ", "_")
             if not safe_route_name:
-                safe_route_name = "Api_Root" if is_api else "Home"
+                safe_route_name = "Home"
                 
             output_file = os.path.abspath(os.path.join(proj_screenshot_dir, f"{safe_route_name}.png"))
             print(f"Capturing unauthenticated route: {full_url} -> {output_file}")

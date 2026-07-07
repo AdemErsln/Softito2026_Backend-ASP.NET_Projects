@@ -160,6 +160,7 @@ Akıllı kahve otomatlarının takibi, içecek stokları, malzeme yönetimi, sat
 
 ### 📸 Ekran Görüntüleri:
 <p align="left">
+  <img src="screenshots/Proje 8 - KahveOtomati/Home.png" width="260" alt="API Karşılama Ekranı" />
   <img src="screenshots/Proje 8 - KahveOtomati/scalar_v1.png" width="260" alt="Scalar Dokümantasyon" />
 </p>
 
